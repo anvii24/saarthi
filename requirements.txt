@@ -1,0 +1,14 @@
+requests
+beautifulsoup4
+nltk
+numpy
+pandas
+scikit-learn
+sentence-transformers
+torch
+transformers
+langdetect
+streamlit
+python-dotenv
+matplotlib
+pytest
