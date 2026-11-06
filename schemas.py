@@ -3,7 +3,7 @@ Shared data shapes for Saarthi.
 
 Everyone imports from this file so that crawlers, indexes, search,
 ranking and the app all agree on what a verse, a link and a search
-result look like. Do not change a field name without telling the team.
+result look like.
 
 Usage:
     from schemas import Verse, Link, SearchResult, THEMES, validate_verse
