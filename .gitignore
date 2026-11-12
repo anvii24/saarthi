@@ -221,3 +221,6 @@ __marimo__/
 
 data/processed/
 data/raw/hi_commentary/
+
+# Local VS Code settings
+.vscode/

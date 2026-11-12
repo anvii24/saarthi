@@ -1,0 +1,41 @@
+{
+  "source": "Swami Swarupananda, Srimad-Bhagavad-Gita (1909)",
+  "individual_passages": 647,
+  "grouped_passages": 24,
+  "missing_chapter_files": [],
+  "expected_verse_ids_checked": true,
+  "missing_verse_ids": [
+    "13.35"
+  ],
+  "unexpected_verse_ids": [],
+  "individual_verse_ids": 647,
+  "grouped_verse_ids": 53,
+  "total_covered_verse_ids": 700,
+  "grouped_ranges": [
+    "1.4-6",
+    "1.21-22",
+    "1.24-25",
+    "1.28-29",
+    "1.32-34",
+    "1.38-39",
+    "2.42-44",
+    "4.30-31",
+    "5.8-9",
+    "5.27-28",
+    "6.20-23",
+    "8.9-10",
+    "8.12-13",
+    "10.4-5",
+    "10.12-13",
+    "11.26-27",
+    "11.41-42",
+    "12.3-4",
+    "12.6-7",
+    "12.13-14",
+    "12.18-19",
+    "13.5-6",
+    "15.3-4",
+    "17.5-6"
+  ],
+  "note": "Grouped passages count toward verse coverage but remain separate from individual verse records."
+}
