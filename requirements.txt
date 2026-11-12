@@ -13,3 +13,6 @@ python-dotenv
 matplotlib
 pytest
 datasets
+openai
+sentencepiece
+protobuf
