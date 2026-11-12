@@ -2,12 +2,17 @@
 Merge raw VedicScriptures responses into data/verses.json and data/links.json
 (Person 3: Anvi).
 
-Input:  one JSON file per verse in data/raw/vedicscriptures/ — exactly what the
-        API returns for /slok/<chapter>/<verse>/ (Antara's crawler saves these).
+Input:  1. data/raw/hi_commentary/  — one raw VedicScriptures JSON per verse
+           (from crawler/crawl_hi_commentary.py): Sanskrit, transliteration,
+           6 English + 2 Hindi translations, English + Hindi commentary
+        2. data/raw/en_source1/verses.json  — Antara's AdiyogiArts source
+           (crawler/crawl_en_source1.py). Its English translation is ~98% the same
+           as Gambhirananda's, which we already have, so we take only its short
+           plain-English explanation of each verse, as "explanation_en".
 Output: data/verses.json  — one clean Verse record per verse (see schemas.py)
         data/links.json   — verse-to-verse cross-references found in the commentaries
 
-Run from the repo root:
+Run from the repo root (after both crawlers):
     python crawler/merge.py
     python crawler/merge.py --raw some/other/folder     (optional)
 
@@ -31,10 +36,12 @@ from collections import Counter
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from schemas import validate_verse  # noqa: E402
 
-RAW_DIR = os.path.join("data", "raw", "vedicscriptures")
+RAW_DIR = os.path.join("data", "raw", "hi_commentary")
+EN_SOURCE1 = os.path.join("data", "raw", "en_source1", "verses.json")
 VERSES_OUT = os.path.join("data", "verses.json")
 LINKS_OUT = os.path.join("data", "links.json")
-SOURCE_URL = "https://vedicscriptures.github.io/slok/{ch}/{v}/"
+SOURCE_URL = ("https://raw.githubusercontent.com/vedicscriptures/bhagavad-gita-data/"
+              "main/slok/bhagavadgita_chapter_{ch}_slok_{v}.json")
 
 # (source key in the API response, field, our translation key)
 ENGLISH_TRANSLATIONS = [
@@ -51,6 +58,8 @@ HINDI_TRANSLATIONS = [
 ]
 COMMENTARY_EN = ("prabhu", "ec")   # English purport
 COMMENTARY_HI = ("rams", "hc")     # Hindi commentary (richest in cross-references)
+
+EN_SOURCE1_URL = "https://raw.githubusercontent.com/AdiyogiArts/gita-json/main/en.json"
 
 COLOPHON_START = "ॐ तत्सदिति"
 NO_COMMENT = "did not comment"
@@ -171,6 +180,21 @@ def main():
             bad += 1
             print(f"  {verse['id']}: {problems}")
     valid_ids = {v["id"] for v in verses}
+
+    # 2b. add Antara's plain-English explanations (en_source1), matched by verse id
+    if os.path.exists(EN_SOURCE1):
+        with open(EN_SOURCE1, encoding="utf-8") as f:
+            explanations = {r["id"]: clean(r.get("commentary", "")) for r in json.load(f)}
+        added = 0
+        for verse in verses:
+            text = explanations.get(verse["id"], "")
+            if text:
+                verse["explanation_en"] = text
+                verse["source_urls"].append(EN_SOURCE1_URL)
+                added += 1
+        print(f"Added {added} plain-English explanations from {EN_SOURCE1}")
+    else:
+        print(f"(No {EN_SOURCE1} yet: run crawler/crawl_en_source1.py to add explanations)")
 
     # 3. extract links (only to verses that exist, never to itself, no duplicates)
     links, seen = [], set()
