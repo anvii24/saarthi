@@ -69,3 +69,19 @@ The original Sanskrit verses are ancient text and in the public domain.
 **Important limitation:** the edition is a close prose rendering, but not every numbered passage necessarily corresponds one-to-one with a Sanskrit shloka. The parser preserves explicit ranges and the coverage report flags missing IDs. A human must review grouped passages and numbering before the translation is merged into `data/verses.json`.
 
 **Authorship note:** the archive's index mentions a debate about whether Sister Nivedita (Margaret Noble) may have contributed to or authored the translation. The first-edition preface describes Swami Swarupananda as compiler and notes collaboration. We retain the archive's byline for attribution but do not claim the attribution debate is settled.
+
+### Missing verse: 13.35 (Chapter 13)
+
+The selected Swami Swarupananda (1909) edition ends Chapter 13 after
+Verse 13.34. The source page (p. 307) explicitly states that this is
+the end of the thirteenth chapter.
+
+Therefore, Verse 13.35 is not available in this edition. Its absence
+is source-specific and does not indicate a crawler failure.
+
+- Missing verse ID: `13.35`
+- Evidence: Source page 307, immediately after Verse 13.34.
+- Treatment: Kept unavailable in `en_source2`; no replacement
+  translation or invented text has been inserted.
+- Coverage: 700 of the 701 expected verse IDs are covered, including
+  grouped passages. Team approval of this exception is pending.

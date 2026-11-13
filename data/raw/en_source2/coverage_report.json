@@ -37,5 +37,8 @@
     "15.3-4",
     "17.5-6"
   ],
-  "note": "Grouped passages count toward verse coverage but remain separate from individual verse records."
+  "note": "Grouped passages count toward verse coverage but remain separate from individual verse records.",
+  "missing_verse_notes": {
+    "13.35": "Not present in the selected Swami Swarupananda (1909) edition. The source ends Chapter 13 after Verse 34 and explicitly marks the end of the thirteenth chapter. This is a source-specific omission, not a parser failure. Verified against the source page 307. No replacement translation has been inserted."
+  }
 }
