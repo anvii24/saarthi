@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+import time
 
 from dotenv import load_dotenv
 
@@ -44,6 +45,24 @@ def _save_cache() -> None:
         json.dump(_cache, f, ensure_ascii=False, indent=1)
 
 
+RETRY_WAITS = [15, 30, 60]  # seconds to wait after a rate-limit error
+
+
+def _create_with_retry(kwargs: dict) -> str:
+    """Call the API; on a rate-limit error (429) wait and try again a few times."""
+    from openai import RateLimitError
+
+    for wait in RETRY_WAITS + [None]:
+        try:
+            return _get_client().chat.completions.create(**kwargs).choices[0].message.content or ""
+        except RateLimitError:
+            if wait is None:
+                raise
+            print(f"[llm] rate limit reached, waiting {wait}s ...")
+            time.sleep(wait)
+    return ""
+
+
 def ask(prompt: str, system: str = "", json_mode: bool = False, temperature: float = 0.2) -> str:
     """Send one prompt to the LLM and return its reply as text (cached)."""
     cache = _load_cache()
@@ -57,7 +76,7 @@ def ask(prompt: str, system: str = "", json_mode: bool = False, temperature: flo
     if json_mode:
         kwargs["response_format"] = {"type": "json_object"}
 
-    reply = _get_client().chat.completions.create(**kwargs).choices[0].message.content or ""
+    reply = _create_with_retry(kwargs)
     cache[key] = reply
     _save_cache()
     return reply

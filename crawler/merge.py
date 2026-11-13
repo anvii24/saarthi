@@ -9,6 +9,10 @@ Input:  1. data/raw/hi_commentary/  — one raw VedicScriptures JSON per verse
            (crawler/crawl_en_source1.py). Its English translation is ~98% the same
            as Gambhirananda's, which we already have, so we take only its short
            plain-English explanation of each verse, as "explanation_en".
+        3. data/raw/en_source2/verses.json  — Kashvi's Swami Swarupananda (1909)
+           translation (crawler/crawl_en_source2.py), added as "en_swarupananda".
+           Its edition counts 34 verses in chapter 13, so chapters are aligned by
+           comparing texts (see add_aligned_translation), not just by id.
 Output: data/verses.json  — one clean Verse record per verse (see schemas.py)
         data/links.json   — verse-to-verse cross-references found in the commentaries
 
@@ -38,6 +42,7 @@ from schemas import validate_verse  # noqa: E402
 
 RAW_DIR = os.path.join("data", "raw", "hi_commentary")
 EN_SOURCE1 = os.path.join("data", "raw", "en_source1", "verses.json")
+EN_SOURCE2 = os.path.join("data", "raw", "en_source2", "verses.json")
 VERSES_OUT = os.path.join("data", "verses.json")
 LINKS_OUT = os.path.join("data", "links.json")
 SOURCE_URL = ("https://raw.githubusercontent.com/vedicscriptures/bhagavad-gita-data/"
@@ -60,6 +65,7 @@ COMMENTARY_EN = ("prabhu", "ec")   # English purport
 COMMENTARY_HI = ("rams", "hc")     # Hindi commentary (richest in cross-references)
 
 EN_SOURCE1_URL = "https://raw.githubusercontent.com/AdiyogiArts/gita-json/main/en.json"
+EN_SOURCE2_URL = "https://sacred-texts.com/book/srimad-bhagavad-gita/contents"
 
 COLOPHON_START = "ॐ तत्सदिति"
 NO_COMMENT = "did not comment"
@@ -125,6 +131,59 @@ def hindi_refs(text: str) -> list[tuple[int, int]]:
 def english_refs(text: str) -> list[tuple[int, int]]:
     """Gita references in Prabhupada's purport: 'Bg. 18.69' or 'Bhagavad-gītā (4.9)'."""
     return [(int(c), int(v)) for c, v in EN_REF.findall(text or "")]
+
+
+# ---------------------------------------------------------------------------
+# Aligning a source that numbers verses differently
+# ---------------------------------------------------------------------------
+# Some editions count 34 verses in chapter 13 (our edition has 35, with Arjuna's
+# question as 13.1), so their 13.1 is our 13.2. Matching ids alone would attach
+# every chapter 13 translation to the wrong verse. For each chapter we try
+# shifting the source by -1, 0 or +1 and keep the shift whose texts overlap
+# most with our existing English translations.
+
+WORD = re.compile(r"[a-z]+")
+STOP = {"the", "and", "of", "to", "in", "is", "a", "that", "he", "who", "this", "his",
+        "o", "for", "with", "by", "not", "be", "as", "are", "all", "which", "me", "my",
+        "i", "you", "thou", "thy", "thee", "it", "from", "one", "these", "they", "so"}
+
+
+def _words(text: str) -> set[str]:
+    return {w for w in WORD.findall((text or "").lower()) if w not in STOP and len(w) > 2}
+
+
+def _overlap(a: set[str], b: set[str]) -> float:
+    return len(a & b) / len(a | b) if a and b else 0.0
+
+
+def add_aligned_translation(verses: list[dict], source: list[dict], src_key: str, our_key: str) -> int:
+    """Add source[...]['translations'][src_key] to our verses as our_key, per-chapter aligned."""
+    ours = {v["id"]: _words(" ".join(t for k, t in v["translations"].items() if k.startswith("en_")))
+            for v in verses}
+    by_chapter: dict[int, list[tuple[int, str]]] = {}
+    for record in source:
+        text = clean(record.get("translations", {}).get(src_key, ""))
+        if text:
+            by_chapter.setdefault(int(record["chapter"]), []).append((int(record["verse"]), text))
+
+    by_id = {v["id"]: v for v in verses}
+    added = 0
+    for ch, items in sorted(by_chapter.items()):
+        def score(shift: int) -> float:
+            sims = [_overlap(_words(t), ours.get(f"{ch}.{v + shift}", set())) for v, t in items]
+            return sum(sims) / len(sims)
+        best = max((0, 1, -1), key=score)  # 0 first, so ties keep the ids as they are
+        if best != 0:
+            print(f"  chapter {ch}: source numbering is shifted, mapping verse n -> n{best:+d} "
+                  f"(text overlap {score(0):.2f} -> {score(best):.2f})")
+        for v, text in items:
+            target = by_id.get(f"{ch}.{v + best}")
+            if target:
+                target["translations"][our_key] = text
+                if EN_SOURCE2_URL not in target["source_urls"]:
+                    target["source_urls"].append(EN_SOURCE2_URL)
+                added += 1
+    return added
 
 
 # ---------------------------------------------------------------------------
@@ -195,6 +254,15 @@ def main():
         print(f"Added {added} plain-English explanations from {EN_SOURCE1}")
     else:
         print(f"(No {EN_SOURCE1} yet: run crawler/crawl_en_source1.py to add explanations)")
+
+    # 2c. add Kashvi's Swarupananda (1909) translation (en_source2), aligning chapters
+    if os.path.exists(EN_SOURCE2):
+        with open(EN_SOURCE2, encoding="utf-8") as f:
+            source2 = json.load(f)
+        added = add_aligned_translation(verses, source2, "en_source2", "en_swarupananda")
+        print(f"Added {added} Swarupananda translations from {EN_SOURCE2}")
+    else:
+        print(f"(No {EN_SOURCE2} yet: run crawler/crawl_en_source2.py to add it)")
 
     # 3. extract links (only to verses that exist, never to itself, no duplicates)
     links, seen = [], set()
