@@ -3,13 +3,15 @@ Shared data shapes for Saarthi.
 
 Everyone imports from this file so that crawlers, indexes, search,
 ranking and the app all agree on what a verse, a link and a search
-result look like.
+result look like. Do not change a field name without telling the team.
 
 Usage:
     from schemas import Verse, Link, SearchResult, THEMES, validate_verse
 """
 
 from typing import TypedDict
+
+# Theme labels 
 
 THEMES = [
     "duty",
@@ -22,12 +24,10 @@ THEMES = [
     "devotion",
     "knowledge_and_wisdom",
     "equanimity",
+    "relationships",
 ]
 
-
-# ---------------------------------------------------------------------------
 # 1. Verse — one record per verse in data/verses.json (700 in total)
-# ---------------------------------------------------------------------------
 
 class Verse(TypedDict):
     id: str                       # "2.47"  (chapter.verse)
@@ -39,10 +39,7 @@ class Verse(TypedDict):
     commentary: str               # commentary text, "" if none
     source_urls: list[str]        # pages this record was built from
 
-
-# ---------------------------------------------------------------------------
 # 2. Link — one cross-reference between verses in data/links.json
-# ---------------------------------------------------------------------------
 
 class Link(TypedDict):
     from_id: str   # "2.47"  (stored in JSON as "from")
@@ -62,20 +59,14 @@ def link_to_json(link: Link) -> dict:
     """Convert a Link back into the JSON format used in data/links.json."""
     return {"from": link["from_id"], "to": link["to_id"], "source": link["source"]}
 
-
-# ---------------------------------------------------------------------------
 # 3. SearchResult — what every search function returns (a list, best first)
-# ---------------------------------------------------------------------------
 
 class SearchResult(TypedDict):
     id: str       # verse id, e.g. "2.47"
     score: float  # higher = more relevant
     method: str   # "tfidf", "bm25", "dense", "rrf", "rerank", ...
 
-
-# ---------------------------------------------------------------------------
 # Validation
-# ---------------------------------------------------------------------------
 
 REQUIRED_VERSE_FIELDS = {
     "id": str,
