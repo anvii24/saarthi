@@ -2,6 +2,32 @@ import math
 
 from indexing.link_analysis import build_graph, pagerank, hits
 
+import pytest
+
+
+def test_pagerank_invalid_damping():
+    with pytest.raises(ValueError):
+        pagerank({"A": set()}, damping=1.0)
+
+
+def test_pagerank_invalid_iterations():
+    with pytest.raises(ValueError):
+        pagerank({"A": set()}, max_iterations=0)
+
+
+def test_pagerank_invalid_tolerance():
+    with pytest.raises(ValueError):
+        pagerank({"A": set()}, tolerance=0)
+
+
+def test_hits_invalid_iterations():
+    with pytest.raises(ValueError):
+        hits({"A": set()}, max_iterations=0)
+
+
+def test_hits_invalid_tolerance():
+    with pytest.raises(ValueError):
+        hits({"A": set()}, tolerance=0)
 
 def test_build_graph():
     verses = [{"id": "1.1"}, {"id": "1.2"}, {"id": "1.3"}]

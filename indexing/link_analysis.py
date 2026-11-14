@@ -1,5 +1,7 @@
 import json
 
+from torch.mtia import graph
+
 
 def build_graph(verses, links):
     graph = {verse["id"]: set() for verse in verses}
@@ -26,6 +28,15 @@ def load_graph(
     return build_graph(verses, links)
 
 def pagerank(graph, damping=0.85, max_iterations=100, tolerance=1e-8):
+    if not 0 <= damping < 1:
+        raise ValueError("Damping must be between 0 and 1")
+
+    if max_iterations <= 0:
+        raise ValueError("Maximum iterations must be positive")
+
+    if tolerance <= 0:
+        raise ValueError("Tolerance must be positive")
+
     nodes = list(graph)
     n = len(nodes)
 
@@ -71,6 +82,12 @@ def pagerank(graph, damping=0.85, max_iterations=100, tolerance=1e-8):
     return scores
 
 def hits(graph, max_iterations=100, tolerance=1e-8):
+    if max_iterations <= 0:
+        raise ValueError("Maximum iterations must be positive")
+
+    if tolerance <= 0:
+        raise ValueError("Tolerance must be positive")
+
     nodes = list(graph)
 
     if not nodes:
