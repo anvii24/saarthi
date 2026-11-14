@@ -1,0 +1,14 @@
+metric,value
+questions,34
+sentences,198
+cited_sentences,188
+supported_pct,63.8
+removed_total,68
+removed_per_answer,2.0
+answers_fully_supported_pct,8.8
+citation_relevance_pct,19.4
+retrieval_P@5,0.188
+safety_notes_added,0
+supported_pct@0.3,71.3
+supported_pct@0.5,63.8
+supported_pct@0.7,57.4

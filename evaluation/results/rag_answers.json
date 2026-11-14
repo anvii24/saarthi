@@ -1,0 +1,2076 @@
+[
+  {
+    "id": "q067",
+    "question": "I studied really hard for my midsems but still got a bad grade. How do I stop feeling like a failure?",
+    "retrieved": [
+      "2.48",
+      "12.10",
+      "6.5",
+      "2.39",
+      "2.49"
+    ],
+    "answer": "It is natural to feel discouraged when things do not go as planned, but you might find it helpful to focus on your efforts rather than the outcome. You could try to perform your duties while remaining steady and balanced, letting go of your attachment to the specific result [2.48]. By working with this mindset, you can free yourself from the weight of feeling bound by the consequences of your actions [2.39]. It is suggested that you try to lift yourself up with your own mind, as your own perspective can be your best friend in difficult moments [6.5]. If that feels challenging, you might simply focus on dedicating your work to something greater than yourself [12.10]. Those who are overly focused on the rewards of their labor often find themselves feeling unhappy, so shifting your attention away from the grade itself might bring you some peace [2.49].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel discouraged when things do not go as planned, but you might find it helpful to focus on your efforts rather than the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You could try to perform your duties while remaining steady and balanced, letting go of your attachment to the specific result [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "By working with this mindset, you can free yourself from the weight of feeling bound by the consequences of your actions [2.39].",
+        "verse_ids": [
+          "2.39"
+        ],
+        "score": 0.585,
+        "supported": true
+      },
+      {
+        "sentence": "It is suggested that you try to lift yourself up with your own mind, as your own perspective can be your best friend in difficult moments [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.025,
+        "supported": false
+      },
+      {
+        "sentence": "If that feels challenging, you might simply focus on dedicating your work to something greater than yourself [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.585,
+        "supported": true
+      },
+      {
+        "sentence": "Those who are overly focused on the rewards of their labor often find themselves feeling unhappy, so shifting your attention away from the grade itself might bring you some peace [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.003,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q068",
+    "question": "I keep refreshing my email waiting for internship results. How do I stop obsessing over outcomes I can't control?",
+    "retrieved": [
+      "2.47",
+      "12.12",
+      "18.57",
+      "2.49",
+      "12.9"
+    ],
+    "answer": "It is natural to feel anxious while waiting for news, but the Gita suggests that you have a right to perform your duties while remaining detached from the fruits of those actions [2.47]. You might consider that those who are driven by a constant thirst for specific rewards often find themselves in a state of distress [2.49]. Instead of focusing on the outcome, you could try to mentally surrender your actions and rely on a higher power for support [18.57]. If keeping your mind steady on this perspective feels difficult, you might find it helpful to simply practice this approach consistently [12.9]. Ultimately, the Gita notes that renouncing the desire for the results of your work is a path that can lead to peace of mind [12.12]. This shift in focus may help you stay present while you wait for your results.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel anxious while waiting for news, but the Gita suggests that you have a right to perform your duties while remaining detached from the fruits of those actions [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.078,
+        "supported": false
+      },
+      {
+        "sentence": "You might consider that those who are driven by a constant thirst for specific rewards often find themselves in a state of distress [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.97,
+        "supported": true
+      },
+      {
+        "sentence": "Instead of focusing on the outcome, you could try to mentally surrender your actions and rely on a higher power for support [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.756,
+        "supported": true
+      },
+      {
+        "sentence": "If keeping your mind steady on this perspective feels difficult, you might find it helpful to simply practice this approach consistently [12.9].",
+        "verse_ids": [
+          "12.9"
+        ],
+        "score": 0.961,
+        "supported": true
+      },
+      {
+        "sentence": "Ultimately, the Gita notes that renouncing the desire for the results of your work is a path that can lead to peace of mind [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.628,
+        "supported": true
+      },
+      {
+        "sentence": "This shift in focus may help you stay present while you wait for your results.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q069",
+    "question": "Why should I put in effort if the result isn't even in my hands?",
+    "retrieved": [
+      "2.47",
+      "3.19",
+      "4.14",
+      "18.6",
+      "12.11"
+    ],
+    "answer": "It is suggested that you have a right to perform your prescribed duty, but you are not entitled to the fruits of action [2.47]. You are encouraged to act as a matter of duty without being attached to the results [3.19]. The text mentions that one should not become the agent of the results of action, nor should one have an inclination for inaction [2.47]. It is considered a firm conclusion that all activities should be performed without attachment or expectation of a specific outcome [18.6]. If you find this difficult, you might try to act by giving up all results of your work while keeping your mind controlled [12.11]. By understanding that actions do not need to be driven by a hankering for results, you may find that you do not become entangled in the reactions of your work [4.14].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that you have a right to perform your prescribed duty, but you are not entitled to the fruits of action [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.931,
+        "supported": true
+      },
+      {
+        "sentence": "You are encouraged to act as a matter of duty without being attached to the results [3.19].",
+        "verse_ids": [
+          "3.19"
+        ],
+        "score": 0.967,
+        "supported": true
+      },
+      {
+        "sentence": "The text mentions that one should not become the agent of the results of action, nor should one have an inclination for inaction [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "It is considered a firm conclusion that all activities should be performed without attachment or expectation of a specific outcome [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "If you find this difficult, you might try to act by giving up all results of your work while keeping your mind controlled [12.11].",
+        "verse_ids": [
+          "12.11"
+        ],
+        "score": 0.978,
+        "supported": true
+      },
+      {
+        "sentence": "By understanding that actions do not need to be driven by a hankering for results, you may find that you do not become entangled in the reactions of your work [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.92,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q070",
+    "question": "I got rejected from my dream company after five rounds of interviews. Was all that work for nothing?",
+    "retrieved": [
+      "2.48",
+      "2.47",
+      "4.14",
+      "3.22",
+      "2.49"
+    ],
+    "answer": "It is natural to feel discouraged when a goal is not met, but the Gita suggests that we have a right to perform our duties while remaining detached from the results [2.47]. It encourages us to stay equipoised, viewing both success and failure with the same calm mindset [2.48]. By focusing on the action itself rather than the outcome, we avoid becoming entangled in the reactions of our work [4.14]. Even when there is nothing left to achieve, the Gita notes that it is still valuable to remain engaged in our duties [3.22]. Those who are driven solely by a thirst for rewards may find themselves feeling quite miserable [2.49]. Ultimately, the text suggests that finding balance in our efforts is a more peaceful way to move through life [2.48].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel discouraged when a goal is not met, but the Gita suggests that we have a right to perform our duties while remaining detached from the results [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.516,
+        "supported": true
+      },
+      {
+        "sentence": "It encourages us to stay equipoised, viewing both success and failure with the same calm mindset [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.814,
+        "supported": true
+      },
+      {
+        "sentence": "By focusing on the action itself rather than the outcome, we avoid becoming entangled in the reactions of our work [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.129,
+        "supported": false
+      },
+      {
+        "sentence": "Even when there is nothing left to achieve, the Gita notes that it is still valuable to remain engaged in our duties [3.22].",
+        "verse_ids": [
+          "3.22"
+        ],
+        "score": 0.955,
+        "supported": true
+      },
+      {
+        "sentence": "Those who are driven solely by a thirst for rewards may find themselves feeling quite miserable [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.778,
+        "supported": true
+      },
+      {
+        "sentence": "Ultimately, the text suggests that finding balance in our efforts is a more peaceful way to move through life [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.852,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q071",
+    "question": "My parents want me to join the family business but I want to do something of my own. What is my real duty here?",
+    "retrieved": [
+      "2.47",
+      "18.6",
+      "3.8",
+      "18.47",
+      "18.60"
+    ],
+    "answer": "It is suggested that you focus on performing your duties, as action is always better than choosing not to act at all [3.8]. You have the right to perform your work, but you are not entitled to control the results of your efforts [2.47]. It is recommended that you carry out your activities without being attached to the outcome or expecting a specific result [18.6]. When considering your path, it is noted that performing a duty dictated by your own nature is better than taking on someone else’s work, even if the other work seems to be done more perfectly [18.47]. Sometimes, we may feel conflicted, but we often find ourselves acting according to the work born of our own nature regardless of our initial wishes [18.60]. Ultimately, the guidance suggests that you should not become the agent of the results, but rather simply commit to the act of doing your duty [2.47].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that you focus on performing your duties, as action is always better than choosing not to act at all [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "You have the right to perform your work, but you are not entitled to control the results of your efforts [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.508,
+        "supported": true
+      },
+      {
+        "sentence": "It is recommended that you carry out your activities without being attached to the outcome or expecting a specific result [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "When considering your path, it is noted that performing a duty dictated by your own nature is better than taking on someone else’s work, even if the other work seems to be done more perfectly [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Sometimes, we may feel conflicted, but we often find ourselves acting according to the work born of our own nature regardless of our initial wishes [18.60].",
+        "verse_ids": [
+          "18.60"
+        ],
+        "score": 0.047,
+        "supported": false
+      },
+      {
+        "sentence": "Ultimately, the guidance suggests that you should not become the agent of the results, but rather simply commit to the act of doing your duty [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.961,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q072",
+    "question": "I hate my job but people at home depend on my salary. Should I keep doing it?",
+    "retrieved": [
+      "3.8",
+      "2.47",
+      "18.47",
+      "18.6",
+      "12.10"
+    ],
+    "answer": "It is suggested that performing your prescribed duties is better than not working at all, as even maintaining your physical body requires action [3.8]. You have a right to perform your work, but it is suggested that you are not entitled to the fruits of that action [2.47]. It is also mentioned that you should not consider yourself the cause of the results, nor should you be attached to the idea of not doing your duty [2.47]. The text suggests that all activities should be performed without attachment or expectation of results [18.6]. Furthermore, it is noted that performing your own duty, even if it seems imperfect, is superior to taking on another's occupation [18.47]. If you find this difficult, you might consider working as an offering, as this is described as a way to reach a perfect stage [12.10].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that performing your prescribed duties is better than not working at all, as even maintaining your physical body requires action [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "You have a right to perform your work, but it is suggested that you are not entitled to the fruits of that action [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.953,
+        "supported": true
+      },
+      {
+        "sentence": "It is also mentioned that you should not consider yourself the cause of the results, nor should you be attached to the idea of not doing your duty [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.954,
+        "supported": true
+      },
+      {
+        "sentence": "The text suggests that all activities should be performed without attachment or expectation of results [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Furthermore, it is noted that performing your own duty, even if it seems imperfect, is superior to taking on another's occupation [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.984,
+        "supported": true
+      },
+      {
+        "sentence": "If you find this difficult, you might consider working as an offering, as this is described as a way to reach a perfect stage [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.755,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q073",
+    "question": "Is it okay to do work that suits someone else better just because it pays more?",
+    "retrieved": [
+      "18.47",
+      "3.35",
+      "2.47",
+      "3.8",
+      "2.49"
+    ],
+    "answer": "It is suggested that performing your own prescribed duty is better than taking on someone else's work, even if you perform your own task imperfectly [18.47]. Following a path that aligns with your own nature is considered safer than attempting another person's occupation, which can be fraught with fear or danger [3.35]. While you have a right to perform your work, the text suggests that you are not entitled to the fruits or rewards of that action [2.47]. Those who are driven primarily by a thirst for rewards are described as pitiable or misers [2.49]. It is noted that performing some form of work is superior to inaction, as you cannot even maintain your physical body without working [3.8]. Ultimately, the guidance encourages focusing on the action itself rather than becoming attached to the results [2.47].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that performing your own prescribed duty is better than taking on someone else's work, even if you perform your own task imperfectly [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Following a path that aligns with your own nature is considered safer than attempting another person's occupation, which can be fraught with fear or danger [3.35].",
+        "verse_ids": [
+          "3.35"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "While you have a right to perform your work, the text suggests that you are not entitled to the fruits or rewards of that action [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Those who are driven primarily by a thirst for rewards are described as pitiable or misers [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "It is noted that performing some form of work is superior to inaction, as you cannot even maintain your physical body without working [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Ultimately, the guidance encourages focusing on the action itself rather than becoming attached to the results [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.962,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q074",
+    "question": "I panic before every presentation and my mind goes blank. How do I calm down?",
+    "retrieved": [
+      "6.25",
+      "17.16",
+      "2.66",
+      "5.27",
+      "12.12"
+    ],
+    "answer": "It is natural to feel unsteady when your mind is not at peace, as peace is necessary for both wisdom and happiness [2.66]. You might find it helpful to practice mental austerity, which includes cultivating tranquility, gentleness, and a withdrawal of the mind from distractions [17.16]. One way to approach this is to gradually steady your intellect and fix your mind on the self, choosing not to dwell on other thoughts [6.25]. You could also try to shut out external objects and focus your vision, while balancing your breathing to help control your senses and mind [5.27]. If these practices feel difficult, the Gita suggests that simply renouncing the results of your actions can lead to immediate peace [12.12]. By letting go of the outcome of your presentation, you may find that your mind becomes calmer and more settled [12.12].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel unsteady when your mind is not at peace, as peace is necessary for both wisdom and happiness [2.66].",
+        "verse_ids": [
+          "2.66"
+        ],
+        "score": 0.027,
+        "supported": false
+      },
+      {
+        "sentence": "You might find it helpful to practice mental austerity, which includes cultivating tranquility, gentleness, and a withdrawal of the mind from distractions [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.017,
+        "supported": false
+      },
+      {
+        "sentence": "One way to approach this is to gradually steady your intellect and fix your mind on the self, choosing not to dwell on other thoughts [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "You could also try to shut out external objects and focus your vision, while balancing your breathing to help control your senses and mind [5.27].",
+        "verse_ids": [
+          "5.27"
+        ],
+        "score": 0.028,
+        "supported": false
+      },
+      {
+        "sentence": "If these practices feel difficult, the Gita suggests that simply renouncing the results of your actions can lead to immediate peace [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.354,
+        "supported": false
+      },
+      {
+        "sentence": "By letting go of the outcome of your presentation, you may find that your mind becomes calmer and more settled [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.315,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q075",
+    "question": "I'm scared about what happens after college. What if I don't get a job?",
+    "retrieved": [
+      "2.47",
+      "3.8",
+      "2.48",
+      "4.14",
+      "18.66"
+    ],
+    "answer": "It is natural to feel uncertain about the future, but the Gita suggests that you have a right to perform your duties while letting go of your attachment to the results [2.47]. Since you need to work just to maintain your physical body, performing your prescribed duties is considered superior to choosing inaction [3.8]. You might find it helpful to stay equipoised, meaning you remain steady regardless of whether you experience success or failure in your efforts [2.48]. When you act without hankering for specific outcomes, you are not entangled by the reactions of your work [4.14]. By focusing on your current responsibilities rather than the potential results, you can move forward without being bound by the fear of what might happen [2.47]. Ultimately, you are encouraged to surrender your worries and find peace in the idea that you do not need to carry the burden of fear alone [18.66].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel uncertain about the future, but the Gita suggests that you have a right to perform your duties while letting go of your attachment to the results [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.109,
+        "supported": false
+      },
+      {
+        "sentence": "Since you need to work just to maintain your physical body, performing your prescribed duties is considered superior to choosing inaction [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.941,
+        "supported": true
+      },
+      {
+        "sentence": "You might find it helpful to stay equipoised, meaning you remain steady regardless of whether you experience success or failure in your efforts [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.007,
+        "supported": false
+      },
+      {
+        "sentence": "When you act without hankering for specific outcomes, you are not entangled by the reactions of your work [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.493,
+        "supported": false
+      },
+      {
+        "sentence": "By focusing on your current responsibilities rather than the potential results, you can move forward without being bound by the fear of what might happen [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.808,
+        "supported": true
+      },
+      {
+        "sentence": "Ultimately, you are encouraged to surrender your worries and find peace in the idea that you do not need to carry the burden of fear alone [18.66].",
+        "verse_ids": [
+          "18.66"
+        ],
+        "score": 0.99,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q076",
+    "question": "I overthink everything at night and can't sleep. How do I quiet my mind?",
+    "retrieved": [
+      "6.25",
+      "12.12",
+      "17.16",
+      "5.27",
+      "6.13"
+    ],
+    "answer": "It is suggested that you can try to quiet your mind by gradually withdrawing your focus and fixing it solely on the Self, thinking of nothing else [6.25]. You might find it helpful to practice mental austerity, which includes cultivating tranquility, gentleness, and a sense of withdrawal [17.16]. Another approach involves letting go of the results of your actions, as this renunciation can lead to immediate peace [12.12]. You could also try sitting with your body, head, and neck held erect and still to help keep your mind unagitated [6.13]. Additionally, focusing on your breath and keeping your senses turned inward may assist you in becoming free from desire, fear, and anger [5.27]. These steps offer a way to steady your thoughts when you are trying to rest [6.25].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that you can try to quiet your mind by gradually withdrawing your focus and fixing it solely on the Self, thinking of nothing else [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "You might find it helpful to practice mental austerity, which includes cultivating tranquility, gentleness, and a sense of withdrawal [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.017,
+        "supported": false
+      },
+      {
+        "sentence": "Another approach involves letting go of the results of your actions, as this renunciation can lead to immediate peace [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.789,
+        "supported": true
+      },
+      {
+        "sentence": "You could also try sitting with your body, head, and neck held erect and still to help keep your mind unagitated [6.13].",
+        "verse_ids": [
+          "6.13"
+        ],
+        "score": 0.002,
+        "supported": false
+      },
+      {
+        "sentence": "Additionally, focusing on your breath and keeping your senses turned inward may assist you in becoming free from desire, fear, and anger [5.27].",
+        "verse_ids": [
+          "5.27"
+        ],
+        "score": 0.019,
+        "supported": false
+      },
+      {
+        "sentence": "These steps offer a way to steady your thoughts when you are trying to rest [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.994,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q077",
+    "question": "I lose my temper with my family over small things and regret it later. How do I control my anger?",
+    "retrieved": [
+      "3.34",
+      "6.25",
+      "18.51",
+      "6.34",
+      "3.33"
+    ],
+    "answer": "It is natural to feel that the mind is restless, turbulent, and as difficult to control as the wind [6.34]. We all have tendencies that follow our own nature, which can make simple restraint feel like a challenge [3.33]. The Gita suggests that we should not let ourselves be controlled by the feelings of attraction and repulsion that arise toward the objects around us, as these can act as adversaries [3.34]. One way to approach this is to use a steady intellect to gradually withdraw the mind and fix it on the Self [6.25]. It is also suggested that we can work toward a pure understanding by restraining the mind with resolve and letting go of those feelings of attachment and hatred [18.51]. By focusing on this steady, internal resolve, we can navigate these moments with more clarity [18.51].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel that the mind is restless, turbulent, and as difficult to control as the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "We all have tendencies that follow our own nature, which can make simple restraint feel like a challenge [3.33].",
+        "verse_ids": [
+          "3.33"
+        ],
+        "score": 0.981,
+        "supported": true
+      },
+      {
+        "sentence": "The Gita suggests that we should not let ourselves be controlled by the feelings of attraction and repulsion that arise toward the objects around us, as these can act as adversaries [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "One way to approach this is to use a steady intellect to gradually withdraw the mind and fix it on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "It is also suggested that we can work toward a pure understanding by restraining the mind with resolve and letting go of those feelings of attachment and hatred [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.858,
+        "supported": true
+      },
+      {
+        "sentence": "By focusing on this steady, internal resolve, we can navigate these moments with more clarity [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.051,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q078",
+    "question": "Every time I buy something new I just want the next thing. Why am I never satisfied?",
+    "retrieved": [
+      "4.14",
+      "3.34",
+      "2.13",
+      "5.21",
+      "13.15"
+    ],
+    "answer": "It is natural to feel that our senses are constantly drawn toward objects, but these feelings of attraction and repulsion can act as stumbling blocks [3.34]. The Gita suggests that we might find more peace by not letting these attachments to external things control our state of mind [3.34]. One way to look at this is to consider that a person who is not attached to external objects may find a different kind of happiness within themselves [5.21]. By focusing on this inner state, one might not feel the same pull toward material sense pleasures [5.21]. The text also mentions that it is possible to act without hankering for the results of those actions [4.14]. Understanding this perspective might help one avoid becoming entangled in the cycle of wanting more [4.14].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel that our senses are constantly drawn toward objects, but these feelings of attraction and repulsion can act as stumbling blocks [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.964,
+        "supported": true
+      },
+      {
+        "sentence": "The Gita suggests that we might find more peace by not letting these attachments to external things control our state of mind [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.888,
+        "supported": true
+      },
+      {
+        "sentence": "One way to look at this is to consider that a person who is not attached to external objects may find a different kind of happiness within themselves [5.21].",
+        "verse_ids": [
+          "5.21"
+        ],
+        "score": 0.799,
+        "supported": true
+      },
+      {
+        "sentence": "By focusing on this inner state, one might not feel the same pull toward material sense pleasures [5.21].",
+        "verse_ids": [
+          "5.21"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "The text also mentions that it is possible to act without hankering for the results of those actions [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Understanding this perspective might help one avoid becoming entangled in the cycle of wanting more [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.378,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q079",
+    "question": "I feel jealous when my friends get placed before me. How do I deal with it?",
+    "retrieved": [
+      "2.49",
+      "3.8",
+      "3.34",
+      "2.48",
+      "5.22"
+    ],
+    "answer": "It is natural to feel pulled by attractions and aversions toward the things we see around us, but these feelings can act as stumbling blocks [3.34]. The Gita suggests that we might find more peace by performing our own duties while remaining steady, regardless of whether we succeed or fail [2.48]. Since the pleasures we gain from external objects are temporary and often lead to sorrow, wise people choose not to find their happiness in them [5.22]. It is helpful to remember that doing your work is always better than not working at all, as even basic survival requires action [3.8]. Those who are constantly focused on the rewards of their efforts are described as being in a pitiable state [2.49]. By choosing to focus on wisdom rather than the results of our actions, we can move away from these difficult feelings [2.49].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel pulled by attractions and aversions toward the things we see around us, but these feelings can act as stumbling blocks [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.641,
+        "supported": true
+      },
+      {
+        "sentence": "The Gita suggests that we might find more peace by performing our own duties while remaining steady, regardless of whether we succeed or fail [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.667,
+        "supported": true
+      },
+      {
+        "sentence": "Since the pleasures we gain from external objects are temporary and often lead to sorrow, wise people choose not to find their happiness in them [5.22].",
+        "verse_ids": [
+          "5.22"
+        ],
+        "score": 0.062,
+        "supported": false
+      },
+      {
+        "sentence": "It is helpful to remember that doing your work is always better than not working at all, as even basic survival requires action [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.155,
+        "supported": false
+      },
+      {
+        "sentence": "Those who are constantly focused on the rewards of their efforts are described as being in a pitiable state [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "By choosing to focus on wisdom rather than the results of our actions, we can move away from these difficult feelings [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.795,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q080",
+    "question": "My grandmother passed away recently and I can't accept that she's gone.",
+    "retrieved": [
+      "13.11",
+      "2.25",
+      "4.6",
+      "8.15",
+      "7.19"
+    ],
+    "answer": "It is natural to feel the weight of loss, but the Gita suggests that the soul is invisible, inconceivable, and immutable [2.25]. Because the soul does not change in this way, the text proposes that one should not grieve for the body [2.25]. Finding peace might involve turning toward a state of unwavering devotion and seeking out quiet, solitary places [13.11]. It can be helpful to remember that the world we live in is temporary and full of miseries [8.15]. Those who reach a high level of understanding eventually realize that the divine is the cause of all that is [7.19]. By focusing on these perspectives, the Gita offers a way to navigate the difficult experience of letting go.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel the weight of loss, but the Gita suggests that the soul is invisible, inconceivable, and immutable [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.014,
+        "supported": false
+      },
+      {
+        "sentence": "Because the soul does not change in this way, the text proposes that one should not grieve for the body [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.943,
+        "supported": true
+      },
+      {
+        "sentence": "Finding peace might involve turning toward a state of unwavering devotion and seeking out quiet, solitary places [13.11].",
+        "verse_ids": [
+          "13.11"
+        ],
+        "score": 0.746,
+        "supported": true
+      },
+      {
+        "sentence": "It can be helpful to remember that the world we live in is temporary and full of miseries [8.15].",
+        "verse_ids": [
+          "8.15"
+        ],
+        "score": 0.01,
+        "supported": false
+      },
+      {
+        "sentence": "Those who reach a high level of understanding eventually realize that the divine is the cause of all that is [7.19].",
+        "verse_ids": [
+          "7.19"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "By focusing on these perspectives, the Gita offers a way to navigate the difficult experience of letting go.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q081",
+    "question": "How do I cope with losing someone I love?",
+    "retrieved": [
+      "6.23",
+      "2.25",
+      "2.27",
+      "9.11",
+      "2.30"
+    ],
+    "answer": "It is natural to feel the weight of loss, but the Gita suggests that the soul dwelling within the body can never be killed [2.30]. Because the soul is described as invisible, inconceivable, and immutable, one might find a perspective that eases the need for grief [2.25]. The text also notes that death is certain for everyone who is born, making it an inevitable fact of life [2.27]. When facing such sorrow, the Gita mentions that finding freedom from the misery caused by material contact is a form of yoga [6.23]. This practice of yoga is something that can be approached with determination and an undismayed heart [6.23]. By reflecting on these ideas, you might find a way to navigate your feelings during this difficult time.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel the weight of loss, but the Gita suggests that the soul dwelling within the body can never be killed [2.30].",
+        "verse_ids": [
+          "2.30"
+        ],
+        "score": 0.43,
+        "supported": false
+      },
+      {
+        "sentence": "Because the soul is described as invisible, inconceivable, and immutable, one might find a perspective that eases the need for grief [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.052,
+        "supported": false
+      },
+      {
+        "sentence": "The text also notes that death is certain for everyone who is born, making it an inevitable fact of life [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.188,
+        "supported": false
+      },
+      {
+        "sentence": "When facing such sorrow, the Gita mentions that finding freedom from the misery caused by material contact is a form of yoga [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.046,
+        "supported": false
+      },
+      {
+        "sentence": "This practice of yoga is something that can be approached with determination and an undismayed heart [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.982,
+        "supported": true
+      },
+      {
+        "sentence": "By reflecting on these ideas, you might find a way to navigate your feelings during this difficult time.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q082",
+    "question": "Is death really the end? What happens to the people we lose?",
+    "retrieved": [
+      "2.13",
+      "2.28",
+      "2.20",
+      "8.5",
+      "2.27"
+    ],
+    "answer": "It is suggested that just as we move from boyhood to youth and then to old age within one lifetime, the soul similarly passes into another body at the time of death [2.13]. Because all beings are unmanifest before birth and become unmanifest again after death, there is no need for lamentation regarding this natural transition [2.28]. The essence of a person is described as birthless, eternal, and ancient, meaning it is not killed even when the physical body is destroyed [2.20]. Since death is certain for everyone who is born, and rebirth is certain for those who have died, this process is viewed as an inevitable fact [2.27]. Furthermore, it is mentioned that whoever quits their body while remembering the Divine at the end of life attains that same nature [8.5]. These perspectives offer a way to view the cycle of life and death as a continuous journey rather than a final end.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that just as we move from boyhood to youth and then to old age within one lifetime, the soul similarly passes into another body at the time of death [2.13].",
+        "verse_ids": [
+          "2.13"
+        ],
+        "score": 0.78,
+        "supported": true
+      },
+      {
+        "sentence": "Because all beings are unmanifest before birth and become unmanifest again after death, there is no need for lamentation regarding this natural transition [2.28].",
+        "verse_ids": [
+          "2.28"
+        ],
+        "score": 0.001,
+        "supported": false
+      },
+      {
+        "sentence": "The essence of a person is described as birthless, eternal, and ancient, meaning it is not killed even when the physical body is destroyed [2.20].",
+        "verse_ids": [
+          "2.20"
+        ],
+        "score": 0.955,
+        "supported": true
+      },
+      {
+        "sentence": "Since death is certain for everyone who is born, and rebirth is certain for those who have died, this process is viewed as an inevitable fact [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.969,
+        "supported": true
+      },
+      {
+        "sentence": "Furthermore, it is mentioned that whoever quits their body while remembering the Divine at the end of life attains that same nature [8.5].",
+        "verse_ids": [
+          "8.5"
+        ],
+        "score": 0.857,
+        "supported": true
+      },
+      {
+        "sentence": "These perspectives offer a way to view the cycle of life and death as a continuous journey rather than a final end.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q083",
+    "question": "I can't stop scrolling my phone even when I have deadlines. How do I control myself?",
+    "retrieved": [
+      "6.25",
+      "3.34",
+      "2.61",
+      "9.34",
+      "12.10"
+    ],
+    "answer": "It is natural to feel drawn to the things we see and experience, but these attractions can sometimes act as stumbling blocks when we have important work to do [3.34]. You might find it helpful to gradually withdraw your attention from distractions by using your intellect to stay steady [6.25]. By keeping your senses under control and focusing your consciousness on a higher goal, your intelligence can become more steadfast [2.61]. If focusing your mind feels difficult, you could try dedicating your daily tasks and efforts to a higher purpose [12.10]. By staying devoted and keeping your mind fixed on that supreme goal, you can remain absorbed in your work [9.34]. These steps suggest a way to gently shift your focus away from the phone and back toward your responsibilities [6.25].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel drawn to the things we see and experience, but these attractions can sometimes act as stumbling blocks when we have important work to do [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.001,
+        "supported": false
+      },
+      {
+        "sentence": "You might find it helpful to gradually withdraw your attention from distractions by using your intellect to stay steady [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.967,
+        "supported": true
+      },
+      {
+        "sentence": "By keeping your senses under control and focusing your consciousness on a higher goal, your intelligence can become more steadfast [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.98,
+        "supported": true
+      },
+      {
+        "sentence": "If focusing your mind feels difficult, you could try dedicating your daily tasks and efforts to a higher purpose [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.944,
+        "supported": true
+      },
+      {
+        "sentence": "By staying devoted and keeping your mind fixed on that supreme goal, you can remain absorbed in your work [9.34].",
+        "verse_ids": [
+          "9.34"
+        ],
+        "score": 0.037,
+        "supported": false
+      },
+      {
+        "sentence": "These steps suggest a way to gently shift your focus away from the phone and back toward your responsibilities [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.991,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q084",
+    "question": "I procrastinate everything till the last minute. How do I become more disciplined?",
+    "retrieved": [
+      "12.12",
+      "6.25",
+      "2.61",
+      "3.8",
+      "12.10"
+    ],
+    "answer": "It is suggested that performing your prescribed duties is better than not working at all, as even maintaining your physical body requires action [3.8]. If you find it difficult to stay focused, you might try simply dedicating your work to a higher purpose, as this can help you reach a state of perfection [12.10]. The text also suggests that one can gradually learn to steady the mind by using intelligence and firm conviction, step by step [6.25]. Keeping your senses under control and fixing your consciousness on the supreme is another way to develop a steady intelligence [2.61]. Finally, if you find that practice is challenging, you might focus on gaining knowledge, or even better, learn to let go of the results of your actions to find peace of mind [12.12].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that performing your prescribed duties is better than not working at all, as even maintaining your physical body requires action [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "If you find it difficult to stay focused, you might try simply dedicating your work to a higher purpose, as this can help you reach a state of perfection [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "The text also suggests that one can gradually learn to steady the mind by using intelligence and firm conviction, step by step [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.971,
+        "supported": true
+      },
+      {
+        "sentence": "Keeping your senses under control and fixing your consciousness on the supreme is another way to develop a steady intelligence [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.95,
+        "supported": true
+      },
+      {
+        "sentence": "Finally, if you find that practice is challenging, you might focus on gaining knowledge, or even better, learn to let go of the results of your actions to find peace of mind [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.071,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q085",
+    "question": "My mind keeps wandering whenever I try to focus. How do I train it?",
+    "retrieved": [
+      "6.25",
+      "6.34",
+      "6.5",
+      "2.67",
+      "6.26"
+    ],
+    "answer": "It is natural to feel that the mind is restless, turbulent, and as difficult to control as the wind [6.34]. When the mind follows the wandering senses, it can carry away your intelligence just as a strong wind sweeps away a boat on the water [2.67]. However, you can choose to deliver yourself with the help of your own mind, as the mind acts as either a friend or an enemy to the soul [6.5]. The Gita suggests that whenever the mind wanders due to its flickering nature, you should withdraw it and bring it back under the control of the Self [6.26]. This process involves gradually withdrawing the mind with steady intelligence [6.25]. By consistently fixing the mind on the Self and thinking of nothing else, you can work toward a state of steadiness [6.25].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel that the mind is restless, turbulent, and as difficult to control as the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "When the mind follows the wandering senses, it can carry away your intelligence just as a strong wind sweeps away a boat on the water [2.67].",
+        "verse_ids": [
+          "2.67"
+        ],
+        "score": 0.93,
+        "supported": true
+      },
+      {
+        "sentence": "However, you can choose to deliver yourself with the help of your own mind, as the mind acts as either a friend or an enemy to the soul [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.483,
+        "supported": false
+      },
+      {
+        "sentence": "The Gita suggests that whenever the mind wanders due to its flickering nature, you should withdraw it and bring it back under the control of the Self [6.26].",
+        "verse_ids": [
+          "6.26"
+        ],
+        "score": 0.987,
+        "supported": true
+      },
+      {
+        "sentence": "This process involves gradually withdrawing the mind with steady intelligence [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "By consistently fixing the mind on the Self and thinking of nothing else, you can work toward a state of steadiness [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.947,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q086",
+    "question": "I don't know what I want to do with my life. How do I find my purpose?",
+    "retrieved": [
+      "12.12",
+      "2.49",
+      "2.47",
+      "9.28",
+      "18.2"
+    ],
+    "answer": "It is natural to feel uncertain, but the Gita suggests that you have a right to perform your duties without being attached to the specific outcomes of your work [2.47]. You might find it helpful to focus on the action itself rather than thirsting for the rewards that come from it [2.49]. The wise describe renunciation as giving up activities based on material desire and letting go of the results of all your efforts [18.2]. By practicing this kind of detachment, you can free yourself from the bondage of worrying about whether your actions lead to good or bad results [9.28]. Ultimately, letting go of the fruits of your work is a way to find peace of mind [12.12].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel uncertain, but the Gita suggests that you have a right to perform your duties without being attached to the specific outcomes of your work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.428,
+        "supported": false
+      },
+      {
+        "sentence": "You might find it helpful to focus on the action itself rather than thirsting for the rewards that come from it [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.312,
+        "supported": false
+      },
+      {
+        "sentence": "The wise describe renunciation as giving up activities based on material desire and letting go of the results of all your efforts [18.2].",
+        "verse_ids": [
+          "18.2"
+        ],
+        "score": 0.643,
+        "supported": true
+      },
+      {
+        "sentence": "By practicing this kind of detachment, you can free yourself from the bondage of worrying about whether your actions lead to good or bad results [9.28].",
+        "verse_ids": [
+          "9.28"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Ultimately, letting go of the fruits of your work is a way to find peace of mind [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.955,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q087",
+    "question": "Everything feels pointless lately, even things I used to enjoy.",
+    "retrieved": [
+      "4.20",
+      "13.11",
+      "7.24",
+      "6.15",
+      "2.49"
+    ],
+    "answer": "It is understandable to feel a sense of pointlessness when things lose their spark, and the Gita suggests that shifting our perspective might offer some relief. It mentions that those who constantly seek rewards for their actions often find themselves feeling quite miserable [2.49]. Instead, one might find a sense of contentment by performing tasks without being attached to the specific results of that work [4.20]. Sometimes, finding peace involves spending time in quiet, solitary places and stepping back from the noise of large crowds [13.11]. By focusing on keeping the mind and body regulated, one can work toward a deeper, more lasting sense of inner peace [6.15]. It is also suggested that our current struggles might stem from a limited understanding of a higher, unchanging nature that exists beyond our immediate view [7.24].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is understandable to feel a sense of pointlessness when things lose their spark, and the Gita suggests that shifting our perspective might offer some relief.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It mentions that those who constantly seek rewards for their actions often find themselves feeling quite miserable [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.918,
+        "supported": true
+      },
+      {
+        "sentence": "Instead, one might find a sense of contentment by performing tasks without being attached to the specific results of that work [4.20].",
+        "verse_ids": [
+          "4.20"
+        ],
+        "score": 0.388,
+        "supported": false
+      },
+      {
+        "sentence": "Sometimes, finding peace involves spending time in quiet, solitary places and stepping back from the noise of large crowds [13.11].",
+        "verse_ids": [
+          "13.11"
+        ],
+        "score": 0.845,
+        "supported": true
+      },
+      {
+        "sentence": "By focusing on keeping the mind and body regulated, one can work toward a deeper, more lasting sense of inner peace [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.05,
+        "supported": false
+      },
+      {
+        "sentence": "It is also suggested that our current struggles might stem from a limited understanding of a higher, unchanging nature that exists beyond our immediate view [7.24].",
+        "verse_ids": [
+          "7.24"
+        ],
+        "score": 0.016,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q088",
+    "question": "Who am I really, beyond my marks, my job and what people think of me?",
+    "retrieved": [
+      "15.18",
+      "6.30",
+      "18.55",
+      "9.22",
+      "13.11"
+    ],
+    "answer": "It is natural to wonder who you are beyond the roles you play in daily life. The Gita suggests that there is a supreme, transcendental reality that exists beyond the changing world of labels and perceptions [15.18]. You might find a deeper sense of self by seeing this presence in everything and seeing all things within it [6.30]. This perspective involves a steady, single-minded focus and a preference for quiet reflection over the distractions of a crowd [13.11]. By practicing this kind of devotion, you may come to understand this supreme nature as it truly is [18.55]. For those who remain attached to this vision, there is a sense of being cared for and supported in what they possess [9.22].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to wonder who you are beyond the roles you play in daily life.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "The Gita suggests that there is a supreme, transcendental reality that exists beyond the changing world of labels and perceptions [15.18].",
+        "verse_ids": [
+          "15.18"
+        ],
+        "score": 0.45,
+        "supported": false
+      },
+      {
+        "sentence": "You might find a deeper sense of self by seeing this presence in everything and seeing all things within it [6.30].",
+        "verse_ids": [
+          "6.30"
+        ],
+        "score": 0.231,
+        "supported": false
+      },
+      {
+        "sentence": "This perspective involves a steady, single-minded focus and a preference for quiet reflection over the distractions of a crowd [13.11].",
+        "verse_ids": [
+          "13.11"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "By practicing this kind of devotion, you may come to understand this supreme nature as it truly is [18.55].",
+        "verse_ids": [
+          "18.55"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "For those who remain attached to this vision, there is a sense of being cared for and supported in what they possess [9.22].",
+        "verse_ids": [
+          "9.22"
+        ],
+        "score": 0.995,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q089",
+    "question": "How do I keep my faith when everything is going wrong?",
+    "retrieved": [
+      "2.48",
+      "6.15",
+      "18.57",
+      "3.30",
+      "12.11"
+    ],
+    "answer": "It can be helpful to perform your daily duties while remaining balanced, letting go of any attachment to whether things end in success or failure [2.48]. You might find peace by keeping your mind focused and controlled through constant practice [6.15]. One way to approach difficult times is to mentally surrender your actions to the Divine, keeping your intellect fixed on that higher presence [18.57]. It is suggested that you engage in your tasks without personal expectations, ego, or the fever of anxiety [3.30]. If that feels difficult, you can simply try to act while renouncing the results of your work and keeping your mind steady [12.11]. By depending on the Divine and working under that protection, you can remain conscious of that connection in all your activities [18.57].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It can be helpful to perform your daily duties while remaining balanced, letting go of any attachment to whether things end in success or failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.305,
+        "supported": false
+      },
+      {
+        "sentence": "You might find peace by keeping your mind focused and controlled through constant practice [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.457,
+        "supported": false
+      },
+      {
+        "sentence": "One way to approach difficult times is to mentally surrender your actions to the Divine, keeping your intellect fixed on that higher presence [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.021,
+        "supported": false
+      },
+      {
+        "sentence": "It is suggested that you engage in your tasks without personal expectations, ego, or the fever of anxiety [3.30].",
+        "verse_ids": [
+          "3.30"
+        ],
+        "score": 0.964,
+        "supported": true
+      },
+      {
+        "sentence": "If that feels difficult, you can simply try to act while renouncing the results of your work and keeping your mind steady [12.11].",
+        "verse_ids": [
+          "12.11"
+        ],
+        "score": 0.206,
+        "supported": false
+      },
+      {
+        "sentence": "By depending on the Divine and working under that protection, you can remain conscious of that connection in all your activities [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.025,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q090",
+    "question": "Does praying actually help, or is it just a habit?",
+    "retrieved": [
+      "6.5",
+      "17.18",
+      "12.12",
+      "12.10",
+      "5.2"
+    ],
+    "answer": "It is suggested that you can look at your own mind as either your friend or your enemy, and it is up to you to lift yourself up [6.5]. If you find it difficult to follow specific spiritual practices, you might simply dedicate your daily work to the Divine, as this can also lead to a sense of perfection [12.10]. Working in a spirit of devotion is described as being a very effective path [5.2]. It is noted that performing actions just to gain honor, respect, or worship from others is considered unstable and temporary [17.18]. If you are looking for peace of mind, the Gita suggests that letting go of the desire for the results of your actions is even more helpful than meditation or knowledge [12.12].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that you can look at your own mind as either your friend or your enemy, and it is up to you to lift yourself up [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.89,
+        "supported": true
+      },
+      {
+        "sentence": "If you find it difficult to follow specific spiritual practices, you might simply dedicate your daily work to the Divine, as this can also lead to a sense of perfection [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "Working in a spirit of devotion is described as being a very effective path [5.2].",
+        "verse_ids": [
+          "5.2"
+        ],
+        "score": 0.176,
+        "supported": false
+      },
+      {
+        "sentence": "It is noted that performing actions just to gain honor, respect, or worship from others is considered unstable and temporary [17.18].",
+        "verse_ids": [
+          "17.18"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "If you are looking for peace of mind, the Gita suggests that letting go of the desire for the results of your actions is even more helpful than meditation or knowledge [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.866,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q091",
+    "question": "I want to feel connected to God but don't know where to start.",
+    "retrieved": [
+      "6.15",
+      "9.22",
+      "12.2",
+      "6.47",
+      "7.21"
+    ],
+    "answer": "It is suggested that those who fix their minds on the personal form of the Divine with great faith are considered the most perfect yogis [12.2]. You might find that by keeping your mind focused on the Divine with faith, you become the most intimately united and the best among all those who practice yoga [6.47]. If you choose to worship with faith, the Divine supports and strengthens that very commitment within you [7.21]. For those who remain meditative and worship with exclusive devotion, the Divine helps to secure what they lack and preserve what they already have [9.22]. By practicing constant control of the body, mind, and activities, one may eventually attain the abode of the Divine [6.15].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is suggested that those who fix their minds on the personal form of the Divine with great faith are considered the most perfect yogis [12.2].",
+        "verse_ids": [
+          "12.2"
+        ],
+        "score": 0.991,
+        "supported": true
+      },
+      {
+        "sentence": "You might find that by keeping your mind focused on the Divine with faith, you become the most intimately united and the best among all those who practice yoga [6.47].",
+        "verse_ids": [
+          "6.47"
+        ],
+        "score": 0.104,
+        "supported": false
+      },
+      {
+        "sentence": "If you choose to worship with faith, the Divine supports and strengthens that very commitment within you [7.21].",
+        "verse_ids": [
+          "7.21"
+        ],
+        "score": 0.019,
+        "supported": false
+      },
+      {
+        "sentence": "For those who remain meditative and worship with exclusive devotion, the Divine helps to secure what they lack and preserve what they already have [9.22].",
+        "verse_ids": [
+          "9.22"
+        ],
+        "score": 0.775,
+        "supported": true
+      },
+      {
+        "sentence": "By practicing constant control of the body, mind, and activities, one may eventually attain the abode of the Divine [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.606,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q092",
+    "question": "How do I know if I'm making the right decision when both options seem good?",
+    "retrieved": [
+      "5.4",
+      "5.5",
+      "3.2",
+      "18.19",
+      "4.16"
+    ],
+    "answer": "It is quite common to feel bewildered when trying to determine the best path forward, as even the intelligent can find themselves confused about what constitutes the right action [4.16]. You might feel as though you are receiving conflicting signals, leading you to wonder which choice will truly be the most beneficial [3.2]. The Gita suggests that knowledge, actions, and the people performing them are categorized into three types based on the different modes of nature [18.19]. It is helpful to remember that different approaches can lead to the same result, and those who see these paths as fundamentally the same are seeing things as they truly are [5.5]. By applying yourself well to one path, you can achieve the same outcome that others reach through different methods [5.4]. This perspective might offer some comfort when you are weighing two options that both seem like good choices.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is quite common to feel bewildered when trying to determine the best path forward, as even the intelligent can find themselves confused about what constitutes the right action [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.256,
+        "supported": false
+      },
+      {
+        "sentence": "You might feel as though you are receiving conflicting signals, leading you to wonder which choice will truly be the most beneficial [3.2].",
+        "verse_ids": [
+          "3.2"
+        ],
+        "score": 0.982,
+        "supported": true
+      },
+      {
+        "sentence": "The Gita suggests that knowledge, actions, and the people performing them are categorized into three types based on the different modes of nature [18.19].",
+        "verse_ids": [
+          "18.19"
+        ],
+        "score": 0.099,
+        "supported": false
+      },
+      {
+        "sentence": "It is helpful to remember that different approaches can lead to the same result, and those who see these paths as fundamentally the same are seeing things as they truly are [5.5].",
+        "verse_ids": [
+          "5.5"
+        ],
+        "score": 0.703,
+        "supported": true
+      },
+      {
+        "sentence": "By applying yourself well to one path, you can achieve the same outcome that others reach through different methods [5.4].",
+        "verse_ids": [
+          "5.4"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "This perspective might offer some comfort when you are weighing two options that both seem like good choices.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q093",
+    "question": "What does it actually mean to know yourself?",
+    "retrieved": [
+      "2.25",
+      "4.34",
+      "13.12",
+      "13.20",
+      "14.2"
+    ],
+    "answer": "Knowing yourself involves recognizing that the soul is invisible, inconceivable, and unchanging, which helps one move past grief for the body [2.25]. You might find it helpful to approach those who have realized the truth, asking them questions and serving them so they can share their knowledge with you [4.34]. True knowledge is described as being steadfast in understanding the self and contemplating the ultimate goal of reality [13.12]. It is also suggested that everything else, which is not this self-knowledge, is considered ignorance [13.12]. You can also look at how material nature and the individual soul are both beginningless, with all changes and qualities arising from nature itself [13.20]. By becoming fixed in this kind of knowledge, one can attain a transcendental nature that remains undisturbed by the cycles of creation and dissolution [14.2].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Knowing yourself involves recognizing that the soul is invisible, inconceivable, and unchanging, which helps one move past grief for the body [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.022,
+        "supported": false
+      },
+      {
+        "sentence": "You might find it helpful to approach those who have realized the truth, asking them questions and serving them so they can share their knowledge with you [4.34].",
+        "verse_ids": [
+          "4.34"
+        ],
+        "score": 0.127,
+        "supported": false
+      },
+      {
+        "sentence": "True knowledge is described as being steadfast in understanding the self and contemplating the ultimate goal of reality [13.12].",
+        "verse_ids": [
+          "13.12"
+        ],
+        "score": 0.981,
+        "supported": true
+      },
+      {
+        "sentence": "It is also suggested that everything else, which is not this self-knowledge, is considered ignorance [13.12].",
+        "verse_ids": [
+          "13.12"
+        ],
+        "score": 0.887,
+        "supported": true
+      },
+      {
+        "sentence": "You can also look at how material nature and the individual soul are both beginningless, with all changes and qualities arising from nature itself [13.20].",
+        "verse_ids": [
+          "13.20"
+        ],
+        "score": 0.953,
+        "supported": true
+      },
+      {
+        "sentence": "By becoming fixed in this kind of knowledge, one can attain a transcendental nature that remains undisturbed by the cycles of creation and dissolution [14.2].",
+        "verse_ids": [
+          "14.2"
+        ],
+        "score": 0.992,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q094",
+    "question": "Why do smart people still make bad choices even when they know better?",
+    "retrieved": [
+      "2.13",
+      "3.29",
+      "4.16",
+      "15.10",
+      "3.42"
+    ],
+    "answer": "It is interesting to consider that even those who are considered intelligent can sometimes be confused about what constitutes the right course of action [4.16]. This happens because people can become deeply attached to the activities driven by the modes of nature, which can cloud their judgment [3.29]. While intelligence is a powerful tool, it is helpful to remember that the senses and the mind also play a significant role in how we perceive the world [3.42]. Sometimes, a person may be so caught up in these material influences that they fail to see the deeper reality of their situation [15.10]. A sober person, however, remains steady and is not easily bewildered by the constant changes that occur in life [2.13]. Understanding these different layers of influence might offer a clearer perspective on why even smart people sometimes struggle to make the choices they intend to make.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is interesting to consider that even those who are considered intelligent can sometimes be confused about what constitutes the right course of action [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "This happens because people can become deeply attached to the activities driven by the modes of nature, which can cloud their judgment [3.29].",
+        "verse_ids": [
+          "3.29"
+        ],
+        "score": 0.839,
+        "supported": true
+      },
+      {
+        "sentence": "While intelligence is a powerful tool, it is helpful to remember that the senses and the mind also play a significant role in how we perceive the world [3.42].",
+        "verse_ids": [
+          "3.42"
+        ],
+        "score": 0.083,
+        "supported": false
+      },
+      {
+        "sentence": "Sometimes, a person may be so caught up in these material influences that they fail to see the deeper reality of their situation [15.10].",
+        "verse_ids": [
+          "15.10"
+        ],
+        "score": 0.408,
+        "supported": false
+      },
+      {
+        "sentence": "A sober person, however, remains steady and is not easily bewildered by the constant changes that occur in life [2.13].",
+        "verse_ids": [
+          "2.13"
+        ],
+        "score": 0.927,
+        "supported": true
+      },
+      {
+        "sentence": "Understanding these different layers of influence might offer a clearer perspective on why even smart people sometimes struggle to make the choices they intend to make.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q095",
+    "question": "How do I stay calm when people criticise my work?",
+    "retrieved": [
+      "17.16",
+      "2.47",
+      "2.48",
+      "18.51",
+      "6.15"
+    ],
+    "answer": "It can be helpful to remember that you have the right to perform your work, but you are not entitled to the fruits or the reactions that come from it [2.47]. Staying calm involves performing your duties while remaining equipoised in both success and failure [2.48]. You might find peace by practicing mental austerity, which includes maintaining gentleness and a tranquil mind [17.16]. It is also suggested that you can restrain your mind by relinquishing feelings of attraction and aversion toward external objects [18.51]. By keeping your mind regulated and focused, you may find a sense of lasting peace [6.15].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It can be helpful to remember that you have the right to perform your work, but you are not entitled to the fruits or the reactions that come from it [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.006,
+        "supported": false
+      },
+      {
+        "sentence": "Staying calm involves performing your duties while remaining equipoised in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.682,
+        "supported": true
+      },
+      {
+        "sentence": "You might find peace by practicing mental austerity, which includes maintaining gentleness and a tranquil mind [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.28,
+        "supported": false
+      },
+      {
+        "sentence": "It is also suggested that you can restrain your mind by relinquishing feelings of attraction and aversion toward external objects [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.94,
+        "supported": true
+      },
+      {
+        "sentence": "By keeping your mind regulated and focused, you may find a sense of lasting peace [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.947,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q096",
+    "question": "I feel on top of the world when praised and crushed when criticised. How do I stay balanced?",
+    "retrieved": [
+      "17.16",
+      "2.48",
+      "2.61",
+      "6.25",
+      "6.14"
+    ],
+    "answer": "It is natural to feel affected by the opinions of others, but the Gita suggests that finding balance begins with cultivating a peaceful and unagitated mind [6.14]. You might consider practicing mental austerity, which includes maintaining tranquility, gentleness, and self-control [17.16]. The text proposes that you can perform your daily duties while remaining equipoised, letting go of your attachment to both success and failure [2.48]. This state of steady intelligence is supported by restraining your senses and keeping your focus fixed on the supreme [2.61]. By gradually using your intellect to withdraw from external distractions, you can learn to keep your mind centered on the Self [6.25]. This approach offers a way to remain steady regardless of whether you are being praised or criticized [2.48].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel affected by the opinions of others, but the Gita suggests that finding balance begins with cultivating a peaceful and unagitated mind [6.14].",
+        "verse_ids": [
+          "6.14"
+        ],
+        "score": 0.16,
+        "supported": false
+      },
+      {
+        "sentence": "You might consider practicing mental austerity, which includes maintaining tranquility, gentleness, and self-control [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.683,
+        "supported": true
+      },
+      {
+        "sentence": "The text proposes that you can perform your daily duties while remaining equipoised, letting go of your attachment to both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "This state of steady intelligence is supported by restraining your senses and keeping your focus fixed on the supreme [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.975,
+        "supported": true
+      },
+      {
+        "sentence": "By gradually using your intellect to withdraw from external distractions, you can learn to keep your mind centered on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "This approach offers a way to remain steady regardless of whether you are being praised or criticized [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.151,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q097",
+    "question": "How do I not let one bad day ruin my whole week?",
+    "retrieved": [
+      "18.51",
+      "6.25",
+      "13.11",
+      "3.34",
+      "2.61"
+    ],
+    "answer": "It is natural to feel that a difficult day impacts your mood, but the Gita suggests that we can practice not letting our reactions to these events take control. We are encouraged to recognize that attraction and aversion are simply reactions of our senses, and we can choose not to be swayed by them [3.34]. By using a steady intellect, we can gradually learn to withdraw our focus from these external triggers [6.25]. It can be helpful to cultivate a sense of inner resolve, letting go of strong likes and dislikes as they arise [18.51]. When we keep our senses under control and fix our consciousness on the supreme, our intelligence remains steady regardless of what happens around us [2.61]. Finding a quiet space and maintaining a focused, devoted mindset can also support this sense of balance [13.11].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to feel that a difficult day impacts your mood, but the Gita suggests that we can practice not letting our reactions to these events take control.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "We are encouraged to recognize that attraction and aversion are simply reactions of our senses, and we can choose not to be swayed by them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.812,
+        "supported": true
+      },
+      {
+        "sentence": "By using a steady intellect, we can gradually learn to withdraw our focus from these external triggers [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.076,
+        "supported": false
+      },
+      {
+        "sentence": "It can be helpful to cultivate a sense of inner resolve, letting go of strong likes and dislikes as they arise [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.899,
+        "supported": true
+      },
+      {
+        "sentence": "When we keep our senses under control and fix our consciousness on the supreme, our intelligence remains steady regardless of what happens around us [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.012,
+        "supported": false
+      },
+      {
+        "sentence": "Finding a quiet space and maintaining a focused, devoted mindset can also support this sense of balance [13.11].",
+        "verse_ids": [
+          "13.11"
+        ],
+        "score": 0.744,
+        "supported": true
+      }
+    ]
+  },
+  {
+    "id": "q098",
+    "question": "My best friend and I had a big fight and stopped talking. How should I handle it?",
+    "retrieved": [
+      "2.38",
+      "3.30",
+      "6.23",
+      "18.51",
+      "16.2"
+    ],
+    "answer": "It can be helpful to approach this situation by practicing forgiveness, gentleness, and freedom from anger [16.2]. You might consider letting go of your personal attachments and aversions regarding the conflict [18.51]. The Gita suggests that you can engage in your daily life while maintaining an equanimous mind, regardless of whether you feel happiness or sorrow about the outcome [2.38]. It is also suggested that you could try to act without focusing on personal expectations or ego [3.30]. Practicing this kind of inner balance with a steady and undismayed heart is described as a way to find freedom from misery [6.23]. These steps offer a way to navigate your feelings while remaining true to your own character [16.2].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It can be helpful to approach this situation by practicing forgiveness, gentleness, and freedom from anger [16.2].",
+        "verse_ids": [
+          "16.2"
+        ],
+        "score": 0.11,
+        "supported": false
+      },
+      {
+        "sentence": "You might consider letting go of your personal attachments and aversions regarding the conflict [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.185,
+        "supported": false
+      },
+      {
+        "sentence": "The Gita suggests that you can engage in your daily life while maintaining an equanimous mind, regardless of whether you feel happiness or sorrow about the outcome [2.38].",
+        "verse_ids": [
+          "2.38"
+        ],
+        "score": 0.963,
+        "supported": true
+      },
+      {
+        "sentence": "It is also suggested that you could try to act without focusing on personal expectations or ego [3.30].",
+        "verse_ids": [
+          "3.30"
+        ],
+        "score": 0.018,
+        "supported": false
+      },
+      {
+        "sentence": "Practicing this kind of inner balance with a steady and undismayed heart is described as a way to find freedom from misery [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.962,
+        "supported": true
+      },
+      {
+        "sentence": "These steps offer a way to navigate your feelings while remaining true to your own character [16.2].",
+        "verse_ids": [
+          "16.2"
+        ],
+        "score": 0.497,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q099",
+    "question": "How do I deal with someone who keeps hurting me but I still care about?",
+    "retrieved": [
+      "3.34",
+      "12.18",
+      "2.62",
+      "10.17",
+      "6.6"
+    ],
+    "answer": "It is natural to experience feelings of attachment or aversion toward the people around us, but these reactions can sometimes act as obstacles to our own inner peace [3.34]. When we dwell on our interactions with others, we may find that attachment leads to longing, which can eventually turn into anger [2.62]. The Gita suggests that one might find more stability by remaining balanced, whether facing friends or those who cause us distress [12.18]. It is also helpful to remember that when we have not mastered our own mind, our thoughts can act like an enemy to us [6.6]. By working to conquer the mind, we can transform it into our own best friend [6.6]. Ultimately, we are encouraged to remain steady regardless of the honor or dishonor we receive from others [12.18].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is natural to experience feelings of attachment or aversion toward the people around us, but these reactions can sometimes act as obstacles to our own inner peace [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.004,
+        "supported": false
+      },
+      {
+        "sentence": "When we dwell on our interactions with others, we may find that attachment leads to longing, which can eventually turn into anger [2.62].",
+        "verse_ids": [
+          "2.62"
+        ],
+        "score": 0.519,
+        "supported": true
+      },
+      {
+        "sentence": "The Gita suggests that one might find more stability by remaining balanced, whether facing friends or those who cause us distress [12.18].",
+        "verse_ids": [
+          "12.18"
+        ],
+        "score": 0.794,
+        "supported": true
+      },
+      {
+        "sentence": "It is also helpful to remember that when we have not mastered our own mind, our thoughts can act like an enemy to us [6.6].",
+        "verse_ids": [
+          "6.6"
+        ],
+        "score": 0.022,
+        "supported": false
+      },
+      {
+        "sentence": "By working to conquer the mind, we can transform it into our own best friend [6.6].",
+        "verse_ids": [
+          "6.6"
+        ],
+        "score": 0.002,
+        "supported": false
+      },
+      {
+        "sentence": "Ultimately, we are encouraged to remain steady regardless of the honor or dishonor we receive from others [12.18].",
+        "verse_ids": [
+          "12.18"
+        ],
+        "score": 0.055,
+        "supported": false
+      }
+    ]
+  },
+  {
+    "id": "q100",
+    "question": "How do I care for my family without getting so attached that their problems overwhelm me?",
+    "retrieved": [
+      "2.48",
+      "18.6",
+      "13.10",
+      "3.9",
+      "6.25"
+    ],
+    "answer": "It can be helpful to approach your family responsibilities by performing your duties without being attached to the results [18.6]. The Gita suggests that you can remain steady by letting go of attachment and staying balanced whether things go well or poorly [2.48]. Developing a sense of non-attachment toward your home and family members can assist you in maintaining an even mind during both pleasant and difficult events [13.10]. You might also consider performing your daily tasks as a form of service, which helps keep you free from the weight of those actions [3.9]. Finally, you can try to gradually steady your intellect and focus your mind inward to find a sense of calm [6.25].",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It can be helpful to approach your family responsibilities by performing your duties without being attached to the results [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.002,
+        "supported": false
+      },
+      {
+        "sentence": "The Gita suggests that you can remain steady by letting go of attachment and staying balanced whether things go well or poorly [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.939,
+        "supported": true
+      },
+      {
+        "sentence": "Developing a sense of non-attachment toward your home and family members can assist you in maintaining an even mind during both pleasant and difficult events [13.10].",
+        "verse_ids": [
+          "13.10"
+        ],
+        "score": 0.818,
+        "supported": true
+      },
+      {
+        "sentence": "You might also consider performing your daily tasks as a form of service, which helps keep you free from the weight of those actions [3.9].",
+        "verse_ids": [
+          "3.9"
+        ],
+        "score": 0.001,
+        "supported": false
+      },
+      {
+        "sentence": "Finally, you can try to gradually steady your intellect and focus your mind inward to find a sense of calm [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.99,
+        "supported": true
+      }
+    ]
+  }
+]

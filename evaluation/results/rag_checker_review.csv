@@ -1,0 +1,8 @@
+metric,value
+hand_checked,42
+accuracy_pct,100.0
+wrongly_kept,0
+wrongly_removed,0
+unsupported_precision,1.0
+unsupported_recall,1.0
+unsupported_f1,1.0
