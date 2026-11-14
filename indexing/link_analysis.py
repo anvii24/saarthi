@@ -1,8 +1,5 @@
 import json
 
-from torch.mtia import graph
-
-
 def build_graph(verses, links):
     graph = {verse["id"]: set() for verse in verses}
 
@@ -59,6 +56,82 @@ def pagerank(graph, damping=0.85, max_iterations=100, tolerance=1e-8):
 
         for node in nodes:
             new_scores[node] += damping * dangling_sum / n
+
+        for source in nodes:
+            targets = graph[source]
+
+            if targets:
+                contribution = damping * scores[source] / len(targets)
+
+                for target in targets:
+                    new_scores[target] += contribution
+
+        difference = sum(
+            abs(new_scores[node] - scores[node])
+            for node in nodes
+        )
+
+        scores = new_scores
+
+        if difference < tolerance:
+            break
+
+    return scores
+
+
+def topic_pagerank(
+    graph,
+    theme_verses,
+    damping=0.85,
+    max_iterations=100,
+    tolerance=1e-8
+):
+    if not 0 <= damping < 1:
+        raise ValueError("Damping must be between 0 and 1")
+
+    if max_iterations <= 0:
+        raise ValueError("Maximum iterations must be positive")
+
+    if tolerance <= 0:
+        raise ValueError("Tolerance must be positive")
+
+    nodes = list(graph)
+    n = len(nodes)
+
+    if n == 0:
+        return {}
+
+    seeds = set(theme_verses) & set(nodes)
+
+    if not seeds:
+        return pagerank(
+            graph,
+            damping=damping,
+            max_iterations=max_iterations,
+            tolerance=tolerance
+        )
+
+    teleport = {
+        node: 1 / len(seeds) if node in seeds else 0.0
+        for node in nodes
+    }
+
+    scores = teleport.copy()
+
+    for _ in range(max_iterations):
+        new_scores = {
+            node: (1 - damping) * teleport[node]
+            for node in nodes
+        }
+
+        dangling_sum = sum(
+            scores[node]
+            for node in nodes
+            if not graph[node]
+        )
+
+        for node in nodes:
+            new_scores[node] += damping * dangling_sum * teleport[node]
 
         for source in nodes:
             targets = graph[source]
