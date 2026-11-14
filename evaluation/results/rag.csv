@@ -1,7 +1,9 @@
 metric,value
+prompt,v1
 questions,34
 sentences,198
 cited_sentences,188
+uncited_pct,5.1
 supported_pct,63.8
 removed_total,68
 removed_per_answer,2.0

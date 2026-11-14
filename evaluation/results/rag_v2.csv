@@ -1,0 +1,16 @@
+metric,value
+prompt,v2
+questions,34
+sentences,214
+cited_sentences,120
+uncited_pct,43.9
+supported_pct,89.2
+removed_total,13
+removed_per_answer,0.38
+answers_fully_supported_pct,67.6
+citation_relevance_pct,24.4
+retrieval_P@5,0.188
+safety_notes_added,0
+supported_pct@0.3,93.3
+supported_pct@0.5,89.2
+supported_pct@0.7,85.0

@@ -1,0 +1,2036 @@
+[
+  {
+    "id": "q067",
+    "question": "I studied really hard for my midsems but still got a bad grade. How do I stop feeling like a failure?",
+    "retrieved": [
+      "2.48",
+      "12.10",
+      "6.5",
+      "2.39",
+      "2.49"
+    ],
+    "answer": "One should raise oneself by one's Self alone, let not one lower oneself, for the Self alone is the friend of oneself, and the Self alone is the enemy of oneself [6.5]. Perform all thy actions with mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. It is only the petty-minded who work for reward [2.49]. Perhaps you could consider that your worth is not defined by a single grade, but rather by the effort and dedication you brought to your studies. This might mean that you can choose to be kind to yourself right now, viewing this experience as a step in your journey rather than a final judgment. In your situation, perhaps focusing on the act of learning itself could help you find a sense of peace that isn't tied to the outcome of an exam.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "One should raise oneself by one's Self alone, let not one lower oneself, for the Self alone is the friend of oneself, and the Self alone is the enemy of oneself [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.471,
+        "supported": false
+      },
+      {
+        "sentence": "Perform all thy actions with mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.304,
+        "supported": false
+      },
+      {
+        "sentence": "It is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could consider that your worth is not defined by a single grade, but rather by the effort and dedication you brought to your studies.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that you can choose to be kind to yourself right now, viewing this experience as a step in your journey rather than a final judgment.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the act of learning itself could help you find a sense of peace that isn't tied to the outcome of an exam.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q068",
+    "question": "I keep refreshing my email waiting for internship results. How do I stop obsessing over outcomes I can't control?",
+    "retrieved": [
+      "2.47",
+      "12.12",
+      "18.57",
+      "2.49",
+      "12.9"
+    ],
+    "answer": "Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction [2.47]. It is only the petty-minded who work for reward [2.49]. Renunciation of the fruit of action is superior to meditation, and where there is renunciation peace will follow [12.12]. Surrender then thy actions unto Me, live in Me, concentrate thine intellect on Me, and think always of Me [18.57]. This might mean that focusing your energy on the effort you have already put into your applications could help ease the urge to constantly check your inbox. In your situation, perhaps shifting your attention toward a broader sense of purpose could offer you a bit more stillness while you wait. You might find that practicing this shift in focus, even in small moments, helps you feel less tethered to the outcome.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.732,
+        "supported": true
+      },
+      {
+        "sentence": "It is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Renunciation of the fruit of action is superior to meditation, and where there is renunciation peace will follow [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.001,
+        "supported": false
+      },
+      {
+        "sentence": "Surrender then thy actions unto Me, live in Me, concentrate thine intellect on Me, and think always of Me [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.718,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that focusing your energy on the effort you have already put into your applications could help ease the urge to constantly check your inbox.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, perhaps shifting your attention toward a broader sense of purpose could offer you a bit more stillness while you wait.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that practicing this shift in focus, even in small moments, helps you feel less tethered to the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q069",
+    "question": "Why should I put in effort if the result isn't even in my hands?",
+    "retrieved": [
+      "2.47",
+      "3.19",
+      "4.14",
+      "18.6",
+      "12.11"
+    ],
+    "answer": "You have the right to work, but you have no right to the fruits of that work [2.47]. It is suggested that you perform the actions that should be done without attachment to the results [3.19]. These actions should be performed while leaving aside the desire for rewards [18.6]. Perhaps you could view your daily tasks as things to be done for their own sake, rather than as steps toward a specific outcome. This might mean that you can find a sense of peace by focusing entirely on the process itself, letting go of the pressure to control what happens next. If this feels difficult, you might try to simply stay present in your work, knowing that your value is found in the effort rather than the final result.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "You have the right to work, but you have no right to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.974,
+        "supported": true
+      },
+      {
+        "sentence": "It is suggested that you perform the actions that should be done without attachment to the results [3.19].",
+        "verse_ids": [
+          "3.19"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "These actions should be performed while leaving aside the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your daily tasks as things to be done for their own sake, rather than as steps toward a specific outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that you can find a sense of peace by focusing entirely on the process itself, letting go of the pressure to control what happens next.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "If this feels difficult, you might try to simply stay present in your work, knowing that your value is found in the effort rather than the final result.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q070",
+    "question": "I got rejected from my dream company after five rounds of interviews. Was all that work for nothing?",
+    "retrieved": [
+      "2.48",
+      "2.47",
+      "4.14",
+      "3.22",
+      "2.49"
+    ],
+    "answer": "You have the right to work, but you do not have the right to the fruits of that work [2.47]. It is suggested that you perform your actions while remaining balanced in both success and failure [2.48]. Those who work only for the sake of a reward are considered petty-minded [2.49]. In your situation, perhaps the effort you put into those interviews has value in itself, regardless of the final outcome. This might mean that you can find peace by focusing on the process of your growth rather than the specific result you were hoping for. You might consider whether your worth is defined by the work you do rather than the job offer you did not receive.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "You have the right to work, but you do not have the right to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.978,
+        "supported": true
+      },
+      {
+        "sentence": "It is suggested that you perform your actions while remaining balanced in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Those who work only for the sake of a reward are considered petty-minded [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps the effort you put into those interviews has value in itself, regardless of the final outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that you can find peace by focusing on the process of your growth rather than the specific result you were hoping for.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might consider whether your worth is defined by the work you do rather than the job offer you did not receive.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q071",
+    "question": "My parents want me to join the family business but I want to do something of my own. What is my real duty here?",
+    "retrieved": [
+      "2.47",
+      "18.6",
+      "3.8",
+      "18.47",
+      "18.60"
+    ],
+    "answer": "It is better to do one's own duty, however defective it may be, than to follow the duty of another, however well one may perform it [18.47]. He who does his duty as his own nature reveals it, never sins [18.47]. Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction [2.47]. Even these actions should be performed leaving aside attachment and the desire for rewards [18.6]. This might mean that reflecting on what truly aligns with your own nature could help you decide whether the family business or your own path is the right direction. Perhaps focusing on the work itself, rather than the expectations of others or the potential rewards, could bring some clarity to your choice.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is better to do one's own duty, however defective it may be, than to follow the duty of another, however well one may perform it [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.925,
+        "supported": true
+      },
+      {
+        "sentence": "He who does his duty as his own nature reveals it, never sins [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.968,
+        "supported": true
+      },
+      {
+        "sentence": "Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive, nor let thy attachment be to inaction [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.732,
+        "supported": true
+      },
+      {
+        "sentence": "Even these actions should be performed leaving aside attachment and the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.828,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that reflecting on what truly aligns with your own nature could help you decide whether the family business or your own path is the right direction.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps focusing on the work itself, rather than the expectations of others or the potential rewards, could bring some clarity to your choice.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q072",
+    "question": "I hate my job but people at home depend on my salary. Should I keep doing it?",
+    "retrieved": [
+      "3.8",
+      "2.47",
+      "18.47",
+      "18.6",
+      "12.10"
+    ],
+    "answer": "Action is superior to inaction, and even the maintenance of the body would not be possible through inaction [3.8]. You have the right to work, but never to the fruits of that work [2.47]. It is better to do one's own duty, however defective it may be, than to follow the duty of another [18.47]. These actions should be performed leaving aside attachment and the desire for rewards [18.6]. In your situation, perhaps focusing on the necessity of your role for those you support could help you find a sense of purpose. This might mean trying to let go of the frustration you feel toward the job itself while you continue to fulfill your responsibilities. It could also be helpful to view your daily tasks as a way of serving a higher purpose beyond just the paycheck.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Action is superior to inaction, and even the maintenance of the body would not be possible through inaction [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "You have the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.969,
+        "supported": true
+      },
+      {
+        "sentence": "It is better to do one's own duty, however defective it may be, than to follow the duty of another [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.962,
+        "supported": true
+      },
+      {
+        "sentence": "These actions should be performed leaving aside attachment and the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.942,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the necessity of your role for those you support could help you find a sense of purpose.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean trying to let go of the frustration you feel toward the job itself while you continue to fulfill your responsibilities.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could also be helpful to view your daily tasks as a way of serving a higher purpose beyond just the paycheck.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q073",
+    "question": "Is it okay to do work that suits someone else better just because it pays more?",
+    "retrieved": [
+      "18.47",
+      "3.35",
+      "2.47",
+      "3.8",
+      "2.49"
+    ],
+    "answer": "It is better to do one's own duty, however defective it may be, than to follow the duty of another, however well one may perform it [18.47]. The duty of another is fraught with danger [3.35]. Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive [2.47]. It is only the petty-minded who work for reward [2.49]. Perhaps this suggests that focusing on the nature of the work itself, rather than the financial gain, could bring more peace to your daily life. It might be helpful to consider whether a role that feels more aligned with your own nature offers a different kind of stability than one chosen primarily for its pay. You may find it useful to reflect on whether your current motivation is centered on the task at hand or the result you hope to receive.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is better to do one's own duty, however defective it may be, than to follow the duty of another, however well one may perform it [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.925,
+        "supported": true
+      },
+      {
+        "sentence": "The duty of another is fraught with danger [3.35].",
+        "verse_ids": [
+          "3.35"
+        ],
+        "score": 0.977,
+        "supported": true
+      },
+      {
+        "sentence": "Thy right is to work only, but never with its fruits; let not the fruits of action be thy motive [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.884,
+        "supported": true
+      },
+      {
+        "sentence": "It is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this suggests that focusing on the nature of the work itself, rather than the financial gain, could bring more peace to your daily life.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be helpful to consider whether a role that feels more aligned with your own nature offers a different kind of stability than one chosen primarily for its pay.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You may find it useful to reflect on whether your current motivation is centered on the task at hand or the result you hope to receive.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q074",
+    "question": "I panic before every presentation and my mind goes blank. How do I calm down?",
+    "retrieved": [
+      "6.25",
+      "17.16",
+      "2.66",
+      "5.27",
+      "12.12"
+    ],
+    "answer": "Serenity, kindness, silence, self-control, and purity are called mental austerity [17.16]. Little by little, by the help of reason controlled by fortitude, one may attain peace and, fixing the mind on the Self, not think of any other thing [6.25]. Right discrimination is not for the unsteady, and without concentration, there cannot be meditation, nor can there be peace [2.66]. Knowledge is superior to blind action, meditation to mere knowledge, and renunciation of the fruit of action to meditation, for peace immediately follows renunciation [12.12]. In your situation, perhaps focusing on the simple rhythm of your breathing before you begin could help you find a bit more stillness. This might mean that letting go of your worry about the final outcome of the presentation could allow a sense of calm to settle in more naturally.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Serenity, kindness, silence, self-control, and purity are called mental austerity [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of reason controlled by fortitude, one may attain peace and, fixing the mind on the Self, not think of any other thing [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Right discrimination is not for the unsteady, and without concentration, there cannot be meditation, nor can there be peace [2.66].",
+        "verse_ids": [
+          "2.66"
+        ],
+        "score": 0.842,
+        "supported": true
+      },
+      {
+        "sentence": "Knowledge is superior to blind action, meditation to mere knowledge, and renunciation of the fruit of action to meditation, for peace immediately follows renunciation [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.974,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the simple rhythm of your breathing before you begin could help you find a bit more stillness.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that letting go of your worry about the final outcome of the presentation could allow a sense of calm to settle in more naturally.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q075",
+    "question": "I'm scared about what happens after college. What if I don't get a job?",
+    "retrieved": [
+      "2.47",
+      "3.8",
+      "2.48",
+      "4.14",
+      "18.66"
+    ],
+    "answer": "You have the right to work, but you do not have the right to the fruits of your actions [2.47]. It might be helpful to focus on the effort you put into your job search rather than worrying about the outcome. You are encouraged to perform your prescribed duty, as action is superior to inaction [3.8]. In your situation, perhaps you could view your current studies and applications as a necessary part of your path, regardless of the uncertainty of the future. You might try to perform your actions while remaining balanced in both success and failure [2.48]. This could mean that even if things do not go exactly as planned, you can still maintain a sense of peace within yourself.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "You have the right to work, but you do not have the right to the fruits of your actions [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.981,
+        "supported": true
+      },
+      {
+        "sentence": "It might be helpful to focus on the effort you put into your job search rather than worrying about the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You are encouraged to perform your prescribed duty, as action is superior to inaction [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.941,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could view your current studies and applications as a necessary part of your path, regardless of the uncertainty of the future.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might try to perform your actions while remaining balanced in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.974,
+        "supported": true
+      },
+      {
+        "sentence": "This could mean that even if things do not go exactly as planned, you can still maintain a sense of peace within yourself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q076",
+    "question": "I overthink everything at night and can't sleep. How do I quiet my mind?",
+    "retrieved": [
+      "6.25",
+      "12.12",
+      "17.16",
+      "5.27",
+      "6.13"
+    ],
+    "answer": "Little by little, by the help of his reason controlled by fortitude, one may attain peace and, fixing the mind on the Self, not think of any other thing [6.25]. Serenity, kindness, silence, self-control and purity are called austerity of mind [17.16]. Excluding external objects, one may keep the gaze fixed between the eyebrows, with the inward and outward breathings passing equally through the nostrils [5.27]. Perhaps you could try focusing on the rhythm of your breath as a way to gently guide your thoughts away from the day's events. In your situation, this might mean practicing a quiet stillness of mind before you try to fall asleep. It is possible that letting go of the need to analyze your actions could help you find the peace you are looking for.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Little by little, by the help of his reason controlled by fortitude, one may attain peace and, fixing the mind on the Self, not think of any other thing [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Serenity, kindness, silence, self-control and purity are called austerity of mind [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Excluding external objects, one may keep the gaze fixed between the eyebrows, with the inward and outward breathings passing equally through the nostrils [5.27].",
+        "verse_ids": [
+          "5.27"
+        ],
+        "score": 0.956,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could try focusing on the rhythm of your breath as a way to gently guide your thoughts away from the day's events.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, this might mean practicing a quiet stillness of mind before you try to fall asleep.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It is possible that letting go of the need to analyze your actions could help you find the peace you are looking for.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q077",
+    "question": "I lose my temper with my family over small things and regret it later. How do I control my anger?",
+    "retrieved": [
+      "3.34",
+      "6.25",
+      "18.51",
+      "6.34",
+      "3.33"
+    ],
+    "answer": "The mind is fickle, turbulent, and as difficult to control as the wind [6.34]. Attachment and aversion for the objects of the senses abide in the senses, and one should not come under their sway [3.34]. Guided by pure reason, one may bravely restrain oneself by giving up attachment and hatred [18.51]. Little by little, by the help of reason controlled by fortitude, one may attain peace [6.25]. Perhaps this means that when you feel your temper rising, you could try to gently observe those feelings as natural impulses rather than acting on them immediately. In your situation, it might be helpful to practice small moments of stillness to gradually steady your mind when things feel overwhelming.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The mind is fickle, turbulent, and as difficult to control as the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Attachment and aversion for the objects of the senses abide in the senses, and one should not come under their sway [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Guided by pure reason, one may bravely restrain oneself by giving up attachment and hatred [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of reason controlled by fortitude, one may attain peace [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that when you feel your temper rising, you could try to gently observe those feelings as natural impulses rather than acting on them immediately.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to practice small moments of stillness to gradually steady your mind when things feel overwhelming.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q078",
+    "question": "Every time I buy something new I just want the next thing. Why am I never satisfied?",
+    "retrieved": [
+      "4.14",
+      "3.34",
+      "2.13",
+      "5.21",
+      "13.15"
+    ],
+    "answer": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34]. He finds happiness in his own Self, and enjoys eternal bliss, whose heart does not yearn for the contacts of earth and whose Self is one with the Everlasting [5.21]. My actions do not fetter Me, nor do I desire anything that they can bring [4.14]. In your situation, perhaps the constant cycle of wanting new things is simply a reaction to these natural impulses rather than a reflection of what you truly need. This might mean that finding a sense of contentment could come from looking inward instead of focusing on the next purchase. Perhaps you could explore whether your happiness might be found in a place that does not depend on the things you own.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.946,
+        "supported": true
+      },
+      {
+        "sentence": "He finds happiness in his own Self, and enjoys eternal bliss, whose heart does not yearn for the contacts of earth and whose Self is one with the Everlasting [5.21].",
+        "verse_ids": [
+          "5.21"
+        ],
+        "score": 0.907,
+        "supported": true
+      },
+      {
+        "sentence": "My actions do not fetter Me, nor do I desire anything that they can bring [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps the constant cycle of wanting new things is simply a reaction to these natural impulses rather than a reflection of what you truly need.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding a sense of contentment could come from looking inward instead of focusing on the next purchase.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps you could explore whether your happiness might be found in a place that does not depend on the things you own.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q079",
+    "question": "I feel jealous when my friends get placed before me. How do I deal with it?",
+    "retrieved": [
+      "2.49",
+      "3.8",
+      "3.34",
+      "2.48",
+      "5.22"
+    ],
+    "answer": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34]. Perform all thy actions with mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. It is only the petty-minded who work for reward [2.49]. The joys that spring from external associations bring pain; they have their beginning and their endings [5.22]. Perhaps you could consider whether your feelings of jealousy are simply natural reactions that you do not need to follow. In your situation, it might be helpful to focus on your own path rather than comparing your progress to the external achievements of others. This could mean finding a sense of balance that remains steady regardless of whether you or your friends reach a goal first.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.946,
+        "supported": true
+      },
+      {
+        "sentence": "Perform all thy actions with mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.304,
+        "supported": false
+      },
+      {
+        "sentence": "It is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "The joys that spring from external associations bring pain; they have their beginning and their endings [5.22].",
+        "verse_ids": [
+          "5.22"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could consider whether your feelings of jealousy are simply natural reactions that you do not need to follow.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to focus on your own path rather than comparing your progress to the external achievements of others.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This could mean finding a sense of balance that remains steady regardless of whether you or your friends reach a goal first.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q080",
+    "question": "My grandmother passed away recently and I can't accept that she's gone.",
+    "retrieved": [
+      "13.11",
+      "2.25",
+      "4.6",
+      "8.15",
+      "7.19"
+    ],
+    "answer": "The Spirit is named the Unmanifest, the Unthinkable, and the immutable, and knowing the Spirit as such, there is no cause to grieve [2.25]. Coming unto the Divine, great souls go no more to the misery and death of earthly life, for they have gained perfection [8.15]. After many lives, the wise man realizes the Divine as it is, seeing that all is the innermost Self [7.19]. In your situation, perhaps this means that the essence of your grandmother is something that cannot be lost or changed, even if her physical presence is no longer here. This might mean that finding a quiet space to reflect could help you feel a sense of connection that transcends the pain of her absence. You might find comfort in the idea that her journey has led her to a state of peace beyond the suffering of this world.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The Spirit is named the Unmanifest, the Unthinkable, and the immutable, and knowing the Spirit as such, there is no cause to grieve [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.864,
+        "supported": true
+      },
+      {
+        "sentence": "Coming unto the Divine, great souls go no more to the misery and death of earthly life, for they have gained perfection [8.15].",
+        "verse_ids": [
+          "8.15"
+        ],
+        "score": 0.507,
+        "supported": true
+      },
+      {
+        "sentence": "After many lives, the wise man realizes the Divine as it is, seeing that all is the innermost Self [7.19].",
+        "verse_ids": [
+          "7.19"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps this means that the essence of your grandmother is something that cannot be lost or changed, even if her physical presence is no longer here.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding a quiet space to reflect could help you feel a sense of connection that transcends the pain of her absence.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find comfort in the idea that her journey has led her to a state of peace beyond the suffering of this world.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q081",
+    "question": "How do I cope with losing someone I love?",
+    "retrieved": [
+      "6.23",
+      "2.25",
+      "2.27",
+      "9.11",
+      "2.30"
+    ],
+    "answer": "For death is as sure for that which is born, as birth is for that which is dead, and therefore one should not grieve for what is inevitable [2.27]. The Spirit in man is imperishable, and the Indweller in the body of everyone is ever indestructible [2.30]. It is named the Unmanifest, the Unthinkable, and the immutable, so knowing the Spirit as such, there is no cause to grieve [2.25]. This inner severance from the affliction of misery is spirituality, which should be practised with determination and with a heart that refuses to be depressed [6.23]. In your situation, perhaps you could try to hold onto the idea that the essence of your loved one remains untouched by the changes we see. This might mean that even in the depth of your sorrow, you can gently look for a sense of peace that stays steady within you. It could be helpful to approach your healing with a patient and determined heart as you navigate this difficult time.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "For death is as sure for that which is born, as birth is for that which is dead, and therefore one should not grieve for what is inevitable [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "The Spirit in man is imperishable, and the Indweller in the body of everyone is ever indestructible [2.30].",
+        "verse_ids": [
+          "2.30"
+        ],
+        "score": 0.966,
+        "supported": true
+      },
+      {
+        "sentence": "It is named the Unmanifest, the Unthinkable, and the immutable, so knowing the Spirit as such, there is no cause to grieve [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "This inner severance from the affliction of misery is spirituality, which should be practised with determination and with a heart that refuses to be depressed [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.416,
+        "supported": false
+      },
+      {
+        "sentence": "In your situation, perhaps you could try to hold onto the idea that the essence of your loved one remains untouched by the changes we see.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that even in the depth of your sorrow, you can gently look for a sense of peace that stays steady within you.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to approach your healing with a patient and determined heart as you navigate this difficult time.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q082",
+    "question": "Is death really the end? What happens to the people we lose?",
+    "retrieved": [
+      "2.13",
+      "2.28",
+      "2.20",
+      "8.5",
+      "2.27"
+    ],
+    "answer": "Just as the soul experiences infancy, youth, and old age within one body, it eventually passes into another [2.13]. The spirit is unborn, eternal, and ancient, and it does not die when the body is killed [2.20]. Death is as certain for the born as birth is for the dead [2.27]. Beings are unmanifested in their beginning, manifested in their middle state, and unmanifested again in their end [2.28]. In your situation, perhaps these thoughts could offer a sense of peace as you navigate the mystery of losing someone you care about. This might mean that the essence of the person you miss continues on in a way that is beyond our current sight. It could be helpful to consider that what we perceive as an end may simply be a transition that is as natural as the stages of life we see every day.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Just as the soul experiences infancy, youth, and old age within one body, it eventually passes into another [2.13].",
+        "verse_ids": [
+          "2.13"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "The spirit is unborn, eternal, and ancient, and it does not die when the body is killed [2.20].",
+        "verse_ids": [
+          "2.20"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Death is as certain for the born as birth is for the dead [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Beings are unmanifested in their beginning, manifested in their middle state, and unmanifested again in their end [2.28].",
+        "verse_ids": [
+          "2.28"
+        ],
+        "score": 0.706,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps these thoughts could offer a sense of peace as you navigate the mystery of losing someone you care about.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that the essence of the person you miss continues on in a way that is beyond our current sight.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to consider that what we perceive as an end may simply be a transition that is as natural as the stages of life we see every day.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q083",
+    "question": "I can't stop scrolling my phone even when I have deadlines. How do I control myself?",
+    "retrieved": [
+      "6.25",
+      "3.34",
+      "2.61",
+      "9.34",
+      "12.10"
+    ],
+    "answer": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34]. Little by little, by the help of his reason controlled by fortitude, let him attain peace; and, fixing his mind on the Self, let him not think of any other thing [6.25]. And if you are not strong enough to practise concentration, then devote yourself to My service, do all your acts for My sake, and you shall still attain the goal [12.10]. Perhaps you could try to notice the pull of your phone as a natural impulse that you don't necessarily have to follow. In your situation, it might be helpful to start with small, steady steps toward focusing your attention elsewhere. You might also find it comforting to think of your work as a way of offering your efforts to something greater than just the immediate task.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.946,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of his reason controlled by fortitude, let him attain peace; and, fixing his mind on the Self, let him not think of any other thing [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.941,
+        "supported": true
+      },
+      {
+        "sentence": "And if you are not strong enough to practise concentration, then devote yourself to My service, do all your acts for My sake, and you shall still attain the goal [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.921,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could try to notice the pull of your phone as a natural impulse that you don't necessarily have to follow.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to start with small, steady steps toward focusing your attention elsewhere.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might also find it comforting to think of your work as a way of offering your efforts to something greater than just the immediate task.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q084",
+    "question": "I procrastinate everything till the last minute. How do I become more disciplined?",
+    "retrieved": [
+      "12.12",
+      "6.25",
+      "2.61",
+      "3.8",
+      "12.10"
+    ],
+    "answer": "Action for duty's sake is superior to inaction, as even the maintenance of the body would be impossible if one remained inactive [3.8]. Little by little, by the help of reason controlled by fortitude, one may attain peace [6.25]. If one is not strong enough to practice concentration, one may devote oneself to service and do all acts for the sake of the Divine [12.10]. Peace follows the renunciation of the fruits of actions [12.12]. In your situation, perhaps focusing on the necessity of simply starting your tasks could help you move past the habit of waiting. This might mean that taking small, steady steps toward your goals is a gentle way to build your focus over time. You might also find that letting go of your worries about the final result makes the process of working feel a little lighter.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Action for duty's sake is superior to inaction, as even the maintenance of the body would be impossible if one remained inactive [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of reason controlled by fortitude, one may attain peace [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "If one is not strong enough to practice concentration, one may devote oneself to service and do all acts for the sake of the Divine [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.854,
+        "supported": true
+      },
+      {
+        "sentence": "Peace follows the renunciation of the fruits of actions [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.472,
+        "supported": false
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the necessity of simply starting your tasks could help you move past the habit of waiting.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that taking small, steady steps toward your goals is a gentle way to build your focus over time.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might also find that letting go of your worries about the final result makes the process of working feel a little lighter.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q085",
+    "question": "My mind keeps wandering whenever I try to focus. How do I train it?",
+    "retrieved": [
+      "6.25",
+      "6.34",
+      "6.5",
+      "2.67",
+      "6.26"
+    ],
+    "answer": "The mind is fickle, turbulent, obstinate, and extremely difficult to control, much like the wind [6.34]. When the mind follows the wandering senses, it carries away one's discrimination just as a ship at sea is tossed by a tempest [2.67]. Whenever the volatile and wavering mind wanders, one should restrain it and bring it back under the control of the Self [6.26]. By using reason and fortitude, one can little by little attain peace and fix the mind on the Self [6.25]. Perhaps you could view your wandering thoughts as a natural challenge rather than a personal failure. In your situation, it might be helpful to gently guide your attention back to your focus whenever you notice it drifting away. This could be a way of being a friend to yourself as you practice steadying your mind over time.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The mind is fickle, turbulent, obstinate, and extremely difficult to control, much like the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "When the mind follows the wandering senses, it carries away one's discrimination just as a ship at sea is tossed by a tempest [2.67].",
+        "verse_ids": [
+          "2.67"
+        ],
+        "score": 0.987,
+        "supported": true
+      },
+      {
+        "sentence": "Whenever the volatile and wavering mind wanders, one should restrain it and bring it back under the control of the Self [6.26].",
+        "verse_ids": [
+          "6.26"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "By using reason and fortitude, one can little by little attain peace and fix the mind on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your wandering thoughts as a natural challenge rather than a personal failure.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to gently guide your attention back to your focus whenever you notice it drifting away.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This could be a way of being a friend to yourself as you practice steadying your mind over time.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q086",
+    "question": "I don't know what I want to do with my life. How do I find my purpose?",
+    "retrieved": [
+      "12.12",
+      "2.49",
+      "2.47",
+      "9.28",
+      "18.2"
+    ],
+    "answer": "You have the right to work, but you have no right to the fruits of your labor [2.47]. It is the petty-minded who work for the sake of a reward [2.49]. Renunciation is defined as the surrender of the fruits of all actions [18.2]. Peace follows immediately when one renounces the fruits of their actions [12.12]. \n\nIn your situation, perhaps you could focus on the act of doing something rather than worrying about where it will lead. This might mean that finding your purpose is less about choosing the perfect outcome and more about finding peace in the work itself. You might consider letting go of the pressure to achieve a specific result, allowing yourself to simply engage with the present moment.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "You have the right to work, but you have no right to the fruits of your labor [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.927,
+        "supported": true
+      },
+      {
+        "sentence": "It is the petty-minded who work for the sake of a reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Renunciation is defined as the surrender of the fruits of all actions [18.2].",
+        "verse_ids": [
+          "18.2"
+        ],
+        "score": 0.622,
+        "supported": true
+      },
+      {
+        "sentence": "Peace follows immediately when one renounces the fruits of their actions [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could focus on the act of doing something rather than worrying about where it will lead.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding your purpose is less about choosing the perfect outcome and more about finding peace in the work itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might consider letting go of the pressure to achieve a specific result, allowing yourself to simply engage with the present moment.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q087",
+    "question": "Everything feels pointless lately, even things I used to enjoy.",
+    "retrieved": [
+      "4.20",
+      "13.11",
+      "7.24",
+      "6.15",
+      "2.49"
+    ],
+    "answer": "It is only the petty-minded who work for reward [2.49]. Having surrendered all claim to the results of his actions, always contented and independent, in reality he does nothing, even though he is apparently acting [4.20]. Thus keeping his mind always in communion with Me, and with his thoughts subdued, he shall attain that Peace which is mine and which will lead him to liberation at last [6.15]. Perhaps this feeling of pointlessness is an invitation to shift your focus away from the outcomes of your daily tasks. In your situation, it might be helpful to look for a sense of inner balance that does not depend on the success or failure of what you are doing. You might find that letting go of the need for a specific result allows you to move through your day with a little more ease.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "It is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Having surrendered all claim to the results of his actions, always contented and independent, in reality he does nothing, even though he is apparently acting [4.20].",
+        "verse_ids": [
+          "4.20"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "Thus keeping his mind always in communion with Me, and with his thoughts subdued, he shall attain that Peace which is mine and which will lead him to liberation at last [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.881,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this feeling of pointlessness is an invitation to shift your focus away from the outcomes of your daily tasks.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to look for a sense of inner balance that does not depend on the success or failure of what you are doing.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that letting go of the need for a specific result allows you to move through your day with a little more ease.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q088",
+    "question": "Who am I really, beyond my marks, my job and what people think of me?",
+    "retrieved": [
+      "15.18",
+      "6.30",
+      "18.55",
+      "9.22",
+      "13.11"
+    ],
+    "answer": "The Supreme Personality is declared to be the highest Purusha, transcending both the perishable and the imperishable [15.18]. He who sees the Divine in everything and everything in the Divine is never separated from Him [6.30]. Through devotion, one knows the truth of who He is and enters into the Supreme [18.55]. This might mean that your true identity is not found in your external roles, but in a deeper, constant connection to something beyond the changing world. Perhaps you could find peace by looking past the opinions of others and focusing on this inner, unchanging presence. In your situation, it may be helpful to consider that your worth is not defined by your achievements, but by this eternal relationship.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The Supreme Personality is declared to be the highest Purusha, transcending both the perishable and the imperishable [15.18].",
+        "verse_ids": [
+          "15.18"
+        ],
+        "score": 0.945,
+        "supported": true
+      },
+      {
+        "sentence": "He who sees the Divine in everything and everything in the Divine is never separated from Him [6.30].",
+        "verse_ids": [
+          "6.30"
+        ],
+        "score": 0.031,
+        "supported": false
+      },
+      {
+        "sentence": "Through devotion, one knows the truth of who He is and enters into the Supreme [18.55].",
+        "verse_ids": [
+          "18.55"
+        ],
+        "score": 0.99,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that your true identity is not found in your external roles, but in a deeper, constant connection to something beyond the changing world.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps you could find peace by looking past the opinions of others and focusing on this inner, unchanging presence.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it may be helpful to consider that your worth is not defined by your achievements, but by this eternal relationship.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q089",
+    "question": "How do I keep my faith when everything is going wrong?",
+    "retrieved": [
+      "2.48",
+      "6.15",
+      "18.57",
+      "3.30",
+      "12.11"
+    ],
+    "answer": "Perform all your actions with your mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. Surrender your actions unto the Divine, live in the Divine, concentrate your intellect on the Divine, and think always of the Divine [18.57]. If you are unable to do even this, then seek refuge in union with the Divine, and with perfect self-control renounce the fruit of your action [12.11]. This might mean that when life feels overwhelming, you could try to let go of your expectations for a specific outcome and simply focus on the present moment. Perhaps you could view your daily tasks as a way to stay connected to something larger than your current struggles. In your situation, it might be helpful to release the need to control every result and instead find a sense of inner steadiness.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Perform all your actions with your mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.253,
+        "supported": false
+      },
+      {
+        "sentence": "Surrender your actions unto the Divine, live in the Divine, concentrate your intellect on the Divine, and think always of the Divine [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.002,
+        "supported": false
+      },
+      {
+        "sentence": "If you are unable to do even this, then seek refuge in union with the Divine, and with perfect self-control renounce the fruit of your action [12.11].",
+        "verse_ids": [
+          "12.11"
+        ],
+        "score": 0.708,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that when life feels overwhelming, you could try to let go of your expectations for a specific outcome and simply focus on the present moment.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps you could view your daily tasks as a way to stay connected to something larger than your current struggles.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to release the need to control every result and instead find a sense of inner steadiness.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q090",
+    "question": "Does praying actually help, or is it just a habit?",
+    "retrieved": [
+      "6.5",
+      "17.18",
+      "12.12",
+      "12.10",
+      "5.2"
+    ],
+    "answer": "One should raise oneself by one's Self alone, as the Self is the friend of oneself [6.5]. If you are not strong enough to practise concentration, then devote yourself to service and do all your acts for the sake of the Divine [12.10]. Austerity performed for the sake of popularity or vanity comes from passion, and its result is always doubtful and temporary [17.18]. Renunciation of action and the path of right action both lead to the highest, but of the two, right action is the better [5.2]. This might mean that the value of your prayer could depend more on the sincerity of your heart than on the ritual itself. In your situation, perhaps focusing on your daily actions as a form of service could be just as meaningful as the habit of prayer. You might find that looking inward to your own strength helps you decide which path brings you the most peace.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "One should raise oneself by one's Self alone, as the Self is the friend of oneself [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.891,
+        "supported": true
+      },
+      {
+        "sentence": "If you are not strong enough to practise concentration, then devote yourself to service and do all your acts for the sake of the Divine [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.576,
+        "supported": true
+      },
+      {
+        "sentence": "Austerity performed for the sake of popularity or vanity comes from passion, and its result is always doubtful and temporary [17.18].",
+        "verse_ids": [
+          "17.18"
+        ],
+        "score": 0.984,
+        "supported": true
+      },
+      {
+        "sentence": "Renunciation of action and the path of right action both lead to the highest, but of the two, right action is the better [5.2].",
+        "verse_ids": [
+          "5.2"
+        ],
+        "score": 0.803,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that the value of your prayer could depend more on the sincerity of your heart than on the ritual itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on your daily actions as a form of service could be just as meaningful as the habit of prayer.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that looking inward to your own strength helps you decide which path brings you the most peace.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q091",
+    "question": "I want to feel connected to God but don't know where to start.",
+    "retrieved": [
+      "6.15",
+      "9.22",
+      "12.2",
+      "6.47",
+      "7.21"
+    ],
+    "answer": "Those who keep their minds fixed on the Divine, worshipping with unwavering faith and concentration, are considered the best in yoga [12.2]. Perhaps you could start by simply choosing a form of worship that feels natural to you, as the Divine makes that faith firm and unflinching [7.21]. The person who is full of faith and has their inner self merged in the Divine is deemed the most devout [6.47]. This might mean that finding a quiet, consistent way to turn your thoughts toward the Divine could be a gentle way to begin your journey. By keeping the mind balanced and controlled, one attains the peace that abides in the Divine [6.15]. In your situation, perhaps focusing on this inner stillness could help you feel that sense of connection you are looking for.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Those who keep their minds fixed on the Divine, worshipping with unwavering faith and concentration, are considered the best in yoga [12.2].",
+        "verse_ids": [
+          "12.2"
+        ],
+        "score": 0.86,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could start by simply choosing a form of worship that feels natural to you, as the Divine makes that faith firm and unflinching [7.21].",
+        "verse_ids": [
+          "7.21"
+        ],
+        "score": 0.012,
+        "supported": false
+      },
+      {
+        "sentence": "The person who is full of faith and has their inner self merged in the Divine is deemed the most devout [6.47].",
+        "verse_ids": [
+          "6.47"
+        ],
+        "score": 0.532,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that finding a quiet, consistent way to turn your thoughts toward the Divine could be a gentle way to begin your journey.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "By keeping the mind balanced and controlled, one attains the peace that abides in the Divine [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.862,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on this inner stillness could help you feel that sense of connection you are looking for.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q092",
+    "question": "How do I know if I'm making the right decision when both options seem good?",
+    "retrieved": [
+      "5.4",
+      "5.5",
+      "3.2",
+      "18.19",
+      "4.16"
+    ],
+    "answer": "Even the wise are bewildered by the question of what constitutes action and inaction [4.16]. The language of these choices can sometimes perplex our reason and make us feel uncertain [3.2]. It is said that the level reached by wisdom is also attained through right action, and he who sees these two as one knows the truth [5.5]. Those who are truly established in one path obtain the fruits of both [5.4]. In your situation, perhaps you could consider that the pressure to find a single perfect choice might be less important than the intention you bring to your actions. This might mean that moving forward with sincerity is just as valuable as finding the theoretically correct path.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Even the wise are bewildered by the question of what constitutes action and inaction [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "The language of these choices can sometimes perplex our reason and make us feel uncertain [3.2].",
+        "verse_ids": [
+          "3.2"
+        ],
+        "score": 0.916,
+        "supported": true
+      },
+      {
+        "sentence": "It is said that the level reached by wisdom is also attained through right action, and he who sees these two as one knows the truth [5.5].",
+        "verse_ids": [
+          "5.5"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Those who are truly established in one path obtain the fruits of both [5.4].",
+        "verse_ids": [
+          "5.4"
+        ],
+        "score": 0.972,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could consider that the pressure to find a single perfect choice might be less important than the intention you bring to your actions.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that moving forward with sincerity is just as valuable as finding the theoretically correct path.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q093",
+    "question": "What does it actually mean to know yourself?",
+    "retrieved": [
+      "2.25",
+      "4.34",
+      "13.12",
+      "13.20",
+      "14.2"
+    ],
+    "answer": "The Self is described as unmanifested, unthinkable, and unchangeable [2.25]. Constant yearning for the knowledge of the Self and pondering over the lessons of the great Truth is declared to be knowledge [13.12]. One may learn this by prostrating, questioning, and serving those who have realized the Truth [4.34]. You might find that knowing yourself involves a quiet, persistent curiosity about what remains constant within you. Perhaps this process is less about finding a new answer and more about turning your attention toward that which does not change. In your situation, it could be helpful to look for guidance from those who seem to have found a sense of stillness in their own lives.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The Self is described as unmanifested, unthinkable, and unchangeable [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "Constant yearning for the knowledge of the Self and pondering over the lessons of the great Truth is declared to be knowledge [13.12].",
+        "verse_ids": [
+          "13.12"
+        ],
+        "score": 0.978,
+        "supported": true
+      },
+      {
+        "sentence": "One may learn this by prostrating, questioning, and serving those who have realized the Truth [4.34].",
+        "verse_ids": [
+          "4.34"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "You might find that knowing yourself involves a quiet, persistent curiosity about what remains constant within you.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps this process is less about finding a new answer and more about turning your attention toward that which does not change.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to look for guidance from those who seem to have found a sense of stillness in their own lives.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q094",
+    "question": "Why do smart people still make bad choices even when they know better?",
+    "retrieved": [
+      "2.13",
+      "3.29",
+      "4.16",
+      "15.10",
+      "3.42"
+    ],
+    "answer": "Even the wise are sometimes bewildered when trying to distinguish between what constitutes action and what constitutes inaction [4.16]. It is said that the senses are powerful, but beyond the senses is the mind, beyond the mind is the intellect, and beyond and greater than intellect is He [3.42]. Those deluded by the qualities of nature are attached to the functions of those qualities [3.29]. The ignorant do not see that it is He who is present in life or that it is He who enjoys pleasure through the qualities, as only the eye of wisdom sees [15.10]. In your situation, perhaps even a sharp intellect can be momentarily clouded by the pull of these natural impulses. This might mean that making a poor choice is a common human struggle rather than a failure of intelligence. It is possible that seeing clearly requires looking beyond the mind and intellect toward a deeper perspective.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Even the wise are sometimes bewildered when trying to distinguish between what constitutes action and what constitutes inaction [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "It is said that the senses are powerful, but beyond the senses is the mind, beyond the mind is the intellect, and beyond and greater than intellect is He [3.42].",
+        "verse_ids": [
+          "3.42"
+        ],
+        "score": 0.94,
+        "supported": true
+      },
+      {
+        "sentence": "Those deluded by the qualities of nature are attached to the functions of those qualities [3.29].",
+        "verse_ids": [
+          "3.29"
+        ],
+        "score": 0.065,
+        "supported": false
+      },
+      {
+        "sentence": "The ignorant do not see that it is He who is present in life or that it is He who enjoys pleasure through the qualities, as only the eye of wisdom sees [15.10].",
+        "verse_ids": [
+          "15.10"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps even a sharp intellect can be momentarily clouded by the pull of these natural impulses.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that making a poor choice is a common human struggle rather than a failure of intelligence.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It is possible that seeing clearly requires looking beyond the mind and intellect toward a deeper perspective.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q095",
+    "question": "How do I stay calm when people criticise my work?",
+    "retrieved": [
+      "17.16",
+      "2.47",
+      "2.48",
+      "18.51",
+      "6.15"
+    ],
+    "answer": "Serenity of mind, good-heartedness, self-control, and purity of nature is called mental austerity [17.16]. You have the right to work only, but never to the fruits of that work [2.47]. Perform your actions with a mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. By keeping the mind balanced and controlled, one attains a deep sense of peace [6.15]. In your situation, perhaps focusing on the effort you put into your work rather than the feedback you receive could help you maintain your inner balance. This might mean that when you hear criticism, you could try to view it as separate from your own sense of peace and self-worth.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Serenity of mind, good-heartedness, self-control, and purity of nature is called mental austerity [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "You have the right to work only, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.913,
+        "supported": true
+      },
+      {
+        "sentence": "Perform your actions with a mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.523,
+        "supported": true
+      },
+      {
+        "sentence": "By keeping the mind balanced and controlled, one attains a deep sense of peace [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the effort you put into your work rather than the feedback you receive could help you maintain your inner balance.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that when you hear criticism, you could try to view it as separate from your own sense of peace and self-worth.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q096",
+    "question": "I feel on top of the world when praised and crushed when criticised. How do I stay balanced?",
+    "retrieved": [
+      "17.16",
+      "2.48",
+      "2.61",
+      "6.25",
+      "6.14"
+    ],
+    "answer": "Evenness of mind is called Yoga [2.48]. Serenity of mind, good-heartedness, self-control, and purity of nature is called mental austerity [17.16]. Little by little, by the help of reason controlled by fortitude, one may attain peace and fix the mind on the Self [6.25]. Perhaps you could view your reactions to praise and criticism as opportunities to practice this steady, internal balance. This might mean gently guiding your attention back to a place of quiet whenever you feel swayed by the opinions of others. In your situation, it could be helpful to focus on cultivating that sense of inner peace, little by little, regardless of what is happening around you.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Evenness of mind is called Yoga [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "Serenity of mind, good-heartedness, self-control, and purity of nature is called mental austerity [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of reason controlled by fortitude, one may attain peace and fix the mind on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.989,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your reactions to praise and criticism as opportunities to practice this steady, internal balance.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean gently guiding your attention back to a place of quiet whenever you feel swayed by the opinions of others.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to focus on cultivating that sense of inner peace, little by little, regardless of what is happening around you.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q097",
+    "question": "How do I not let one bad day ruin my whole week?",
+    "retrieved": [
+      "18.51",
+      "6.25",
+      "13.11",
+      "3.34",
+      "2.61"
+    ],
+    "answer": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34]. Little by little, by the help of his reason controlled by fortitude, let him attain peace; and, fixing his mind on the Self, let him not think of any other thing [6.25]. Restraining them all, let him meditate steadfastly on Me; for who thus conquers his senses achieves perfection [2.61]. In your situation, perhaps you could try to gently observe your feelings about the day without letting them dictate your mood for the rest of the week. This might mean finding a quiet moment to steady your mind, allowing the frustration of the day to fade away so you can start fresh.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.946,
+        "supported": true
+      },
+      {
+        "sentence": "Little by little, by the help of his reason controlled by fortitude, let him attain peace; and, fixing his mind on the Self, let him not think of any other thing [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.941,
+        "supported": true
+      },
+      {
+        "sentence": "Restraining them all, let him meditate steadfastly on Me; for who thus conquers his senses achieves perfection [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.873,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could try to gently observe your feelings about the day without letting them dictate your mood for the rest of the week.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean finding a quiet moment to steady your mind, allowing the frustration of the day to fade away so you can start fresh.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q098",
+    "question": "My best friend and I had a big fight and stopped talking. How should I handle it?",
+    "retrieved": [
+      "2.38",
+      "3.30",
+      "6.23",
+      "18.51",
+      "16.2"
+    ],
+    "answer": "Guided by pure reason, one might bravely restrain oneself, renouncing objects of sense and giving up attachment and hatred [18.51]. Harmlessness, truth, absence of anger, renunciation, peacefulness, absence of crookedness, compassion towards beings, non-covetousness, gentleness, modesty, and absence of fickleness are qualities to consider [16.2]. This inner severance from the affliction of misery is spirituality, and it should be practised with determination and with a heart which refuses to be depressed [6.23]. In your situation, perhaps you could try to approach the conflict with a steady heart, focusing on being gentle and truthful rather than letting the pain of the argument take over. It might be helpful to look at the situation with an equal eye, letting go of the need for a specific outcome as you decide how to move forward.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Guided by pure reason, one might bravely restrain oneself, renouncing objects of sense and giving up attachment and hatred [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Harmlessness, truth, absence of anger, renunciation, peacefulness, absence of crookedness, compassion towards beings, non-covetousness, gentleness, modesty, and absence of fickleness are qualities to consider [16.2].",
+        "verse_ids": [
+          "16.2"
+        ],
+        "score": 0.965,
+        "supported": true
+      },
+      {
+        "sentence": "This inner severance from the affliction of misery is spirituality, and it should be practised with determination and with a heart which refuses to be depressed [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.235,
+        "supported": false
+      },
+      {
+        "sentence": "In your situation, perhaps you could try to approach the conflict with a steady heart, focusing on being gentle and truthful rather than letting the pain of the argument take over.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be helpful to look at the situation with an equal eye, letting go of the need for a specific outcome as you decide how to move forward.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q099",
+    "question": "How do I deal with someone who keeps hurting me but I still care about?",
+    "retrieved": [
+      "3.34",
+      "12.18",
+      "2.62",
+      "10.17",
+      "6.6"
+    ],
+    "answer": "When a man dwells on the objects of sense, he creates an attraction for them; attraction develops into desire, and desire breeds anger [2.62]. The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34]. One who is equal to friends and enemies, who is equipoised in honor and dishonor, heat and cold, happiness and distress, who is free from attachment and remains steady in situations of gain or loss [12.18]. To him who has conquered his lower nature by Its help, the Self is a friend, but to him who has not done so, It is an enemy [6.6]. Perhaps you could reflect on whether your focus on this person is stirring up feelings that make your own peace harder to maintain. This might mean that finding a sense of inner balance could help you navigate these painful interactions with more clarity. It is possible that looking inward to find your own stability is a way to care for yourself while you are being hurt.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "When a man dwells on the objects of sense, he creates an attraction for them; attraction develops into desire, and desire breeds anger [2.62].",
+        "verse_ids": [
+          "2.62"
+        ],
+        "score": 0.824,
+        "supported": true
+      },
+      {
+        "sentence": "The love and hate which are aroused by the objects of sense arise from Nature; do not yield to them [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.946,
+        "supported": true
+      },
+      {
+        "sentence": "One who is equal to friends and enemies, who is equipoised in honor and dishonor, heat and cold, happiness and distress, who is free from attachment and remains steady in situations of gain or loss [12.18].",
+        "verse_ids": [
+          "12.18"
+        ],
+        "score": 0.907,
+        "supported": true
+      },
+      {
+        "sentence": "To him who has conquered his lower nature by Its help, the Self is a friend, but to him who has not done so, It is an enemy [6.6].",
+        "verse_ids": [
+          "6.6"
+        ],
+        "score": 0.976,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could reflect on whether your focus on this person is stirring up feelings that make your own peace harder to maintain.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding a sense of inner balance could help you navigate these painful interactions with more clarity.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It is possible that looking inward to find your own stability is a way to care for yourself while you are being hurt.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q100",
+    "question": "How do I care for my family without getting so attached that their problems overwhelm me?",
+    "retrieved": [
+      "2.48",
+      "18.6",
+      "13.10",
+      "3.9",
+      "6.25"
+    ],
+    "answer": "Perform all your actions with your mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. In this world, people are fettered by action unless it is performed as a sacrifice, so let your acts be done without attachment, as sacrifice only [3.9]. These actions should be performed leaving aside attachment and the desire for rewards [18.6]. This might mean that you can continue to support your family while viewing your care for them as a dedicated service rather than a personal burden. Perhaps you could try to maintain a sense of inner balance, even when the situations at home feel difficult or uncertain. By focusing on the act of giving itself, you may find a way to stay present for your loved ones without feeling as though their challenges are your own to carry.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Perform all your actions with your mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.253,
+        "supported": false
+      },
+      {
+        "sentence": "In this world, people are fettered by action unless it is performed as a sacrifice, so let your acts be done without attachment, as sacrifice only [3.9].",
+        "verse_ids": [
+          "3.9"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "These actions should be performed leaving aside attachment and the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.942,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that you can continue to support your family while viewing your care for them as a dedicated service rather than a personal burden.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps you could try to maintain a sense of inner balance, even when the situations at home feel difficult or uncertain.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "By focusing on the act of giving itself, you may find a way to stay present for your loved ones without feeling as though their challenges are your own to carry.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  }
+]
