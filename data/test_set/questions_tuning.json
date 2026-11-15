@@ -1,0 +1,142 @@
+{
+  "q035": {
+    "theme": "duty",
+    "en": "I promised to help with a group project, but my own workload is piling up. How should I balance my commitments?",
+    "hi": "मैंने समूह परियोजना में मदद करने का वादा किया था, लेकिन मेरा अपना काम भी बढ़ता जा रहा है। मैं अपनी जिम्मेदारियों में संतुलन कैसे रखूँ?",
+    "hinglish": "Group project mein help karne ka promise kiya tha, par mera khud ka workload bhi badh raha hai. Commitments balance kaise karun?",
+    "author": "Kashvi"
+  },
+  "q036": {
+    "theme": "duty",
+    "en": "How do I distinguish between doing what is expected of me and doing what is genuinely right?",
+    "hi": "मुझसे जो अपेक्षा की जाती है और जो वास्तव में सही है, उनमें अंतर कैसे समझूँ?",
+    "hinglish": "Mujhse jo expect kiya jaata hai aur jo genuinely sahi hai, unmein difference kaise samajhun?",
+    "author": "Kashvi"
+  },
+  "q037": {
+    "theme": "duty",
+    "en": "I feel guilty taking a break when there is still work left. How can I fulfil my duties without exhausting myself?",
+    "hi": "जब काम बाकी होता है, तो आराम करने पर अपराधबोध होता है। खुद को थकाए बिना अपने कर्तव्य कैसे निभाऊँ?",
+    "hinglish": "Kaam pending ho toh break lene par guilt hota hai. Khud ko exhaust kiye bina duties kaise fulfil karun?",
+    "author": "Kashvi"
+  },
+  "q038": {
+    "theme": "action_and_results",
+    "en": "I keep checking how much progress others have made. How can I focus on my own effort?",
+    "hi": "मैं बार-बार देखती हूँ कि दूसरों ने कितनी प्रगति की है। अपने प्रयास पर ध्यान कैसे रखूँ?",
+    "hinglish": "Main baar baar check karti hoon ki doosron ne kitni progress ki hai. Apne efforts par focus kaise karun?",
+    "author": "Kashvi"
+  },
+  "q039": {
+    "theme": "action_and_results",
+    "en": "When a plan fails despite careful preparation, how do I find the motivation to try again?",
+    "hi": "पूरी तैयारी के बाद भी योजना असफल हो जाए, तो दोबारा कोशिश करने की प्रेरणा कैसे पाऊँ?",
+    "hinglish": "Achhi preparation ke baad bhi plan fail ho jaaye toh dobara try karne ki motivation kaise laun?",
+    "author": "Kashvi"
+  },
+  "q040": {
+    "theme": "action_and_results",
+    "en": "How can I take responsibility for my mistakes without letting them define my self-worth?",
+    "hi": "अपनी गलतियों की जिम्मेदारी लेते हुए भी उन्हें अपने आत्म-मूल्य का पैमाना बनने से कैसे रोकूँ?",
+    "hinglish": "Apni mistakes ki responsibility lete hue unhe apni self-worth define nahi karne kaise doon?",
+    "author": "Kashvi"
+  },
+  "q041": {
+    "theme": "fear_and_anxiety",
+    "en": "I am afraid of disappointing people who believe in me. How can I handle that pressure?",
+    "hi": "मुझ पर विश्वास करने वाले लोगों को निराश करने का डर लगता है। इस दबाव से कैसे निपटूँ?",
+    "hinglish": "Jo log mujh par believe karte hain unhe disappoint karne ka darr lagta hai. Is pressure ko kaise handle karun?",
+    "author": "Kashvi"
+  },
+  "q042": {
+    "theme": "fear_and_anxiety",
+    "en": "I keep imagining the worst possible outcome before making a decision. How can I stop letting fear decide for me?",
+    "hi": "फैसला लेने से पहले मैं सबसे बुरे परिणाम की कल्पना करने लगती हूँ। डर को अपने फैसले कैसे न लेने दूँ?",
+    "hinglish": "Decision lene se pehle main worst-case scenario imagine karti rehti hoon. Fear ko apne liye decide karne se kaise rokun?",
+    "author": "Kashvi"
+  },
+  "q043": {
+    "theme": "fear_and_anxiety",
+    "en": "How can I stay composed when I have to face a situation I cannot prepare for?",
+    "hi": "जब किसी ऐसी परिस्थिति का सामना करना हो जिसकी तैयारी नहीं कर सकती, तब संयमित कैसे रहूँ?",
+    "hinglish": "Jab kisi aisi situation ka saamna karna ho jiske liye prepare nahi kar sakti, tab composed kaise rahun?",
+    "author": "Kashvi"
+  },
+  "q044": {
+    "theme": "anger_and_desire",
+    "en": "When someone takes credit for my work, I feel furious. How can I respond without acting out of anger?",
+    "hi": "जब कोई मेरे काम का श्रेय ले लेता है, तो मुझे बहुत गुस्सा आता है। क्रोध में प्रतिक्रिया दिए बिना कैसे जवाब दूँ?",
+    "hinglish": "Jab koi mere kaam ka credit le leta hai toh bahut gussa aata hai. Anger mein react kiye bina kaise respond karun?",
+    "author": "Kashvi"
+  },
+  "q045": {
+    "theme": "anger_and_desire",
+    "en": "I get irritated when things do not happen at my pace. How can I become more patient?",
+    "hi": "जब चीज़ें मेरी गति से नहीं होतीं, तो चिड़चिड़ापन होने लगता है। धैर्य कैसे बढ़ाऊँ?",
+    "hinglish": "Jab cheezein meri pace se nahi hoti toh irritation hoti hai. Patience kaise develop karun?",
+    "author": "Kashvi"
+  },
+  "q046": {
+    "theme": "anger_and_desire",
+    "en": "How do I recognise when a healthy ambition is turning into an unhealthy obsession?",
+    "hi": "मुझे कैसे पता चले कि मेरी महत्वाकांक्षा कब अस्वस्थ जुनून में बदल रही है?",
+    "hinglish": "Kaise samajhun ki healthy ambition kab unhealthy obsession ban rahi hai?",
+    "author": "Kashvi"
+  },
+  "q047": {
+    "theme": "grief_and_loss",
+    "en": "A close friendship has ended, and I keep replaying what went wrong. How can I accept the loss?",
+    "hi": "मेरी एक करीबी दोस्ती खत्म हो गई है और मैं बार-बार सोचती हूँ कि क्या गलत हुआ। इस नुकसान को कैसे स्वीकार करूँ?",
+    "hinglish": "Close friendship end ho gayi hai aur main baar baar sochti hoon kya galat hua. Is loss ko kaise accept karun?",
+    "author": "Kashvi"
+  },
+  "q048": {
+    "theme": "grief_and_loss",
+    "en": "How can I support a grieving person when I do not know what to say?",
+    "hi": "जब किसी शोक में डूबे व्यक्ति से क्या कहूँ, यह समझ न आए, तो उसका साथ कैसे दूँ?",
+    "hinglish": "Jab kisi grieving person ko kya bolun samajh na aaye, toh uska support kaise karun?",
+    "author": "Kashvi"
+  },
+  "q049": {
+    "theme": "grief_and_loss",
+    "en": "I keep wishing I could change something from my past. How can I make peace with what cannot be undone?",
+    "hi": "मैं बार-बार अतीत की किसी बात को बदलने की इच्छा करती हूँ। जो बदला नहीं जा सकता, उसके साथ मन की शांति कैसे पाऊँ?",
+    "hinglish": "Main past ki ek baat change karne ki wish karti rehti hoon. Jo undo nahi ho sakta uske saath peace kaise banaun?",
+    "author": "Kashvi"
+  },
+  "q050": {
+    "theme": "self_control",
+    "en": "I make a timetable but abandon it after a day or two. How can I build consistency?",
+    "hi": "मैं समय-सारणी बनाती हूँ, लेकिन एक-दो दिन बाद छोड़ देती हूँ। निरंतरता कैसे विकसित करूँ?",
+    "hinglish": "Timetable banati hoon par ek do din baad chhod deti hoon. Consistency kaise build karun?",
+    "author": "Kashvi"
+  },
+  "q051": {
+    "theme": "self_control",
+    "en": "I know what I should be doing, but I keep choosing distractions. How can I guide my mind back to the task?",
+    "hi": "मुझे पता है कि मुझे क्या करना चाहिए, फिर भी मैं ध्यान भटकाने वाली चीज़ें चुनती हूँ। मन को काम पर वापस कैसे लाऊँ?",
+    "hinglish": "Pata hai kya karna chahiye, phir bhi distractions choose karti hoon. Mind ko task par wapas kaise laun?",
+    "author": "Kashvi"
+  },
+  "q052": {
+    "theme": "self_control",
+    "en": "How can I practise moderation instead of swinging between overworking and doing nothing?",
+    "hi": "बहुत अधिक काम करने और बिल्कुल काम न करने के बीच झूलने के बजाय संतुलन कैसे रखूँ?",
+    "hinglish": "Overwork karne aur bilkul kuch na karne ke beech swing karne ke bajaye moderation kaise practise karun?",
+    "author": "Kashvi"
+  },
+  "q053": {
+    "theme": "purpose_and_meaning",
+    "en": "I chose a path because it impressed others, but it does not feel meaningful to me. What should I reflect on?",
+    "hi": "मैंने ऐसा रास्ता चुना क्योंकि उससे दूसरे प्रभावित होते थे, लेकिन वह मुझे अर्थपूर्ण नहीं लगता। मुझे किस बात पर विचार करना चाहिए?",
+    "hinglish": "Maine ek path choose kiya kyunki doosre impress hote the, par mujhe meaningful nahi lagta. Kis baat par reflect karun?",
+    "author": "Kashvi"
+  },
+  "q054": {
+    "theme": "purpose_and_meaning",
+    "en": "Does the value of my work depend on how visible or prestigious it is?",
+    "hi": "क्या मेरे काम का महत्व इस बात पर निर्भर करता है कि वह कितना दिखाई देता है या कितना प्रतिष्ठित है?",
+    "hinglish": "Mere work ki value is baat par depend karti hai ki woh kitna visible ya prestigious hai?",
+    "author": "Kashvi"
+  }
+}
