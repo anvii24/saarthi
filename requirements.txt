@@ -7,12 +7,10 @@ scikit-learn
 sentence-transformers
 torch
 transformers
-langdetect
 streamlit
 python-dotenv
 matplotlib
 pytest
-datasets
 openai
 sentencepiece
 protobuf
