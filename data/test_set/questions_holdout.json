@@ -1,0 +1,324 @@
+{
+  "q055": {
+    "theme": "purpose_and_meaning",
+    "en": "I feel pressured to figure out my entire future right now. How can I take the next step without knowing everything?",
+    "hi": "मुझे लगता है कि अभी ही अपना पूरा भविष्य तय कर लेना चाहिए। सब कुछ जाने बिना अगला कदम कैसे उठाऊँ?",
+    "hinglish": "Lagta hai abhi hi poora future figure out karna chahiye. Sab kuch jaane bina next step kaise loon?",
+    "author": "Kashvi"
+  },
+  "q056": {
+    "theme": "devotion",
+    "en": "How can I maintain faith while still asking questions and thinking critically?",
+    "hi": "सवाल पूछते हुए और आलोचनात्मक ढंग से सोचते हुए भी आस्था कैसे बनाए रखूँ?",
+    "hinglish": "Questions poochte hue aur critically sochte hue bhi faith kaise maintain karun?",
+    "author": "Kashvi"
+  },
+  "q057": {
+    "theme": "devotion",
+    "en": "I remember prayer only when I am in trouble. How can I make my spiritual practice more sincere?",
+    "hi": "मुझे प्रार्थना तभी याद आती है जब मैं परेशानी में होती हूँ। अपनी आध्यात्मिक साधना को अधिक सच्चा कैसे बनाऊँ?",
+    "hinglish": "Mujhe prayer sirf trouble mein yaad aati hai. Apni spiritual practice ko sincere kaise banaun?",
+    "author": "Kashvi"
+  },
+  "q058": {
+    "theme": "devotion",
+    "en": "What does it mean to trust in something greater while still making my own effort?",
+    "hi": "अपना पूरा प्रयास करते हुए किसी परम शक्ति पर भरोसा करने का क्या अर्थ है?",
+    "hinglish": "Apni taraf se full effort karte hue kisi greater power par trust karne ka kya meaning hai?",
+    "author": "Kashvi"
+  },
+  "q059": {
+    "theme": "knowledge_and_wisdom",
+    "en": "How can I tell the difference between reacting emotionally and making a thoughtful decision?",
+    "hi": "भावनात्मक प्रतिक्रिया देने और सोच-समझकर निर्णय लेने में अंतर कैसे पहचानूँ?",
+    "hinglish": "Emotional reaction dene aur soch samajh kar decision lene mein difference kaise pehchaanun?",
+    "author": "Kashvi"
+  },
+  "q060": {
+    "theme": "knowledge_and_wisdom",
+    "en": "When I receive conflicting advice, how can I decide what is worth following?",
+    "hi": "जब मुझे एक-दूसरे से अलग सलाह मिलती है, तो किस सलाह का पालन करना चाहिए यह कैसे तय करूँ?",
+    "hinglish": "Jab conflicting advice milti hai toh kaunsi advice follow karni chahiye kaise decide karun?",
+    "author": "Kashvi"
+  },
+  "q061": {
+    "theme": "knowledge_and_wisdom",
+    "en": "How can I remain open to learning when I strongly believe I am already right?",
+    "hi": "जब मुझे पूरा विश्वास हो कि मैं सही हूँ, तब भी सीखने के लिए खुला मन कैसे रखूँ?",
+    "hinglish": "Jab mujhe strongly lagta hai ki main right hoon, tab bhi learning ke liye open kaise rahun?",
+    "author": "Kashvi"
+  },
+  "q062": {
+    "theme": "equanimity",
+    "en": "How can I stay balanced when my plans keep changing because of circumstances outside my control?",
+    "hi": "जब मेरे नियंत्रण से बाहर की परिस्थितियों के कारण योजनाएँ बदलती रहती हैं, तो संतुलित कैसे रहूँ?",
+    "hinglish": "Mere control ke bahar circumstances ki wajah se plans change hote rehte hain. Balanced kaise rahun?",
+    "author": "Kashvi"
+  },
+  "q063": {
+    "theme": "equanimity",
+    "en": "I take every small setback personally. How can I develop a steadier perspective?",
+    "hi": "मैं हर छोटी असफलता को व्यक्तिगत रूप से लेती हूँ। अधिक स्थिर दृष्टिकोण कैसे विकसित करूँ?",
+    "hinglish": "Main har chhote setback ko personally le leti hoon. Steady perspective kaise develop karun?",
+    "author": "Kashvi"
+  },
+  "q064": {
+    "theme": "equanimity",
+    "en": "How can I enjoy good moments without becoming afraid that they will soon end?",
+    "hi": "अच्छे पलों का आनंद लेते हुए यह डर कैसे न रखूँ कि वे जल्द खत्म हो जाएँगे?",
+    "hinglish": "Good moments enjoy karte hue yeh fear kaise na rakhoon ki woh jaldi khatam ho jayenge?",
+    "author": "Kashvi"
+  },
+  "q065": {
+    "theme": "relationships",
+    "en": "How can I disagree with someone respectfully without feeling that I have to win the argument?",
+    "hi": "किसी से सम्मानपूर्वक असहमति कैसे जताऊँ, बिना यह महसूस किए कि बहस जीतना जरूरी है?",
+    "hinglish": "Kisi se respectfully disagree kaise karun bina yeh soche ki argument jeetna zaroori hai?",
+    "author": "Kashvi"
+  },
+  "q066": {
+    "theme": "relationships",
+    "en": "How do I set boundaries with someone I care about while still treating them with compassion?",
+    "hi": "जिस व्यक्ति की मुझे परवाह है, उसके साथ करुणा बनाए रखते हुए सीमाएँ कैसे तय करूँ?",
+    "hinglish": "Jis person ki care hai uske saath compassion rakhte hue boundaries kaise set karun?",
+    "author": "Kashvi"
+  },
+  "q067": {
+    "theme": "action_and_results",
+    "en": "I studied really hard for my midsems but still got a bad grade. How do I stop feeling like a failure?",
+    "hi": "मैंने मिडसेम के लिए बहुत मेहनत की फिर भी अच्छे नंबर नहीं आए। मैं खुद को नाकाम महसूस करना कैसे बंद करूँ?",
+    "hinglish": "midsem ke liye itni mehnat ki phir bhi marks kharab aaye, khud ko failure feel karna kaise band karun?",
+    "author": "Anvi"
+  },
+  "q068": {
+    "theme": "action_and_results",
+    "en": "I keep refreshing my email waiting for internship results. How do I stop obsessing over outcomes I can't control?",
+    "hi": "मैं इंटर्नशिप के रिज़ल्ट के इंतज़ार में बार-बार ईमेल चेक करती रहती हूँ। जिन नतीजों पर मेरा बस नहीं, उनके बारे में सोचना कैसे बंद करूँ?",
+    "hinglish": "internship result ke liye baar baar mail refresh karti rehti hoon, jo cheez mere control mein nahi uske baare mein sochna kaise band karun?",
+    "author": "Anvi"
+  },
+  "q069": {
+    "theme": "action_and_results",
+    "en": "Why should I put in effort if the result isn't even in my hands?",
+    "hi": "अगर नतीजा मेरे हाथ में ही नहीं है तो मैं मेहनत क्यों करूँ?",
+    "hinglish": "agar result mere haath mein hi nahi hai toh mehnat kyun karun?",
+    "author": "Anvi"
+  },
+  "q070": {
+    "theme": "action_and_results",
+    "en": "I got rejected from my dream company after five rounds of interviews. Was all that work for nothing?",
+    "hi": "पाँच राउंड के इंटरव्यू के बाद मेरी ड्रीम कंपनी ने मुझे रिजेक्ट कर दिया। क्या मेरी सारी मेहनत बेकार गई?",
+    "hinglish": "5 rounds ke baad dream company ne reject kar diya, kya saari mehnat bekaar gayi?",
+    "author": "Anvi"
+  },
+  "q071": {
+    "theme": "duty",
+    "en": "My parents want me to join the family business but I want to do something of my own. What is my real duty here?",
+    "hi": "मेरे माता-पिता चाहते हैं कि मैं फैमिली बिज़नेस संभालूँ, पर मैं अपना कुछ करना चाहती हूँ। यहाँ मेरा असली कर्तव्य क्या है?",
+    "hinglish": "mummy papa chahte hain main family business join karun par mujhe apna kuch karna hai, mera asli farz kya hai?",
+    "author": "Anvi"
+  },
+  "q072": {
+    "theme": "duty",
+    "en": "I hate my job but people at home depend on my salary. Should I keep doing it?",
+    "hi": "मुझे अपनी नौकरी बिल्कुल पसंद नहीं, पर घरवाले मेरी सैलरी पर निर्भर हैं। क्या मुझे यह करते रहना चाहिए?",
+    "hinglish": "mujhe apni job bilkul pasand nahi par ghar wale meri salary pe depend karte hain, kya karte rehna chahiye?",
+    "author": "Anvi"
+  },
+  "q073": {
+    "theme": "duty",
+    "en": "Is it okay to do work that suits someone else better just because it pays more?",
+    "hi": "क्या ऐसा काम करना ठीक है जो किसी और के लिए बना हो, सिर्फ इसलिए कि उसमें पैसे ज़्यादा हैं?",
+    "hinglish": "kya aisa kaam karna theek hai jo kisi aur ke liye bana ho, bas isliye ki paise zyada hain?",
+    "author": "Anvi"
+  },
+  "q074": {
+    "theme": "fear_and_anxiety",
+    "en": "I panic before every presentation and my mind goes blank. How do I calm down?",
+    "hi": "हर प्रेज़ेंटेशन से पहले मैं घबरा जाती हूँ और दिमाग खाली हो जाता है। मैं शांत कैसे रहूँ?",
+    "hinglish": "har presentation se pehle panic ho jata hai aur dimaag blank ho jata hai, calm kaise rahun?",
+    "author": "Anvi"
+  },
+  "q075": {
+    "theme": "fear_and_anxiety",
+    "en": "I'm scared about what happens after college. What if I don't get a job?",
+    "hi": "मुझे कॉलेज के बाद की चिंता सताती है। अगर नौकरी नहीं मिली तो क्या होगा?",
+    "hinglish": "college ke baad kya hoga is baat ka darr lagta hai, agar job nahi mili toh?",
+    "author": "Anvi"
+  },
+  "q076": {
+    "theme": "fear_and_anxiety",
+    "en": "I overthink everything at night and can't sleep. How do I quiet my mind?",
+    "hi": "मैं रात को हर बात के बारे में ज़रूरत से ज़्यादा सोचती हूँ और सो नहीं पाती। मन को शांत कैसे करूँ?",
+    "hinglish": "raat ko har cheez overthink karti hoon aur neend nahi aati, mann shaant kaise karun?",
+    "author": "Anvi"
+  },
+  "q077": {
+    "theme": "anger_and_desire",
+    "en": "I lose my temper with my family over small things and regret it later. How do I control my anger?",
+    "hi": "मैं छोटी-छोटी बातों पर घरवालों पर गुस्सा हो जाती हूँ और बाद में पछताती हूँ। गुस्से पर काबू कैसे करूँ?",
+    "hinglish": "choti choti baaton pe ghar walon pe gussa ho jata hai aur baad mein regret hota hai, gussa control kaise karun?",
+    "author": "Anvi"
+  },
+  "q078": {
+    "theme": "anger_and_desire",
+    "en": "Every time I buy something new I just want the next thing. Why am I never satisfied?",
+    "hi": "हर बार कुछ नया खरीदने के बाद मुझे अगली चीज़ चाहिए होती है। मैं कभी संतुष्ट क्यों नहीं होती?",
+    "hinglish": "kuch naya kharido toh turant agla chahiye hota hai, main kabhi satisfied kyun nahi hoti?",
+    "author": "Anvi"
+  },
+  "q079": {
+    "theme": "anger_and_desire",
+    "en": "I feel jealous when my friends get placed before me. How do I deal with it?",
+    "hi": "जब मेरे दोस्तों की प्लेसमेंट मुझसे पहले हो जाती है तो मुझे जलन होती है। इससे कैसे निपटूँ?",
+    "hinglish": "jab friends ki placement mujhse pehle ho jaati hai toh jealousy hoti hai, isse kaise deal karun?",
+    "author": "Anvi"
+  },
+  "q080": {
+    "theme": "grief_and_loss",
+    "en": "My grandmother passed away recently and I can't accept that she's gone.",
+    "hi": "हाल ही में मेरी दादी का देहांत हो गया और मैं मान ही नहीं पा रही कि वो अब नहीं हैं।",
+    "hinglish": "haal hi mein dadi chali gayi aur main maan hi nahi pa rahi ki woh ab nahi hain",
+    "author": "Anvi"
+  },
+  "q081": {
+    "theme": "grief_and_loss",
+    "en": "How do I cope with losing someone I love?",
+    "hi": "किसी अपने को खोने के दुख से कैसे उबरूँ?",
+    "hinglish": "kisi apne ko khone ke dukh se kaise ubharun?",
+    "author": "Anvi"
+  },
+  "q082": {
+    "theme": "grief_and_loss",
+    "en": "Is death really the end? What happens to the people we lose?",
+    "hi": "क्या मौत सच में अंत है? जिन्हें हम खो देते हैं उनका क्या होता है?",
+    "hinglish": "kya maut sach mein end hai? jinhe hum kho dete hain unka kya hota hai?",
+    "author": "Anvi"
+  },
+  "q083": {
+    "theme": "self_control",
+    "en": "I can't stop scrolling my phone even when I have deadlines. How do I control myself?",
+    "hi": "डेडलाइन होने पर भी मैं फ़ोन स्क्रॉल करना बंद नहीं कर पाती। खुद पर काबू कैसे रखूँ?",
+    "hinglish": "deadline hone pe bhi phone scroll karna band nahi hota, khud pe control kaise rakhun?",
+    "author": "Anvi"
+  },
+  "q084": {
+    "theme": "self_control",
+    "en": "I procrastinate everything till the last minute. How do I become more disciplined?",
+    "hi": "मैं हर काम आखिरी मिनट तक टालती रहती हूँ। मैं ज़्यादा अनुशासित कैसे बनूँ?",
+    "hinglish": "har kaam last minute tak taalti rehti hoon, disciplined kaise banun?",
+    "author": "Anvi"
+  },
+  "q085": {
+    "theme": "self_control",
+    "en": "My mind keeps wandering whenever I try to focus. How do I train it?",
+    "hi": "जब मैं ध्यान लगाने की कोशिश करती हूँ तो मन भटकता रहता है। इसे कैसे साधूँ?",
+    "hinglish": "focus karne ki koshish karti hoon toh mann idhar udhar bhatakta rehta hai, ise kaise control karun?",
+    "author": "Anvi"
+  },
+  "q086": {
+    "theme": "purpose_and_meaning",
+    "en": "I don't know what I want to do with my life. How do I find my purpose?",
+    "hi": "मुझे नहीं पता कि मैं ज़िंदगी में क्या करना चाहती हूँ। अपना उद्देश्य कैसे खोजूँ?",
+    "hinglish": "mujhe nahi pata life mein kya karna hai, apna purpose kaise dhoondhun?",
+    "author": "Anvi"
+  },
+  "q087": {
+    "theme": "purpose_and_meaning",
+    "en": "Everything feels pointless lately, even things I used to enjoy.",
+    "hi": "आजकल सब कुछ बेमतलब लगता है, वो चीज़ें भी जो पहले अच्छी लगती थीं।",
+    "hinglish": "aajkal sab kuch pointless lagta hai, woh cheezein bhi jo pehle achhi lagti thi",
+    "author": "Anvi"
+  },
+  "q088": {
+    "theme": "purpose_and_meaning",
+    "en": "Who am I really, beyond my marks, my job and what people think of me?",
+    "hi": "मेरे नंबर, नौकरी और लोग मेरे बारे में क्या सोचते हैं, इन सबसे परे मैं असल में कौन हूँ?",
+    "hinglish": "marks, job aur log kya sochte hain, in sab se hatke main asal mein kaun hoon?",
+    "author": "Anvi"
+  },
+  "q089": {
+    "theme": "devotion",
+    "en": "How do I keep my faith when everything is going wrong?",
+    "hi": "जब सब कुछ गलत हो रहा हो तब अपनी आस्था कैसे बनाए रखूँ?",
+    "hinglish": "jab sab kuch galat ho raha ho tab faith kaise banaye rakhun?",
+    "author": "Anvi"
+  },
+  "q090": {
+    "theme": "devotion",
+    "en": "Does praying actually help, or is it just a habit?",
+    "hi": "क्या प्रार्थना करने से सच में कुछ होता है, या यह बस एक आदत है?",
+    "hinglish": "kya pray karne se sach mein kuch hota hai ya bas aadat hai?",
+    "author": "Anvi"
+  },
+  "q091": {
+    "theme": "devotion",
+    "en": "I want to feel connected to God but don't know where to start.",
+    "hi": "मैं भगवान से जुड़ाव महसूस करना चाहती हूँ पर समझ नहीं आता कहाँ से शुरू करूँ।",
+    "hinglish": "bhagwan se connected feel karna chahti hoon par samajh nahi aata kahan se start karun",
+    "author": "Anvi"
+  },
+  "q092": {
+    "theme": "knowledge_and_wisdom",
+    "en": "How do I know if I'm making the right decision when both options seem good?",
+    "hi": "जब दोनों विकल्प अच्छे लगें तो कैसे पता करूँ कि मैं सही फैसला ले रही हूँ?",
+    "hinglish": "jab dono options achhe lagein toh kaise pata karun ki sahi decision le rahi hoon?",
+    "author": "Anvi"
+  },
+  "q093": {
+    "theme": "knowledge_and_wisdom",
+    "en": "What does it actually mean to know yourself?",
+    "hi": "खुद को जानने का असल मतलब क्या है?",
+    "hinglish": "khud ko jaanne ka asal matlab kya hai?",
+    "author": "Anvi"
+  },
+  "q094": {
+    "theme": "knowledge_and_wisdom",
+    "en": "Why do smart people still make bad choices even when they know better?",
+    "hi": "समझदार लोग जानते हुए भी गलत फैसले क्यों ले लेते हैं?",
+    "hinglish": "smart log jaante hue bhi galat decisions kyun le lete hain?",
+    "author": "Anvi"
+  },
+  "q095": {
+    "theme": "equanimity",
+    "en": "How do I stay calm when people criticise my work?",
+    "hi": "जब लोग मेरे काम की आलोचना करें तो शांत कैसे रहूँ?",
+    "hinglish": "jab log mere kaam ko criticise karein toh calm kaise rahun?",
+    "author": "Anvi"
+  },
+  "q096": {
+    "theme": "equanimity",
+    "en": "I feel on top of the world when praised and crushed when criticised. How do I stay balanced?",
+    "hi": "तारीफ़ मिलने पर मैं बहुत खुश हो जाती हूँ और आलोचना पर टूट जाती हूँ। संतुलित कैसे रहूँ?",
+    "hinglish": "tareef milne pe bahut khush ho jaati hoon aur criticism pe toot jaati hoon, balanced kaise rahun?",
+    "author": "Anvi"
+  },
+  "q097": {
+    "theme": "equanimity",
+    "en": "How do I not let one bad day ruin my whole week?",
+    "hi": "एक बुरे दिन को पूरे हफ़्ते को खराब करने से कैसे रोकूँ?",
+    "hinglish": "ek bura din poora hafta kharab na kare iske liye kya karun?",
+    "author": "Anvi"
+  },
+  "q098": {
+    "theme": "relationships",
+    "en": "My best friend and I had a big fight and stopped talking. How should I handle it?",
+    "hi": "मेरी बेस्ट फ्रेंड और मेरी बड़ी लड़ाई हो गई और अब हम बात नहीं करते। मुझे क्या करना चाहिए?",
+    "hinglish": "best friend se badi ladai ho gayi aur ab baat nahi hoti, kya karun?",
+    "author": "Anvi"
+  },
+  "q099": {
+    "theme": "relationships",
+    "en": "How do I deal with someone who keeps hurting me but I still care about?",
+    "hi": "जो इंसान बार-बार मुझे दुख देता है पर फिर भी मुझे उसकी परवाह है, उसके साथ कैसे पेश आऊँ?",
+    "hinglish": "jo insaan baar baar hurt karta hai par phir bhi uski care hai, uske saath kaise deal karun?",
+    "author": "Anvi"
+  },
+  "q100": {
+    "theme": "relationships",
+    "en": "How do I care for my family without getting so attached that their problems overwhelm me?",
+    "hi": "अपने परिवार की परवाह करते हुए इतना मोह कैसे न रखूँ कि उनकी परेशानियाँ मुझ पर हावी हो जाएँ?",
+    "hinglish": "family ki care karte hue itna attached kaise na hoon ki unki problems mujhpe haavi ho jaayein?",
+    "author": "Anvi"
+  }
+}

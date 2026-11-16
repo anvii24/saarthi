@@ -1,5 +1,5 @@
 """
-RAG explanation
+RAG explanation (Person 3: Anvi).
 
 explain() gives the LLM the user's question plus the top retrieved verses and asks
 for a short explanation that uses ONLY those verses, citing [chapter.verse] after
@@ -7,7 +7,7 @@ every claim about a verse. The explanation is written in English so the
 fact-checker can verify it; translate_answer() then converts it to Hindi or
 Hinglish for the user.
 
-Two prompt versions:
+Two prompt versions (kept side by side so the evaluation is reproducible):
   v1  first version. The LLM read Gambhirananda + Prabhupada translations, but the
       fact-checker verifies against the first two English translations (Sivananda +
       Purohit), so faithful sentences could still look "unsupported".
@@ -16,6 +16,8 @@ Two prompt versions:
         - verse sentences: say what ONE verse says, close to its wording, cite it
         - application sentences: relate it to the user's situation, no citation,
           phrased tentatively, never claiming "the Gita says"
+      Verse sentences name the speaker in the third person ("Krishna says...",
+      "Arjuna admits...") so a verse never reads as if the app itself is speaking.
   evaluation/run_rag.py --prompt v1 / v2 compares them.
 
 Safety: if the question suggests serious distress, a fixed support note is added
@@ -29,7 +31,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from generation.llm import ask  # noqa: E402
 
-DEFAULT_PROMPT = "v2"  
+DEFAULT_PROMPT = "v2"  # v2 won the evaluation (see evaluation/results/rag_compare.csv)
 
 CITATION = re.compile(r"\[(\d{1,2}\.\d{1,3})\]")
 
@@ -53,7 +55,10 @@ SYSTEM_V2 = (
     "A) VERSE sentences: say what ONE verse says, staying close to its own wording, and end "
     "with that verse's id in square brackets, like [2.47]. Cite exactly one verse per "
     "sentence. Do not add anything the verse text does not say: no promises, outcomes, "
-    "reasons, or meanings of your own.\n"
+    "reasons, or meanings of your own. Report the verse in the third person and name its "
+    "speaker (shown in brackets before each verse), e.g. 'Krishna says that...' or 'Arjuna "
+    "admits that...'. Never write a verse sentence as 'I', 'me' or 'my', as if you were the "
+    "speaker.\n"
     "B) APPLICATION sentences: gently connect those verses to the person's situation. They "
     "have NO citation, are phrased tentatively ('This might mean...', 'In your situation, "
     "perhaps...'), and never claim that the Gita or a verse says something.\n\n"
@@ -84,13 +89,25 @@ def texts_v1(verse: dict) -> list[str]:
 
 
 def texts_v2(verse: dict) -> list[str]:
+    """Exactly what fact_check.premise_for() checks an English sentence against:
+    the first two English translations of the verse. Keep these two in sync."""
     return [t for k, t in verse["translations"].items() if k.startswith("en_") and t]
 
 
+SPEAKERS = {"श्रीभगवान्": "Krishna", "अर्जुन": "Arjuna", "सञ्जय": "Sanjaya", "धृतराष्ट्र": "Dhritarashtra"}
+
+
 def format_verses(verses: list[dict], version: str = "v1") -> str:
-    """Each verse as '[2.47] translation one / translation two'."""
-    pick = texts_v2 if version == "v2" else texts_v1
-    return "\n".join(f"[{v['id']}] " + " / ".join(pick(v)[:2]) for v in verses)
+    """v1: '[2.47] translation one / translation two'
+    v2: '[2.47] (Krishna speaking) translation one / translation two'"""
+    lines = []
+    for v in verses:
+        texts = " / ".join((texts_v2 if version == "v2" else texts_v1)(v)[:2])
+        speaker = SPEAKERS.get(v.get("speaker", ""), "")
+        if version == "v2" and speaker:
+            texts = f"({speaker} speaking) {texts}"
+        lines.append(f"[{v['id']}] {texts}")
+    return "\n".join(lines)
 
 
 def needs_safety_note(question: str) -> bool:
@@ -99,7 +116,16 @@ def needs_safety_note(question: str) -> bool:
 
 
 def explain(question: str, verses: list[dict], prompt_version: str = DEFAULT_PROMPT) -> dict:
+    """Write an English explanation that uses only the given verses.
 
+    Args:
+        question: the user's question (English version from process_query)
+        verses: top 3-5 verse records (schemas.Verse)
+        prompt_version: "v1" or "v2" (see the top of this file)
+
+    Returns:
+        {"text": str, "citations": ["2.47", ...], "safety_note": str | None}
+    """
     if not verses:
         return {"text": "I couldn't find verses that clearly answer this question.",
                 "citations": [], "safety_note": None}
