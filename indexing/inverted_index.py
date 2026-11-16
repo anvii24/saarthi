@@ -1,5 +1,3 @@
-
-from gettext import translation
 import re
 import json
 from collections import defaultdict
@@ -24,11 +22,19 @@ class InvertedIndex:
         for verse in verses:
             verse_id = verse["id"]
 
+            # Translation zone: every translation in that language, joined together,
+            # so a word used by any translator can match the verse.
             if lang == "en":
-                translation = verse.get("translations", {}).get("en_prabhupada", "")
+                translation = " ".join(
+                    text for key, text in verse.get("translations", {}).items()
+                    if key.startswith("en_") and text
+                )
                 translation_tokens = clean_en(translation)
             elif lang == "hi":
-                translation = verse.get("translations", {}).get("hi_tejomayananda", "")
+                translation = " ".join(
+                    text for key, text in verse.get("translations", {}).items()
+                    if key.startswith("hi_") and text
+                )
                 translation_tokens = clean_hi(translation)
             else:
                 raise ValueError("Language must be 'en' or 'hi'")
