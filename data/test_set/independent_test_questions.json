@@ -1,0 +1,335 @@
+
+{
+  "ind001": {
+    "theme": "action_and_results",
+    "en": "I spend too much time worrying about whether my efforts will pay off. How can I focus on doing the work instead?",
+    "hi": "मैं यह सोचने में बहुत समय बिताती हूँ कि मेरी मेहनत का फल मिलेगा या नहीं। मैं परिणामों की चिंता करने के बजाय अपने काम पर ध्यान कैसे दूँ?",
+    "hinglish": "Main bahut time yeh sochne mein spend karti hoon ki meri efforts ka result milega ya nahi. Main results ki tension lene ke bajaye apne kaam par focus kaise karun?"
+  },
+  "ind002": {
+    "theme": "action_and_results",
+    "en": "When a project does not go as planned, I feel that all my effort was wasted. How should I look at this differently?",
+    "hi": "जब कोई काम योजना के अनुसार नहीं होता, तो मुझे लगता है कि मेरी सारी मेहनत बेकार गई। मैं इसे अलग नज़रिए से कैसे देखूँ?",
+    "hinglish": "Jab koi project plan ke according nahi hota, toh mujhe lagta hai meri saari mehnat waste ho gayi. Main ise different perspective se kaise dekhun?"
+  },
+  "ind003": {
+    "theme": "action_and_results",
+    "en": "I keep postponing important tasks because I am afraid my work will not be good enough. How can I move forward?",
+    "hi": "मैं ज़रूरी काम टालती रहती हूँ क्योंकि मुझे डर है कि मेरा काम अच्छा नहीं होगा। मैं इस डर से आगे कैसे बढ़ूँ?",
+    "hinglish": "Main important tasks postpone karti rehti hoon kyunki mujhe darr hai ki mera work good enough nahi hoga. Main is fear se aage kaise badhun?"
+  },
+  "ind004": {
+    "theme": "action_and_results",
+    "en": "How can I give my best to a task without becoming obsessed with recognition or rewards?",
+    "hi": "मैं प्रशंसा या इनाम की चिंता किए बिना किसी काम में अपना सर्वश्रेष्ठ कैसे दे सकती हूँ?",
+    "hinglish": "Main appreciation ya rewards ki obsession ke bina kisi task mein apna best kaise de sakti hoon?"
+  },
+  "ind005": {
+    "theme": "action_and_results",
+    "en": "I compare my achievements with others and feel discouraged when they accomplish more. How can I focus on my own efforts?",
+    "hi": "मैं अपनी उपलब्धियों की तुलना दूसरों से करती हूँ और जब वे मुझसे अधिक हासिल करते हैं तो निराश हो जाती हूँ। मैं अपनी मेहनत पर ध्यान कैसे दूँ?",
+    "hinglish": "Main apni achievements ko doosron se compare karti hoon aur jab woh mujhse zyada achieve karte hain toh discouraged feel karti hoon. Main apni efforts par focus kaise karun?"
+  },
+  "ind006": {
+    "theme": "anger_and_desire",
+    "en": "I become resentful when I cannot get what I want. How can I deal with this frustration?",
+    "hi": "जब मुझे अपनी मनचाही चीज़ नहीं मिलती, तो मेरे मन में नाराज़गी पैदा होती है। मैं इस निराशा से कैसे निपटूँ?",
+    "hinglish": "Jab mujhe meri desired cheez nahi milti, toh mujhe resentment feel hota hai. Main is frustration se kaise deal karun?"
+  },
+  "ind007": {
+    "theme": "anger_and_desire",
+    "en": "Even after achieving something I wanted, I quickly begin longing for something else. Why does this happen?",
+    "hi": "अपनी मनचाही चीज़ हासिल करने के बाद भी मैं जल्दी ही किसी दूसरी चीज़ की इच्छा करने लगती हूँ। ऐसा क्यों होता है?",
+    "hinglish": "Jo cheez main chahti hoon use achieve karne ke baad bhi main jaldi kisi aur cheez ki desire karne lagti hoon. Aisa kyun hota hai?"
+  },
+  "ind008": {
+    "theme": "anger_and_desire",
+    "en": "I find it hard to forgive people who have treated me unfairly. How can I let go of this resentment?",
+    "hi": "जिन लोगों ने मेरे साथ गलत व्यवहार किया है, उन्हें माफ़ करना मेरे लिए मुश्किल होता है। मैं इस नाराज़गी को कैसे छोड़ूँ?",
+    "hinglish": "Jin logon ne mere saath unfair behave kiya hai, unhe forgive karna mere liye difficult hota hai. Main is resentment ko kaise let go karun?"
+  },
+  "ind009": {
+    "theme": "anger_and_desire",
+    "en": "I often feel irritated when things do not happen according to my expectations. How can I handle this reaction?",
+    "hi": "जब चीज़ें मेरी उम्मीदों के अनुसार नहीं होतीं, तो मुझे अक्सर चिढ़ होती है। मैं अपनी इस प्रतिक्रिया को कैसे संभालूँ?",
+    "hinglish": "Jab cheezein meri expectations ke according nahi hoti, toh mujhe irritate feel hota hai. Main is reaction ko kaise handle karun?"
+  },
+  "ind010": {
+    "theme": "anger_and_desire",
+    "en": "I feel unhappy when someone else receives an opportunity I wanted. How can I overcome this feeling?",
+    "hi": "जब किसी दूसरे व्यक्ति को वह अवसर मिलता है जो मैं चाहती थी, तो मुझे बुरा लगता है। मैं इस भावना से कैसे उबरूँ?",
+    "hinglish": "Jab kisi aur ko woh opportunity milti hai jo main chahti thi, toh mujhe bura lagta hai. Main is feeling ko kaise overcome karun?"
+  },
+  "ind011": {
+    "theme": "devotion",
+    "en": "I feel spiritually disconnected during difficult periods. How can I rebuild a sense of trust and connection?",
+    "hi": "कठिन समय में मुझे आध्यात्मिक रूप से जुड़ाव महसूस नहीं होता। मैं फिर से विश्वास और जुड़ाव कैसे विकसित करूँ?",
+    "hinglish": "Difficult times mein mujhe spiritually disconnected feel hota hai. Main dobara trust aur connection kaise develop karun?"
+  },
+  "ind012": {
+    "theme": "devotion",
+    "en": "I follow religious practices out of habit but rarely reflect on their meaning. How can I make them more sincere?",
+    "hi": "मैं धार्मिक परंपराओं का पालन आदत के कारण करती हूँ, लेकिन उनके अर्थ पर कम ही विचार करती हूँ। मैं अपनी भक्ति को अधिक सच्चा कैसे बनाऊँ?",
+    "hinglish": "Main religious practices habit ke according follow karti hoon, lekin unke meaning ke baare mein rarely sochti hoon. Main apni devotion ko more sincere kaise banaun?"
+  },
+  "ind013": {
+    "theme": "devotion",
+    "en": "When I face uncertainty, I struggle to trust that things will unfold as they should. How can faith help me?",
+    "hi": "जब मैं अनिश्चितता का सामना करती हूँ, तो मुझे विश्वास रखना मुश्किल लगता है कि सब कुछ सही दिशा में होगा। आस्था मेरी कैसे मदद कर सकती है?",
+    "hinglish": "Jab main uncertainty face karti hoon, toh mujhe trust karna difficult lagta hai ki sab kuch sahi direction mein hoga. Faith meri kaise help kar sakti hai?"
+  },
+  "ind014": {
+    "theme": "devotion",
+    "en": "I want to develop a regular spiritual practice, but I struggle to stay consistent. How can I build that discipline?",
+    "hi": "मैं नियमित आध्यात्मिक अभ्यास करना चाहती हूँ, लेकिन निरंतरता बनाए रखना मुश्किल होता है। मैं यह अनुशासन कैसे विकसित करूँ?",
+    "hinglish": "Main regular spiritual practice karna chahti hoon, lekin consistent rehna difficult hota hai. Main yeh discipline kaise develop karun?"
+  },
+  "ind015": {
+    "theme": "devotion",
+    "en": "How can I express gratitude and remember the divine in ordinary moments of daily life?",
+    "hi": "मैं रोज़मर्रा के साधारण पलों में कृतज्ञता कैसे व्यक्त करूँ और ईश्वर को कैसे याद रखूँ?",
+    "hinglish": "Main daily life ke ordinary moments mein gratitude kaise express karun aur divine ko kaise yaad rakhun?"
+  },
+  "ind016": {
+    "theme": "duty",
+    "en": "I have competing responsibilities at home and work. How can I decide which obligation deserves my attention first?",
+    "hi": "घर और काम की मेरी ज़िम्मेदारियाँ एक-दूसरे से टकराती हैं। मैं कैसे तय करूँ कि किस ज़िम्मेदारी को पहले निभाना चाहिए?",
+    "hinglish": "Meri home aur work ki responsibilities ek doosre se conflict karti hain. Main kaise decide karun ki kis responsibility ko pehle fulfil karna chahiye?"
+  },
+  "ind017": {
+    "theme": "duty",
+    "en": "I sometimes avoid speaking up when I know something is wrong because I fear upsetting others. What is the responsible thing to do?",
+    "hi": "जब मुझे पता होता है कि कुछ गलत है, तब भी मैं दूसरों को नाराज़ करने के डर से बोलने से बचती हूँ। मुझे ज़िम्मेदारी से क्या करना चाहिए?",
+    "hinglish": "Jab mujhe pata hota hai ki kuch wrong hai, tab bhi main doosron ko upset karne ke fear se bolne se bachti hoon. Responsible action kya hoga?"
+  },
+  "ind018": {
+    "theme": "duty",
+    "en": "How can I remain committed to a promise when keeping it becomes inconvenient?",
+    "hi": "जब किसी वादे को निभाना मुश्किल या असुविधाजनक हो जाता है, तब मैं उसके प्रति प्रतिबद्ध कैसे रहूँ?",
+    "hinglish": "Jab kisi promise ko keep karna difficult ya inconvenient ho jata hai, toh main uske liye committed kaise rahun?"
+  },
+  "ind019": {
+    "theme": "duty",
+    "en": "I am unsure whether to follow my personal wishes or meet an obligation I have accepted. How should I think about this conflict?",
+    "hi": "मैं समझ नहीं पाती कि अपनी इच्छाओं का पालन करूँ या उस ज़िम्मेदारी को निभाऊँ जिसे मैंने स्वीकार किया है। मुझे इस दुविधा के बारे में कैसे सोचना चाहिए?",
+    "hinglish": "Main confused hoon ki apni wishes follow karun ya woh responsibility fulfil karun jo maine accept ki hai. Is conflict ke baare mein kaise sochun?"
+  },
+  "ind020": {
+    "theme": "duty",
+    "en": "When nobody notices my contribution, I lose motivation to fulfil my responsibilities. How can I stay dedicated?",
+    "hi": "जब कोई मेरे योगदान पर ध्यान नहीं देता, तो अपनी ज़िम्मेदारियाँ निभाने की प्रेरणा कम हो जाती है। मैं समर्पित कैसे रहूँ?",
+    "hinglish": "Jab koi mere contribution ko notice nahi karta, toh responsibilities fulfil karne ki motivation kam ho jaati hai. Main dedicated kaise rahun?"
+  },
+  "ind021": {
+    "theme": "equanimity",
+    "en": "I feel extremely excited after success and deeply disappointed after setbacks. How can I maintain a more balanced outlook?",
+    "hi": "सफलता मिलने पर मैं बहुत उत्साहित हो जाती हूँ और असफलता मिलने पर बहुत निराश। मैं अपने दृष्टिकोण में संतुलन कैसे बनाए रखूँ?",
+    "hinglish": "Success milne par main bahut excited ho jaati hoon aur setbacks aane par deeply disappointed. Main apna outlook balanced kaise rakhun?"
+  },
+  "ind022": {
+    "theme": "equanimity",
+    "en": "My mood changes depending on whether people praise or criticize me. How can I become less dependent on their opinions?",
+    "hi": "लोग मेरी प्रशंसा करते हैं या आलोचना, इसी के अनुसार मेरा मूड बदल जाता है। मैं उनकी राय पर कम निर्भर कैसे बनूँ?",
+    "hinglish": "Log meri praise karte hain ya criticism, uske according mera mood change hota hai. Main unki opinions par less dependent kaise banun?"
+  },
+  "ind023": {
+    "theme": "equanimity",
+    "en": "Unexpected changes often disturb my peace of mind. How can I remain composed when plans change suddenly?",
+    "hi": "अचानक होने वाले बदलाव अक्सर मेरी मानसिक शांति भंग कर देते हैं। योजनाएँ अचानक बदलने पर मैं शांत कैसे रहूँ?",
+    "hinglish": "Unexpected changes meri peace of mind disturb kar dete hain. Jab plans suddenly change hote hain toh main composed kaise rahun?"
+  },
+  "ind024": {
+    "theme": "equanimity",
+    "en": "I let minor inconveniences ruin my entire day. How can I learn to respond without losing my inner balance?",
+    "hi": "छोटी-छोटी परेशानियाँ मेरा पूरा दिन खराब कर देती हैं। मैं अपना आंतरिक संतुलन खोए बिना प्रतिक्रिया देना कैसे सीखूँ?",
+    "hinglish": "Choti-choti inconveniences mera poora din kharab kar deti hain. Main apna inner balance lose kiye bina respond karna kaise seekhun?"
+  },
+  "ind025": {
+    "theme": "equanimity",
+    "en": "When I cannot control a situation, I become emotionally unsettled. How can I accept uncertainty while staying calm?",
+    "hi": "जब मैं किसी परिस्थिति को नियंत्रित नहीं कर पाती, तो भावनात्मक रूप से विचलित हो जाती हूँ। मैं शांत रहते हुए अनिश्चितता को कैसे स्वीकार करूँ?",
+    "hinglish": "Jab main kisi situation ko control nahi kar paati, toh emotionally unsettled ho jaati hoon. Main calm rehkar uncertainty ko kaise accept karun?"
+  },
+  "ind026": {
+    "theme": "fear_and_anxiety",
+    "en": "I feel nervous before important conversations and keep imagining everything that could go wrong. How can I prepare without panicking?",
+    "hi": "महत्वपूर्ण बातचीत से पहले मैं घबरा जाती हूँ और सोचती रहती हूँ कि क्या-क्या गलत हो सकता है। मैं घबराए बिना तैयारी कैसे करूँ?",
+    "hinglish": "Important conversations se pehle main nervous ho jaati hoon aur sochti rehti hoon ki kya-kya wrong ho sakta hai. Main panic kiye bina prepare kaise karun?"
+  },
+  "ind027": {
+    "theme": "fear_and_anxiety",
+    "en": "I avoid trying unfamiliar activities because I worry about embarrassing myself. How can I become more willing to take small risks?",
+    "hi": "मैं नई गतिविधियाँ करने से बचती हूँ क्योंकि मुझे डर है कि कहीं मेरी बेइज्जती न हो जाए। मैं छोटे जोखिम उठाने के लिए खुद को कैसे तैयार करूँ?",
+    "hinglish": "Main unfamiliar activities try karne se bachti hoon kyunki mujhe embarrassment ka fear hota hai. Main small risks lene ke liye khud ko kaise ready karun?"
+  },
+  "ind028": {
+    "theme": "fear_and_anxiety",
+    "en": "Whenever I receive unexpected news, my mind immediately assumes the worst. How can I stop jumping to frightening conclusions?",
+    "hi": "जब भी मुझे कोई अप्रत्याशित खबर मिलती है, तो मेरा मन तुरंत सबसे बुरा सोचने लगता है। मैं डरावने निष्कर्षों पर पहुँचना कैसे बंद करूँ?",
+    "hinglish": "Jab bhi mujhe unexpected news milti hai, mera mind immediately worst assume karta hai. Main frightening conclusions par jump karna kaise band karun?"
+  },
+  "ind029": {
+    "theme": "fear_and_anxiety",
+    "en": "I feel anxious about making choices because I keep thinking I might regret them later. How can I make decisions with greater confidence?",
+    "hi": "मुझे निर्णय लेने में चिंता होती है क्योंकि मैं सोचती रहती हूँ कि शायद बाद में मुझे पछताना पड़े। मैं अधिक आत्मविश्वास से निर्णय कैसे लूँ?",
+    "hinglish": "Mujhe decisions lene mein anxiety hoti hai kyunki main sochti rehti hoon ki shayad baad mein regret hoga. Main more confidence ke saath decisions kaise lun?"
+  },
+  "ind030": {
+    "theme": "fear_and_anxiety",
+    "en": "Even when everything seems fine, I feel that something bad is about to happen. How can I understand and manage this persistent worry?",
+    "hi": "जब सब कुछ ठीक लगता है, तब भी मुझे लगता है कि कुछ बुरा होने वाला है। मैं इस लगातार बनी रहने वाली चिंता को कैसे समझूँ और संभालूँ?",
+    "hinglish": "Jab sab kuch fine lagta hai, tab bhi mujhe feel hota hai ki kuch bad hone wala hai. Main is persistent worry ko kaise understand aur manage karun?"
+  },
+  "ind031": {
+    "theme": "grief_and_loss",
+    "en": "I keep revisiting memories of a close friend who moved away, and I struggle with the emptiness they left behind. How can I adjust to this change?",
+    "hi": "मैं उस करीबी दोस्त की यादों में खोई रहती हूँ जो दूर चला गया है, और उसके जाने से पैदा हुए खालीपन को स्वीकार करना मुश्किल लगता है। मैं इस बदलाव के साथ कैसे तालमेल बिठाऊँ?",
+    "hinglish": "Main us close friend ki memories mein khoi rehti hoon jo door chala gaya hai, aur uske jaane se jo emptiness aayi hai use accept karna difficult lagta hai. Main is change ke saath adjust kaise karun?"
+  },
+  "ind032": {
+    "theme": "grief_and_loss",
+    "en": "A family tradition that meant a lot to me has ended. I feel disconnected from the past and unsure how to move forward.",
+    "hi": "परिवार की एक ऐसी परंपरा समाप्त हो गई है जो मेरे लिए बहुत मायने रखती थी। मुझे अतीत से जुड़ाव टूटता हुआ लगता है और आगे बढ़ना मुश्किल हो रहा है।",
+    "hinglish": "Family ki ek tradition jo mere liye bahut meaningful thi, ab end ho gayi hai. Mujhe past se disconnected feel hota hai aur aage badhna difficult lagta hai."
+  },
+  "ind033": {
+    "theme": "grief_and_loss",
+    "en": "I feel guilty whenever I enjoy myself after losing someone important. Is it possible to move forward without forgetting them?",
+    "hi": "किसी महत्वपूर्ण व्यक्ति को खोने के बाद जब भी मैं खुश होती हूँ, तो मुझे अपराधबोध होता है। क्या उन्हें भूले बिना आगे बढ़ना संभव है?",
+    "hinglish": "Kisi important person ko lose karne ke baad jab bhi main enjoy karti hoon, toh mujhe guilty feel hota hai. Kya unhe bhule bina aage badhna possible hai?"
+  },
+  "ind034": {
+    "theme": "grief_and_loss",
+    "en": "My childhood home is being sold, and I feel as though a part of my identity is disappearing. How can I cope with this loss?",
+    "hi": "मेरा बचपन का घर बेचा जा रहा है और मुझे लगता है जैसे मेरी पहचान का एक हिस्सा खो रहा है। मैं इस नुकसान का सामना कैसे करूँ?",
+    "hinglish": "Mera childhood home sell ho raha hai aur mujhe lagta hai jaise meri identity ka ek part disappear ho raha hai. Main is loss ko kaise cope karun?"
+  },
+  "ind035": {
+    "theme": "grief_and_loss",
+    "en": "I find it difficult to accept that a long friendship has ended. How can I make peace with a relationship that cannot be restored?",
+    "hi": "एक पुरानी दोस्ती समाप्त हो गई है और इसे स्वीकार करना मेरे लिए कठिन है। जिस रिश्ते को वापस नहीं लाया जा सकता, उसके साथ मैं मन की शांति कैसे पाऊँ?",
+    "hinglish": "Ek long friendship end ho gayi hai aur ise accept karna mere liye difficult hai. Jo relationship wapas nahi aa sakta, uske saath main peace kaise find karun?"
+  },
+  "ind036": {
+    "theme": "knowledge_and_wisdom",
+    "en": "I often accept advice without examining whether it makes sense. How can I develop the habit of thinking critically?",
+    "hi": "मैं अक्सर यह जाँचे बिना सलाह मान लेती हूँ कि वह तर्कसंगत है या नहीं। मैं आलोचनात्मक ढंग से सोचने की आदत कैसे विकसित करूँ?",
+    "hinglish": "Main aksar advice ko examine kiye bina accept kar leti hoon ki woh logical hai ya nahi. Main critically think karne ki habit kaise develop karun?"
+  },
+  "ind037": {
+    "theme": "knowledge_and_wisdom",
+    "en": "I know many things intellectually, but I struggle to apply what I learn in real situations. How can I turn knowledge into understanding?",
+    "hi": "मुझे बौद्धिक रूप से बहुत कुछ पता है, लेकिन वास्तविक परिस्थितियों में सीखी हुई बातों को लागू करना मुश्किल लगता है। मैं ज्ञान को समझ में कैसे बदलूँ?",
+    "hinglish": "Mujhe intellectually bahut kuch pata hai, lekin real situations mein learned things apply karna difficult lagta hai. Main knowledge ko understanding mein kaise convert karun?"
+  },
+  "ind038": {
+    "theme": "knowledge_and_wisdom",
+    "en": "How can I distinguish between what I genuinely know and what I merely assume to be true?",
+    "hi": "मैं वास्तव में जो जानती हूँ और जिसे केवल सच मान लेती हूँ, उनके बीच अंतर कैसे पहचानूँ?",
+    "hinglish": "Main jo genuinely jaanti hoon aur jo sirf true assume karti hoon, unke beech difference kaise identify karun?"
+  },
+  "ind039": {
+    "theme": "knowledge_and_wisdom",
+    "en": "I become defensive whenever someone questions my beliefs. How can I stay open to ideas that challenge what I think?",
+    "hi": "जब कोई मेरे विश्वासों पर सवाल उठाता है, तो मैं रक्षात्मक हो जाती हूँ। मैं अपने विचारों को चुनौती देने वाले नए दृष्टिकोणों के लिए खुली कैसे रहूँ?",
+    "hinglish": "Jab koi mere beliefs par question karta hai, toh main defensive ho jaati hoon. Main apne thoughts ko challenge karne wale new perspectives ke liye open kaise rahun?"
+  },
+  "ind040": {
+    "theme": "knowledge_and_wisdom",
+    "en": "When I face a complicated problem, I focus on immediate details and miss the bigger picture. How can I develop better judgment?",
+    "hi": "जब मैं किसी जटिल समस्या का सामना करती हूँ, तो मैं छोटी-छोटी बातों पर ध्यान देती हूँ और व्यापक दृष्टिकोण चूक जाती हूँ। मैं बेहतर विवेक कैसे विकसित करूँ?",
+    "hinglish": "Jab main kisi complex problem ko face karti hoon, toh main immediate details par focus karti hoon aur bigger picture miss kar deti hoon. Main better judgment kaise develop karun?"
+  },
+
+  "ind041": {
+    "theme": "purpose_and_meaning",
+    "en": "I have a comfortable life, yet I feel that something important is missing. How can I discover what gives my life meaning?",
+    "hi": "मेरे पास एक आरामदायक जीवन है, फिर भी मुझे लगता है कि कुछ महत्वपूर्ण कमी है। मैं कैसे जानूँ कि मेरे जीवन को क्या अर्थ देता है?",
+    "hinglish": "Meri life comfortable hai, phir bhi mujhe lagta hai ki kuch important missing hai. Main kaise discover karun ki meri life ko kya meaning deta hai?"
+  },
+  "ind042": {
+    "theme": "purpose_and_meaning",
+    "en": "I feel pressured to choose a career that impresses others, even though I am unsure whether it suits me. How can I find my own direction?",
+    "hi": "मुझे ऐसा करियर चुनने का दबाव महसूस होता है जो दूसरों को प्रभावित करे, भले ही मुझे पता न हो कि वह मेरे लिए सही है या नहीं। मैं अपनी दिशा कैसे खोजूँ?",
+    "hinglish": "Mujhe aisa career choose karne ka pressure feel hota hai jo doosron ko impress kare, even though mujhe nahi pata ki woh mere liye right hai ya nahi. Main apni direction kaise find karun?"
+  },
+  "ind043": {
+    "theme": "purpose_and_meaning",
+    "en": "I keep changing my goals because I am unsure what I truly want from life. How can I identify what matters most to me?",
+    "hi": "मैं अपने लक्ष्य बार-बार बदलती रहती हूँ क्योंकि मुझे समझ नहीं आता कि मैं जीवन से वास्तव में क्या चाहती हूँ। मैं अपने लिए सबसे महत्वपूर्ण चीज़ कैसे पहचानूँ?",
+    "hinglish": "Main apne goals baar-baar change karti rehti hoon kyunki mujhe samajh nahi aata ki main life se actually kya chahti hoon. Main apne liye sabse important cheez kaise identify karun?"
+  },
+  "ind044": {
+    "theme": "purpose_and_meaning",
+    "en": "I feel that my daily routine has become repetitive and disconnected from anything meaningful. How can I bring a stronger sense of purpose into my days?",
+    "hi": "मुझे लगता है कि मेरी रोज़मर्रा की दिनचर्या दोहराव भरी हो गई है और उसका किसी सार्थक चीज़ से जुड़ाव नहीं रहा। मैं अपने दिनों में उद्देश्य की भावना कैसे लाऊँ?",
+    "hinglish": "Mujhe lagta hai meri daily routine repetitive ho gayi hai aur kisi meaningful cheez se connected nahi hai. Main apne days mein purpose ka sense kaise laun?"
+  },
+  "ind045": {
+    "theme": "purpose_and_meaning",
+    "en": "When I think about the future, I struggle to understand what kind of person I want to become. How can I develop a clearer sense of direction?",
+    "hi": "जब मैं भविष्य के बारे में सोचती हूँ, तो मुझे समझ नहीं आता कि मैं किस तरह का व्यक्ति बनना चाहती हूँ। मैं अपने जीवन की दिशा कैसे स्पष्ट करूँ?",
+    "hinglish": "Jab main future ke baare mein sochti hoon, toh mujhe samajh nahi aata ki main kis type ka person banna chahti hoon. Main apni life ki direction kaise clear karun?"
+  },
+  "ind046": {
+    "theme": "relationships",
+    "en": "I find it difficult to tell close friends when their behaviour hurts me. How can I communicate honestly without damaging the friendship?",
+    "hi": "जब करीबी दोस्तों का व्यवहार मुझे दुख पहुँचाता है, तो उन्हें बताना मेरे लिए मुश्किल होता है। मैं दोस्ती खराब किए बिना ईमानदारी से अपनी बात कैसे कहूँ?",
+    "hinglish": "Jab close friends ka behaviour mujhe hurt karta hai, toh unhe batana difficult hota hai. Main friendship damage kiye bina honestly apni baat kaise communicate karun?"
+  },
+  "ind047": {
+    "theme": "relationships",
+    "en": "My family expects me to agree with their choices, but I have different opinions. How can I maintain respect while expressing my independence?",
+    "hi": "मेरा परिवार चाहता है कि मैं उनके फैसलों से सहमत रहूँ, लेकिन मेरी राय अलग है। मैं सम्मान बनाए रखते हुए अपनी स्वतंत्रता कैसे व्यक्त करूँ?",
+    "hinglish": "Meri family expect karti hai ki main unke choices se agree karun, lekin meri opinions different hain. Main respect maintain karte hue apni independence kaise express karun?"
+  },
+  "ind048": {
+    "theme": "relationships",
+    "en": "I often misunderstand people's intentions and assume they are upset with me. How can I build more trust in my relationships?",
+    "hi": "मैं अक्सर लोगों के इरादों को गलत समझ लेती हूँ और मान लेती हूँ कि वे मुझसे नाराज़ हैं। मैं अपने रिश्तों में अधिक विश्वास कैसे विकसित करूँ?",
+    "hinglish": "Main aksar logon ke intentions misunderstand kar leti hoon aur assume karti hoon ki woh mujhse upset hain. Main apne relationships mein more trust kaise develop karun?"
+  },
+  "ind049": {
+    "theme": "relationships",
+    "en": "I spend so much time trying to meet everyone's expectations that I neglect my own needs. How can I create healthier boundaries?",
+    "hi": "मैं सबकी उम्मीदों पर खरा उतरने में इतना समय बिताती हूँ कि अपनी ज़रूरतों को नज़रअंदाज़ कर देती हूँ। मैं स्वस्थ सीमाएँ कैसे तय करूँ?",
+    "hinglish": "Main sabki expectations meet karne mein itna time spend karti hoon ki apni needs neglect kar deti hoon. Main healthier boundaries kaise set karun?"
+  },
+  "ind050": {
+    "theme": "relationships",
+    "en": "When two people I care about disagree, I feel pressured to take sides. How can I support both without becoming part of their conflict?",
+    "hi": "जब मेरे दो करीबी लोग असहमत होते हैं, तो मुझे किसी एक का पक्ष लेने का दबाव महसूस होता है। मैं उनके विवाद का हिस्सा बने बिना दोनों का साथ कैसे दूँ?",
+    "hinglish": "Jab mere do close log disagree karte hain, toh mujhe kisi ek side ko choose karne ka pressure feel hota hai. Main unke conflict ka part bane bina dono ko support kaise karun?"
+  },
+  "ind051": {
+    "theme": "self_control",
+    "en": "I reach for my phone whenever I have a free moment, even when I intended to do something useful. How can I break this habit?",
+    "hi": "जब भी मुझे थोड़ा खाली समय मिलता है, मैं फोन देखने लगती हूँ, भले ही मैंने कुछ उपयोगी करने का सोचा हो। मैं इस आदत को कैसे बदलूँ?",
+    "hinglish": "Jab bhi mujhe free time milta hai, main phone use karne lagti hoon, even when maine kuch productive karne ka plan banaya hota hai. Main yeh habit kaise break karun?"
+  },
+  "ind052": {
+    "theme": "self_control",
+    "en": "I make detailed schedules but abandon them after a few days. How can I become more consistent with my routines?",
+    "hi": "मैं विस्तृत समय-सारणी बनाती हूँ, लेकिन कुछ दिनों बाद उसका पालन करना छोड़ देती हूँ। मैं अपनी दिनचर्या में निरंतरता कैसे लाऊँ?",
+    "hinglish": "Main detailed schedules banati hoon, lekin kuch days baad unhe follow karna chhod deti hoon. Main apni routine mein consistency kaise laun?"
+  },
+  "ind053": {
+    "theme": "self_control",
+    "en": "I often interrupt my work to check messages, even when they are not urgent. How can I train myself to stay focused?",
+    "hi": "मैं अक्सर काम के बीच संदेश देखने लगती हूँ, जबकि वे ज़रूरी भी नहीं होते। मैं अपना ध्यान बनाए रखने का अभ्यास कैसे करूँ?",
+    "hinglish": "Main aksar work ke beech messages check karne lagti hoon, even when woh urgent nahi hote. Main focused rehne ki practice kaise karun?"
+  },
+  "ind054": {
+    "theme": "self_control",
+    "en": "I know I should stop eating when I am full, but I continue because the food is enjoyable. How can I become more mindful of my impulses?",
+    "hi": "मुझे पता होता है कि पेट भर गया है, फिर भी स्वाद अच्छा लगने के कारण मैं खाना जारी रखती हूँ। मैं अपने आवेगों के प्रति अधिक सजग कैसे बनूँ?",
+    "hinglish": "Mujhe pata hota hai ki main full ho chuki hoon, phir bhi food tasty lagne ki wajah se khati rehti hoon. Main apne impulses ke prati more mindful kaise banun?"
+  },
+  "ind055": {
+    "theme": "self_control",
+    "en": "I give up on learning difficult skills when progress feels slow. How can I develop the patience to keep practising?",
+    "hi": "जब किसी कठिन कौशल को सीखने में प्रगति धीमी होती है, तो मैं प्रयास छोड़ देती हूँ। मैं अभ्यास जारी रखने का धैर्य कैसे विकसित करूँ?",
+    "hinglish": "Jab difficult skills seekhne mein progress slow hoti hai, toh main try karna chhod deti hoon. Main practice continue karne ka patience kaise develop karun?"
+  }
+}
+

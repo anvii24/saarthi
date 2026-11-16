@@ -1,0 +1,130 @@
+
+import csv
+import json
+import math
+import os
+
+from preprocessing.clean_en import clean_en
+from retrieval.bm25 import search_bm25
+
+
+QUESTIONS_PATH = "data/test_set/questions_tuning.json"
+QRELS_PATH = "data/test_set/qrels_tuning.json"
+OUTPUT_PATH = "evaluation/results/bm25_tuning.csv"
+
+K = 20
+
+# Parameter combinations to compare
+K1_VALUES = [0.8, 1.2, 1.5, 1.8, 2.0]
+B_VALUES = [0.25, 0.5, 0.75, 1.0]
+
+
+def ndcg_at_k(ranked_ids, grades, k=20):
+    """Calculate nDCG@k using graded relevance labels."""
+
+    dcg = 0.0
+
+    for rank, verse_id in enumerate(ranked_ids[:k], start=1):
+        relevance = grades.get(verse_id, 0)
+        gain = (2 ** relevance) - 1
+        dcg += gain / math.log2(rank + 1)
+
+    ideal_grades = sorted(grades.values(), reverse=True)[:k]
+
+    idcg = 0.0
+    for rank, relevance in enumerate(ideal_grades, start=1):
+        gain = (2 ** relevance) - 1
+        idcg += gain / math.log2(rank + 1)
+
+    return dcg / idcg if idcg else 0.0
+
+
+def main():
+    with open(QUESTIONS_PATH, encoding="utf-8") as f:
+        questions = json.load(f)
+
+    with open(QRELS_PATH, encoding="utf-8") as f:
+        qrels = json.load(f)
+
+    question_ids = sorted(set(questions) & set(qrels))
+
+    if len(question_ids) != 20:
+        raise ValueError(
+            f"Expected 20 labelled tuning questions, found {len(question_ids)}"
+        )
+
+    results = []
+
+    total = len(K1_VALUES) * len(B_VALUES)
+    experiment = 0
+
+    for k1 in K1_VALUES:
+        for b in B_VALUES:
+            experiment += 1
+            scores = []
+            empty_results = 0
+
+            for qid in question_ids:
+                query = questions[qid]["en"]
+                tokens = clean_en(query)
+
+                ranked = search_bm25(
+                    tokens,
+                    k=K,
+                    lang="en",
+                    zone="translation",
+                    k1=k1,
+                    b=b,
+                )
+
+                ranked_ids = [result["id"] for result in ranked]
+
+                if not ranked_ids:
+                    empty_results += 1
+
+                scores.append(
+                    ndcg_at_k(ranked_ids, qrels[qid], K)
+                )
+
+            average_score = sum(scores) / len(scores)
+
+            results.append({
+                "k1": k1,
+                "b": b,
+                "nDCG@20": round(average_score, 6),
+                "questions": len(scores),
+                "empty_results": empty_results,
+            })
+
+            print(
+                f"[{experiment}/{total}] "
+                f"k1={k1}, b={b}, "
+                f"nDCG@20={average_score:.4f}, "
+                f"empty={empty_results}"
+            )
+
+    results.sort(
+        key=lambda row: (-row["nDCG@20"], row["k1"], row["b"])
+    )
+
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+
+    with open(OUTPUT_PATH, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=results[0].keys())
+        writer.writeheader()
+        writer.writerows(results)
+
+    print("\nTop 5 BM25 configurations:")
+
+    for result in results[:5]:
+        print(
+            f"k1={result['k1']}, "
+            f"b={result['b']}, "
+            f"nDCG@20={result['nDCG@20']:.4f}"
+        )
+
+    print(f"\nFull results saved to {OUTPUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()
