@@ -10,6 +10,11 @@ cited verse.
 Model: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
 (multilingual, about 1.1 GB, downloaded once on first use; needs `sentencepiece`).
 
+The premise starts with who speaks the verse ("Arjuna says: ..."), taken from the
+source data. Answers report verses in the third person ("Arjuna admits that ..."),
+and without the speaker in the premise the checker could not confirm the name and
+rejected faithful sentences.
+
 Pipeline order: explain in English -> verify -> translate for the user.
 Sentences with no citation (e.g. a short intro) get supported = None: they are
 not claims about a verse, so they are neither ticked nor removed.
@@ -56,13 +61,22 @@ def entailment_prob(premise: str, hypothesis: str) -> float:
     return float(probs[labels["entailment"]])
 
 
+SPEAKERS = {"श्रीभगवान्": "Krishna", "अर्जुन": "Arjuna", "सञ्जय": "Sanjaya", "धृतराष्ट्र": "Dhritarashtra"}
+
+
 def premise_for(verse: dict, sentence: str) -> str:
-    """The verse text to check against, in the same script as the sentence (two translations)."""
-    prefix = "hi_" if DEVANAGARI.search(sentence) else "en_"
+    """The verse text to check against, in the same script as the sentence (two translations),
+    starting with who speaks it, e.g. "Arjuna says: My mind is confused about duty ..."."""
+    hindi = bool(DEVANAGARI.search(sentence))
+    prefix = "hi_" if hindi else "en_"
     texts = [t for k, t in verse.get("translations", {}).items() if k.startswith(prefix) and t]
     if not texts:  # fall back to any translation
         texts = [t for t in verse.get("translations", {}).values() if t]
-    return " ".join(texts[:2])
+    text = " ".join(texts[:2])
+    speaker = verse.get("speaker", "")
+    if speaker in SPEAKERS:
+        text = (f"{speaker} ने कहा: " if hindi else f"{SPEAKERS[speaker]} says: ") + text
+    return text
 
 
 def verify(explanation: str, verses: list[dict], threshold: float = THRESHOLD) -> list[dict]:

@@ -1,0 +1,2088 @@
+[
+  {
+    "id": "q067",
+    "question": "I studied really hard for my midsems but still got a bad grade. How do I stop feeling like a failure?",
+    "retrieved": [
+      "2.48",
+      "12.10",
+      "6.5",
+      "2.39",
+      "2.49"
+    ],
+    "answer": "Krishna says that one should perform actions while remaining balanced in both success and failure, as evenness of mind is called Yoga [2.48]. Krishna states that those who work only for the sake of a reward are considered petty-minded [2.49]. Krishna explains that one should raise oneself by one's own self and never disgrace that self [6.5]. Perhaps you could consider that your worth is not defined by a single grade, but by the effort you put into your studies. It might be helpful to focus on the act of learning itself rather than the outcome, as this could help you feel less burdened by the result. You might also find peace in remembering that you are your own best friend, and treating yourself with kindness is a way to honor that relationship.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform actions while remaining balanced in both success and failure, as evenness of mind is called Yoga [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that those who work only for the sake of a reward are considered petty-minded [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one should raise oneself by one's own self and never disgrace that self [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.977,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could consider that your worth is not defined by a single grade, but by the effort you put into your studies.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be helpful to focus on the act of learning itself rather than the outcome, as this could help you feel less burdened by the result.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might also find peace in remembering that you are your own best friend, and treating yourself with kindness is a way to honor that relationship.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q068",
+    "question": "I keep refreshing my email waiting for internship results. How do I stop obsessing over outcomes I can't control?",
+    "retrieved": [
+      "2.47",
+      "12.12",
+      "18.57",
+      "2.49",
+      "12.9"
+    ],
+    "answer": "Krishna says that one has the right to work only, but never to the fruits of that work [2.47]. Krishna explains that those who work for the sake of a reward are considered petty-minded [2.49]. Krishna notes that peace follows immediately when one renounces the fruits of their actions [12.12]. Krishna suggests that if one cannot fix their mind steadily on a higher goal, they might seek to reach it through the yoga of constant practice [12.9]. Perhaps this means you could try focusing your energy entirely on the quality of your applications rather than the eventual notification. In your situation, it might be helpful to gently redirect your attention to your daily tasks whenever the urge to check your inbox arises. This could be a way to find a little more peace while you wait for the news.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one has the right to work only, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.977,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that those who work for the sake of a reward are considered petty-minded [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna notes that peace follows immediately when one renounces the fruits of their actions [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that if one cannot fix their mind steadily on a higher goal, they might seek to reach it through the yoga of constant practice [12.9].",
+        "verse_ids": [
+          "12.9"
+        ],
+        "score": 0.99,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means you could try focusing your energy entirely on the quality of your applications rather than the eventual notification.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to gently redirect your attention to your daily tasks whenever the urge to check your inbox arises.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This could be a way to find a little more peace while you wait for the news.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q069",
+    "question": "Why should I put in effort if the result isn't even in my hands?",
+    "retrieved": [
+      "2.47",
+      "3.19",
+      "4.14",
+      "18.6",
+      "12.11"
+    ],
+    "answer": "Krishna says that one has the right to work only, but never to the fruits of that work [2.47]. Krishna explains that one should perform the actions that ought to be done without attachment to the results [3.19]. Krishna further states that actions should be performed while leaving aside the desire for rewards [18.6]. This might mean that you could focus your energy on the process of your task rather than the outcome. In your situation, perhaps finding satisfaction in the effort itself could help you feel more at ease.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one has the right to work only, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.977,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one should perform the actions that ought to be done without attachment to the results [3.19].",
+        "verse_ids": [
+          "3.19"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna further states that actions should be performed while leaving aside the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.964,
+        "supported": true
+      },
+      {
+        "sentence": "This might mean that you could focus your energy on the process of your task rather than the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, perhaps finding satisfaction in the effort itself could help you feel more at ease.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q070",
+    "question": "I got rejected from my dream company after five rounds of interviews. Was all that work for nothing?",
+    "retrieved": [
+      "2.48",
+      "2.47",
+      "4.14",
+      "3.22",
+      "2.49"
+    ],
+    "answer": "Krishna says that one has the right to work, but no right to the fruits thereof, and one should not let the fruit of action be the motive [2.47]. Krishna explains that he himself is persistently active even though there is nothing in the universe he is compelled to do or anything for him to attain [3.22]. Krishna states that one should perform actions being steadfast in Yoga, abandoning attachment and remaining balanced in success and failure [2.48]. Krishna notes that it is only the petty-minded who work for reward [2.49].\n\nIn your situation, perhaps the effort you put into those interviews holds value in itself, regardless of the outcome. This might mean that finding satisfaction in the process of working, rather than the result, could help ease the disappointment you are feeling. It could be helpful to consider that your worth is not defined by the success or failure of this specific goal.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one has the right to work, but no right to the fruits thereof, and one should not let the fruit of action be the motive [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that he himself is persistently active even though there is nothing in the universe he is compelled to do or anything for him to attain [3.22].",
+        "verse_ids": [
+          "3.22"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that one should perform actions being steadfast in Yoga, abandoning attachment and remaining balanced in success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.953,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna notes that it is only the petty-minded who work for reward [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps the effort you put into those interviews holds value in itself, regardless of the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding satisfaction in the process of working, rather than the result, could help ease the disappointment you are feeling.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to consider that your worth is not defined by the success or failure of this specific goal.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q071",
+    "question": "My parents want me to join the family business but I want to do something of my own. What is my real duty here?",
+    "retrieved": [
+      "2.47",
+      "18.6",
+      "3.8",
+      "18.47",
+      "18.60"
+    ],
+    "answer": "Krishna says that it is better to perform one's own duty, even if it seems imperfect, rather than following the duty of another person [18.47]. Krishna explains that one should perform their bounden duty because action is superior to remaining inactive [3.8]. Krishna states that one has the right to work, but never to the fruits of that work [2.47]. Krishna also says that actions should be performed while leaving aside attachment and the desire for rewards [18.6]. Perhaps you could reflect on whether your desire to start something of your own aligns with your inner nature or if it is a reaction to external expectations. This might mean that finding clarity about your own path is more important than focusing on the outcome of your decision. In your situation, it could be helpful to consider which path allows you to act with the most dedication and the least attachment to the results.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that it is better to perform one's own duty, even if it seems imperfect, rather than following the duty of another person [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one should perform their bounden duty because action is superior to remaining inactive [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that one has the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.984,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also says that actions should be performed while leaving aside attachment and the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.991,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could reflect on whether your desire to start something of your own aligns with your inner nature or if it is a reaction to external expectations.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding clarity about your own path is more important than focusing on the outcome of your decision.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to consider which path allows you to act with the most dedication and the least attachment to the results.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q072",
+    "question": "I hate my job but people at home depend on my salary. Should I keep doing it?",
+    "retrieved": [
+      "3.8",
+      "2.47",
+      "18.47",
+      "18.6",
+      "12.10"
+    ],
+    "answer": "Krishna says that one should perform their bounden duty, as action is superior to inaction and even the maintenance of the body would be impossible without it [3.8]. Krishna states that one has the right to work only, but never to the fruits of that work [2.47]. Krishna explains that it is better to perform one's own duty, even if it seems defective, rather than following the duty of another [18.47]. Krishna also notes that actions should be performed with detachment and without a desire for rewards [18.6]. In your situation, perhaps you could focus on the act of working itself as a way to support your family, rather than dwelling on your feelings about the job. This might mean finding a way to detach your sense of self from the daily frustrations of your tasks. It could also be helpful to view your professional responsibilities as a service you are providing for those who depend on you.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform their bounden duty, as action is superior to inaction and even the maintenance of the body would be impossible without it [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that one has the right to work only, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that it is better to perform one's own duty, even if it seems defective, rather than following the duty of another [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that actions should be performed with detachment and without a desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could focus on the act of working itself as a way to support your family, rather than dwelling on your feelings about the job.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean finding a way to detach your sense of self from the daily frustrations of your tasks.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could also be helpful to view your professional responsibilities as a service you are providing for those who depend on you.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q073",
+    "question": "Is it okay to do work that suits someone else better just because it pays more?",
+    "retrieved": [
+      "18.47",
+      "3.35",
+      "2.47",
+      "3.8",
+      "2.49"
+    ],
+    "answer": "Krishna says that it is better to perform one's own duty, even if it is defective, than to perform the duty of another well [18.47]. Krishna states that the duty of another is fraught with danger [3.35]. Krishna explains that one has the right to work, but never to the fruits of that work [2.47]. Krishna notes that those who work for reward are considered petty-minded [2.49].\n\nIn your situation, perhaps you could reflect on whether your choice of work aligns with your natural inclinations or if it is driven primarily by the potential for gain. This might mean considering if the long-term satisfaction of following your own path outweighs the immediate appeal of a higher salary. It could be helpful to look at how your daily tasks contribute to your sense of purpose rather than just your bank account.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that it is better to perform one's own duty, even if it is defective, than to perform the duty of another well [18.47].",
+        "verse_ids": [
+          "18.47"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the duty of another is fraught with danger [3.35].",
+        "verse_ids": [
+          "3.35"
+        ],
+        "score": 0.966,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one has the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna notes that those who work for reward are considered petty-minded [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could reflect on whether your choice of work aligns with your natural inclinations or if it is driven primarily by the potential for gain.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean considering if the long-term satisfaction of following your own path outweighs the immediate appeal of a higher salary.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to look at how your daily tasks contribute to your sense of purpose rather than just your bank account.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q074",
+    "question": "I panic before every presentation and my mind goes blank. How do I calm down?",
+    "retrieved": [
+      "6.25",
+      "17.16",
+      "2.66",
+      "5.27",
+      "12.12"
+    ],
+    "answer": "Krishna says that one should attain peace little by little by using a firm intellect to keep the mind focused on the Self without thinking of anything else [6.25]. Krishna explains that serenity, kindness, silence, self-control, and purity are considered the austerity of the mind [17.16]. Krishna states that without concentration there is no meditation, and without meditation there is no peace [2.66]. Krishna also mentions that peace follows when one renounces the fruits of their actions [12.12]. Perhaps focusing on these qualities of mental discipline could help you find a sense of steadiness before you speak. It might be useful to consider if letting go of the outcome of your presentation could help you feel more at ease. In your situation, practicing a quiet, focused mind might eventually lead to the calm you are looking for.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should attain peace little by little by using a firm intellect to keep the mind focused on the Self without thinking of anything else [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that serenity, kindness, silence, self-control, and purity are considered the austerity of the mind [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that without concentration there is no meditation, and without meditation there is no peace [2.66].",
+        "verse_ids": [
+          "2.66"
+        ],
+        "score": 0.967,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also mentions that peace follows when one renounces the fruits of their actions [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps focusing on these qualities of mental discipline could help you find a sense of steadiness before you speak.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be useful to consider if letting go of the outcome of your presentation could help you feel more at ease.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, practicing a quiet, focused mind might eventually lead to the calm you are looking for.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q075",
+    "question": "I'm scared about what happens after college. What if I don't get a job?",
+    "retrieved": [
+      "2.47",
+      "3.8",
+      "2.48",
+      "4.14",
+      "18.66"
+    ],
+    "answer": "Krishna says that one has the right to work, but never to the fruits of that work [2.47]. Krishna advises that one should perform their prescribed duty, as action is superior to inaction [3.8]. Krishna explains that one should perform actions while remaining balanced in both success and failure [2.48]. Perhaps focusing on the effort you put into your studies today could help ease the pressure of worrying about the outcome. This might mean that finding a sense of steadiness in your daily tasks could make the uncertainty of the future feel a little less heavy. You might consider that your value is found in the work you do now, rather than in the specific results that may or may not follow.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one has the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.983,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna advises that one should perform their prescribed duty, as action is superior to inaction [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one should perform actions while remaining balanced in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps focusing on the effort you put into your studies today could help ease the pressure of worrying about the outcome.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that finding a sense of steadiness in your daily tasks could make the uncertainty of the future feel a little less heavy.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might consider that your value is found in the work you do now, rather than in the specific results that may or may not follow.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q076",
+    "question": "I overthink everything at night and can't sleep. How do I quiet my mind?",
+    "retrieved": [
+      "6.25",
+      "12.12",
+      "17.16",
+      "5.27",
+      "6.13"
+    ],
+    "answer": "Krishna says that one should attain quietude little by little by holding the intellect firmly and fixing the mind on the Self so as not to think of anything else [6.25]. Krishna explains that mental austerity consists of serenity of mind, kindness, silence, self-control, and purity [17.16]. Krishna also suggests that one may hold the body, head, and neck erect and motionless, gazing fixedly without looking around [6.13]. Perhaps you could try focusing on your breathing or finding a steady, still posture when you feel your thoughts racing at night. This might mean that gently guiding your attention toward a sense of inner stillness, rather than trying to force your mind to stop, could help you find some rest. You might also consider if letting go of the need to achieve a specific result from your day helps you reach a more peaceful state before sleep.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should attain quietude little by little by holding the intellect firmly and fixing the mind on the Self so as not to think of anything else [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that mental austerity consists of serenity of mind, kindness, silence, self-control, and purity [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also suggests that one may hold the body, head, and neck erect and motionless, gazing fixedly without looking around [6.13].",
+        "verse_ids": [
+          "6.13"
+        ],
+        "score": 0.697,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could try focusing on your breathing or finding a steady, still posture when you feel your thoughts racing at night.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that gently guiding your attention toward a sense of inner stillness, rather than trying to force your mind to stop, could help you find some rest.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might also consider if letting go of the need to achieve a specific result from your day helps you reach a more peaceful state before sleep.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q077",
+    "question": "I lose my temper with my family over small things and regret it later. How do I control my anger?",
+    "retrieved": [
+      "3.34",
+      "6.25",
+      "18.51",
+      "6.34",
+      "3.33"
+    ],
+    "answer": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34]. Arjuna admits that the mind is fickle, turbulent, and as difficult to control as the wind [6.34]. Krishna suggests that one may attain peace little by little by using reason controlled by fortitude to fix the mind in the Self [6.25]. Krishna also notes that even a wise person acts in accordance with their own nature [3.33]. Perhaps you could view your moments of frustration as a natural part of the human experience that you are learning to navigate. This might mean that instead of expecting immediate perfection, you could gently practice returning your focus to a calm center whenever you feel your temper rising. In your situation, it could be helpful to remember that steady, small steps in self-control are a valid way to move forward.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Arjuna admits that the mind is fickle, turbulent, and as difficult to control as the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.991,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that one may attain peace little by little by using reason controlled by fortitude to fix the mind in the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.989,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that even a wise person acts in accordance with their own nature [3.33].",
+        "verse_ids": [
+          "3.33"
+        ],
+        "score": 0.698,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your moments of frustration as a natural part of the human experience that you are learning to navigate.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that instead of expecting immediate perfection, you could gently practice returning your focus to a calm center whenever you feel your temper rising.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to remember that steady, small steps in self-control are a valid way to move forward.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q078",
+    "question": "Every time I buy something new I just want the next thing. Why am I never satisfied?",
+    "retrieved": [
+      "4.14",
+      "3.34",
+      "2.13",
+      "5.21",
+      "13.15"
+    ],
+    "answer": "Krishna says that the love and hate which are aroused by the objects of sense arise from Nature, and he advises that one should not yield to them because they only obstruct the path [3.34]. Krishna explains that a person finds happiness in their own Self, and enjoys eternal bliss, when their heart does not yearn for the contacts of earth [5.21]. Krishna also states that his actions do not fetter him, nor does he desire anything that they can bring [4.14]. Perhaps this means that the constant cycle of wanting new things is a natural pull of the senses that can be gently observed rather than followed. In your situation, it might be helpful to consider if there is a deeper sense of contentment that exists apart from the items you acquire. You might find that shifting your focus away from external objects allows for a different kind of peace to emerge.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that the love and hate which are aroused by the objects of sense arise from Nature, and he advises that one should not yield to them because they only obstruct the path [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that a person finds happiness in their own Self, and enjoys eternal bliss, when their heart does not yearn for the contacts of earth [5.21].",
+        "verse_ids": [
+          "5.21"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also states that his actions do not fetter him, nor does he desire anything that they can bring [4.14].",
+        "verse_ids": [
+          "4.14"
+        ],
+        "score": 0.99,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that the constant cycle of wanting new things is a natural pull of the senses that can be gently observed rather than followed.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider if there is a deeper sense of contentment that exists apart from the items you acquire.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that shifting your focus away from external objects allows for a different kind of peace to emerge.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q079",
+    "question": "I feel jealous when my friends get placed before me. How do I deal with it?",
+    "retrieved": [
+      "2.49",
+      "3.8",
+      "3.34",
+      "2.48",
+      "5.22"
+    ],
+    "answer": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34]. Krishna states that the enjoyments born of contacts are only generators of pain, as they have a beginning and an end, and the wise man does not rejoice in them [5.22]. Krishna explains that it is only the petty-minded who work for reward, and he suggests seeking refuge in wisdom [2.49]. Krishna also says that one should perform their bounden duty, as action is superior to inaction [3.8]. Perhaps this means that when you notice feelings of jealousy arising, you could gently observe them as temporary sensations rather than letting them guide your reactions. In your situation, it might be helpful to focus on the value of your own work itself, rather than comparing your progress to the external achievements of others.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the enjoyments born of contacts are only generators of pain, as they have a beginning and an end, and the wise man does not rejoice in them [5.22].",
+        "verse_ids": [
+          "5.22"
+        ],
+        "score": 0.948,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that it is only the petty-minded who work for reward, and he suggests seeking refuge in wisdom [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also says that one should perform their bounden duty, as action is superior to inaction [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.939,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that when you notice feelings of jealousy arising, you could gently observe them as temporary sensations rather than letting them guide your reactions.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to focus on the value of your own work itself, rather than comparing your progress to the external achievements of others.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q080",
+    "question": "My grandmother passed away recently and I can't accept that she's gone.",
+    "retrieved": [
+      "13.11",
+      "2.25",
+      "4.6",
+      "8.15",
+      "7.19"
+    ],
+    "answer": "Krishna says that the Spirit is named the Unmanifest, the Unthinkable, and the immutable, and knowing the Spirit as such, one has no cause to grieve [2.25]. Krishna explains that great souls who attain Him go no more to the misery and death of earthly life, for they have gained perfection [8.15]. Krishna also notes that after many lives, the wise man realizes Him as He is [7.19]. Perhaps this perspective could offer a small sense of peace as you navigate the deep sadness of your grandmother's passing. It might be helpful to consider that the essence of who she was remains beyond the reach of change or loss. In your situation, you might find comfort in the idea that she has moved into a state of perfection where there is no more pain.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that the Spirit is named the Unmanifest, the Unthinkable, and the immutable, and knowing the Spirit as such, one has no cause to grieve [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.943,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that great souls who attain Him go no more to the misery and death of earthly life, for they have gained perfection [8.15].",
+        "verse_ids": [
+          "8.15"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that after many lives, the wise man realizes Him as He is [7.19].",
+        "verse_ids": [
+          "7.19"
+        ],
+        "score": 0.926,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this perspective could offer a small sense of peace as you navigate the deep sadness of your grandmother's passing.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be helpful to consider that the essence of who she was remains beyond the reach of change or loss.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, you might find comfort in the idea that she has moved into a state of perfection where there is no more pain.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q081",
+    "question": "How do I cope with losing someone I love?",
+    "retrieved": [
+      "6.23",
+      "2.25",
+      "2.27",
+      "9.11",
+      "2.30"
+    ],
+    "answer": "Krishna says that death is certain for that which is born, and birth is certain for that which is dead, so one should not grieve for what is inevitable [2.27]. Krishna explains that the Indweller in the body of everyone is ever indestructible, and therefore one should not grieve for any creature [2.30]. Krishna describes a state of Yoga as the severance from union with pain, which should be practiced with determination and an undesponding mind [6.23]. In your situation, perhaps you could consider that the deep sense of loss you feel might be eased by focusing on the unchanging nature of the spirit. This might mean that while your heart is heavy, you could try to gently hold onto the idea that the essence of your loved one remains beyond the reach of death. Perhaps practicing a steady, determined focus on this inner peace could help you navigate the difficult waves of your grief.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that death is certain for that which is born, and birth is certain for that which is dead, so one should not grieve for what is inevitable [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that the Indweller in the body of everyone is ever indestructible, and therefore one should not grieve for any creature [2.30].",
+        "verse_ids": [
+          "2.30"
+        ],
+        "score": 0.982,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna describes a state of Yoga as the severance from union with pain, which should be practiced with determination and an undesponding mind [6.23].",
+        "verse_ids": [
+          "6.23"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could consider that the deep sense of loss you feel might be eased by focusing on the unchanging nature of the spirit.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that while your heart is heavy, you could try to gently hold onto the idea that the essence of your loved one remains beyond the reach of death.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "Perhaps practicing a steady, determined focus on this inner peace could help you navigate the difficult waves of your grief.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q082",
+    "question": "Is death really the end? What happens to the people we lose?",
+    "retrieved": [
+      "2.13",
+      "2.28",
+      "2.20",
+      "8.5",
+      "2.27"
+    ],
+    "answer": "Krishna says that just as the soul experiences infancy, youth, and old age within one body, it eventually passes into another [2.13]. Krishna explains that the soul is never born and never dies, remaining eternal and changeless even when the body is destroyed [2.20]. Krishna points out that because death is certain for those who are born and birth is certain for those who have died, there is no reason to grieve over what is inevitable [2.27]. Krishna also notes that beings are unmanifested before birth and after death, existing only in a manifested state during their middle life [2.28]. Perhaps these words suggest that the transition we witness is part of a much larger, continuous journey. This might mean that the essence of those we love remains beyond the physical changes we see. In your situation, it could be comforting to consider that the person you lost is simply moving through a natural cycle that is far greater than a single lifetime.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that just as the soul experiences infancy, youth, and old age within one body, it eventually passes into another [2.13].",
+        "verse_ids": [
+          "2.13"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that the soul is never born and never dies, remaining eternal and changeless even when the body is destroyed [2.20].",
+        "verse_ids": [
+          "2.20"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna points out that because death is certain for those who are born and birth is certain for those who have died, there is no reason to grieve over what is inevitable [2.27].",
+        "verse_ids": [
+          "2.27"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that beings are unmanifested before birth and after death, existing only in a manifested state during their middle life [2.28].",
+        "verse_ids": [
+          "2.28"
+        ],
+        "score": 0.193,
+        "supported": false
+      },
+      {
+        "sentence": "Perhaps these words suggest that the transition we witness is part of a much larger, continuous journey.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that the essence of those we love remains beyond the physical changes we see.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be comforting to consider that the person you lost is simply moving through a natural cycle that is far greater than a single lifetime.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q083",
+    "question": "I can't stop scrolling my phone even when I have deadlines. How do I control myself?",
+    "retrieved": [
+      "6.25",
+      "3.34",
+      "2.61",
+      "9.34",
+      "12.10"
+    ],
+    "answer": "Krishna says that one should restrain the senses and sit steadfast, as the wisdom of one who controls their senses is steady [2.61]. Krishna explains that attachment and aversion for sense objects abide in the senses, and he advises that one should not come under their sway because they are foes [3.34]. Krishna suggests that one should attain quietude little by little by holding the intellect firmly and fixing the mind on the Self [6.25]. Krishna also notes that if one is unable to practice concentration, one can still attain the goal by doing all actions for his sake [12.10]. Perhaps you could try to gently pull your attention away from the screen in small, manageable steps rather than expecting an immediate change. This might mean viewing your work deadlines as a way to offer your focus toward something greater than the distraction itself. In your situation, it could be helpful to remember that your ability to choose where your mind rests is a skill that grows over time.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should restrain the senses and sit steadfast, as the wisdom of one who controls their senses is steady [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that attachment and aversion for sense objects abide in the senses, and he advises that one should not come under their sway because they are foes [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that one should attain quietude little by little by holding the intellect firmly and fixing the mind on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that if one is unable to practice concentration, one can still attain the goal by doing all actions for his sake [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.826,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could try to gently pull your attention away from the screen in small, manageable steps rather than expecting an immediate change.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean viewing your work deadlines as a way to offer your focus toward something greater than the distraction itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to remember that your ability to choose where your mind rests is a skill that grows over time.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q084",
+    "question": "I procrastinate everything till the last minute. How do I become more disciplined?",
+    "retrieved": [
+      "12.12",
+      "6.25",
+      "2.61",
+      "3.8",
+      "12.10"
+    ],
+    "answer": "Krishna says that one should perform their prescribed duty, as action is superior to inaction and the maintenance of the body would be impossible without it [3.8]. Krishna suggests that if one is unable to practice concentration, they might devote themselves to service and perform all acts for His sake to attain the goal [12.10]. Krishna advises that one should attain peace little by little by using reason controlled by fortitude, fixing the mind on the Self and thinking of nothing else [6.25]. Krishna explains that one who restrains their senses and meditates steadfastly achieves perfection [2.61]. Perhaps you could start by focusing on the necessity of completing small tasks to maintain your daily life. This might mean gently guiding your attention back to your responsibilities whenever you notice yourself drifting away. It could be helpful to view your work as a dedicated offering, which might make the process feel less overwhelming.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform their prescribed duty, as action is superior to inaction and the maintenance of the body would be impossible without it [3.8].",
+        "verse_ids": [
+          "3.8"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that if one is unable to practice concentration, they might devote themselves to service and perform all acts for His sake to attain the goal [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna advises that one should attain peace little by little by using reason controlled by fortitude, fixing the mind on the Self and thinking of nothing else [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one who restrains their senses and meditates steadfastly achieves perfection [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.989,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could start by focusing on the necessity of completing small tasks to maintain your daily life.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean gently guiding your attention back to your responsibilities whenever you notice yourself drifting away.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to view your work as a dedicated offering, which might make the process feel less overwhelming.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q085",
+    "question": "My mind keeps wandering whenever I try to focus. How do I train it?",
+    "retrieved": [
+      "6.25",
+      "6.34",
+      "6.5",
+      "2.67",
+      "6.26"
+    ],
+    "answer": "Arjuna admits that the mind is fickle, turbulent, obstinate, and as difficult to control as the wind [6.34]. Krishna says that when the mind follows the wandering senses, it carries away one's discrimination just as a ship is tossed by a tempest [2.67]. Krishna explains that when the wavering mind wanders, one should restrain it and bring it back under the control of the Self [6.26]. Krishna suggests that one should gradually attain peace by holding the intellect firmly and fixing the mind on the Self [6.25]. Perhaps this means that acknowledging the natural restlessness of your thoughts is a helpful first step. In your situation, you might find that gently and repeatedly guiding your attention back to your focus is a more effective approach than expecting immediate stillness.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Arjuna admits that the mind is fickle, turbulent, obstinate, and as difficult to control as the wind [6.34].",
+        "verse_ids": [
+          "6.34"
+        ],
+        "score": 0.989,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna says that when the mind follows the wandering senses, it carries away one's discrimination just as a ship is tossed by a tempest [2.67].",
+        "verse_ids": [
+          "2.67"
+        ],
+        "score": 0.966,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that when the wavering mind wanders, one should restrain it and bring it back under the control of the Self [6.26].",
+        "verse_ids": [
+          "6.26"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that one should gradually attain peace by holding the intellect firmly and fixing the mind on the Self [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.987,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that acknowledging the natural restlessness of your thoughts is a helpful first step.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, you might find that gently and repeatedly guiding your attention back to your focus is a more effective approach than expecting immediate stillness.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q086",
+    "question": "I don't know what I want to do with my life. How do I find my purpose?",
+    "retrieved": [
+      "12.12",
+      "2.49",
+      "2.47",
+      "9.28",
+      "18.2"
+    ],
+    "answer": "Krishna says that one has the right to work, but never to the fruits of that work [2.47]. Krishna explains that those who work for the sake of a reward are considered petty-minded [2.49]. Krishna states that the wise define the abandonment of the fruits of all actions as a form of renunciation [18.2]. Krishna notes that peace follows immediately when one renounces the fruits of their actions [12.12]. Perhaps this suggests that focusing on the quality of your daily efforts rather than the outcome could help ease the pressure you feel. In your situation, it might be helpful to consider whether your search for a purpose is being driven by a desire for a specific result. This perspective could potentially offer you a sense of calm as you navigate your next steps.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one has the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.983,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that those who work for the sake of a reward are considered petty-minded [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the wise define the abandonment of the fruits of all actions as a form of renunciation [18.2].",
+        "verse_ids": [
+          "18.2"
+        ],
+        "score": 0.032,
+        "supported": false
+      },
+      {
+        "sentence": "Krishna notes that peace follows immediately when one renounces the fruits of their actions [12.12].",
+        "verse_ids": [
+          "12.12"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this suggests that focusing on the quality of your daily efforts rather than the outcome could help ease the pressure you feel.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider whether your search for a purpose is being driven by a desire for a specific result.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This perspective could potentially offer you a sense of calm as you navigate your next steps.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q087",
+    "question": "Everything feels pointless lately, even things I used to enjoy.",
+    "retrieved": [
+      "4.20",
+      "13.11",
+      "7.24",
+      "6.15",
+      "2.49"
+    ],
+    "answer": "Krishna says that those who work for the sake of reward are considered petty-minded and should instead seek refuge in wisdom [2.49]. Krishna explains that a person who abandons attachment to the fruits of their actions remains content and independent, even while they are engaged in activity [4.20]. Krishna states that by keeping the mind balanced and controlled, one attains a peace that abides in Him [6.15]. Perhaps this feeling of pointlessness is an invitation to shift your focus away from the results of your daily tasks and toward a quieter, more internal sense of balance. In your situation, it might be helpful to consider whether your current dissatisfaction stems from looking for meaning in external outcomes rather than finding contentment in the act itself. You might find that letting go of the need for a specific result allows you to experience a deeper, more steady peace.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that those who work for the sake of reward are considered petty-minded and should instead seek refuge in wisdom [2.49].",
+        "verse_ids": [
+          "2.49"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that a person who abandons attachment to the fruits of their actions remains content and independent, even while they are engaged in activity [4.20].",
+        "verse_ids": [
+          "4.20"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that by keeping the mind balanced and controlled, one attains a peace that abides in Him [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.98,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this feeling of pointlessness is an invitation to shift your focus away from the results of your daily tasks and toward a quieter, more internal sense of balance.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider whether your current dissatisfaction stems from looking for meaning in external outcomes rather than finding contentment in the act itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that letting go of the need for a specific result allows you to experience a deeper, more steady peace.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q088",
+    "question": "Who am I really, beyond my marks, my job and what people think of me?",
+    "retrieved": [
+      "15.18",
+      "6.30",
+      "18.55",
+      "9.22",
+      "13.11"
+    ],
+    "answer": "Krishna says that he transcends both the perishable and the imperishable, being declared the highest Purusha in the world [15.18]. Krishna explains that the one who sees him in everything and everything in him is never separated from him [6.30]. Krishna states that through devotion, one knows him in truth and enters the Supreme [18.55]. Krishna describes the path of unswerving devotion as involving a love for solitude and indifference to social life [13.11]. Perhaps your true identity is found by looking past the external labels of society and focusing on this deeper, constant connection. This might mean that your worth is not defined by your job or the opinions of others, but by a reality that remains even when those things change. In your situation, you might find peace by shifting your attention toward this inner presence that exists beyond your daily roles.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that he transcends both the perishable and the imperishable, being declared the highest Purusha in the world [15.18].",
+        "verse_ids": [
+          "15.18"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that the one who sees him in everything and everything in him is never separated from him [6.30].",
+        "verse_ids": [
+          "6.30"
+        ],
+        "score": 0.983,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that through devotion, one knows him in truth and enters the Supreme [18.55].",
+        "verse_ids": [
+          "18.55"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna describes the path of unswerving devotion as involving a love for solitude and indifference to social life [13.11].",
+        "verse_ids": [
+          "13.11"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps your true identity is found by looking past the external labels of society and focusing on this deeper, constant connection.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that your worth is not defined by your job or the opinions of others, but by a reality that remains even when those things change.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, you might find peace by shifting your attention toward this inner presence that exists beyond your daily roles.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q089",
+    "question": "How do I keep my faith when everything is going wrong?",
+    "retrieved": [
+      "2.48",
+      "6.15",
+      "18.57",
+      "3.30",
+      "12.11"
+    ],
+    "answer": "Krishna says that one should perform all actions with the mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48]. Krishna suggests that by surrendering actions unto Him and concentrating the intellect on Him, one can think always of Him [18.57]. Krishna explains that a person who keeps the mind balanced and controlled attains the peace that abides in Him [6.15]. Krishna advises that one should fight while free from selfishness, anticipation of reward, and mental excitement [3.30]. In your situation, perhaps focusing on the effort itself rather than the outcome could help you find a sense of steadiness. This might mean that even when things feel difficult, you could try to let go of the need for a specific result and simply offer your daily actions to something greater than yourself.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform all actions with the mind concentrated on the Divine, renouncing attachment and looking upon success and failure with an equal eye [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.983,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that by surrendering actions unto Him and concentrating the intellect on Him, one can think always of Him [18.57].",
+        "verse_ids": [
+          "18.57"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that a person who keeps the mind balanced and controlled attains the peace that abides in Him [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.987,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna advises that one should fight while free from selfishness, anticipation of reward, and mental excitement [3.30].",
+        "verse_ids": [
+          "3.30"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps focusing on the effort itself rather than the outcome could help you find a sense of steadiness.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that even when things feel difficult, you could try to let go of the need for a specific result and simply offer your daily actions to something greater than yourself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q090",
+    "question": "Does praying actually help, or is it just a habit?",
+    "retrieved": [
+      "6.5",
+      "17.18",
+      "12.12",
+      "12.10",
+      "5.2"
+    ],
+    "answer": "Krishna says that one should raise oneself by one's own Self, as the Self is the only friend or enemy of oneself [6.5]. Krishna explains that if one is unable to practice concentration, one may still attain perfection by performing all actions for His sake [12.10]. Krishna also notes that austerity performed for the sake of popularity or vanity is unstable and transitory [17.18]. Krishna states that the path of right action is superior to the renunciation of action [5.2]. Perhaps this suggests that the value of your prayer depends on whether it helps you take responsibility for your own growth or serves as a way to perform your daily tasks with a sense of purpose. In your situation, it might be helpful to consider if your prayers are rooted in a genuine intention to act well, rather than a desire for external recognition.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should raise oneself by one's own Self, as the Self is the only friend or enemy of oneself [6.5].",
+        "verse_ids": [
+          "6.5"
+        ],
+        "score": 0.987,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that if one is unable to practice concentration, one may still attain perfection by performing all actions for His sake [12.10].",
+        "verse_ids": [
+          "12.10"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also notes that austerity performed for the sake of popularity or vanity is unstable and transitory [17.18].",
+        "verse_ids": [
+          "17.18"
+        ],
+        "score": 0.985,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the path of right action is superior to the renunciation of action [5.2].",
+        "verse_ids": [
+          "5.2"
+        ],
+        "score": 0.032,
+        "supported": false
+      },
+      {
+        "sentence": "Perhaps this suggests that the value of your prayer depends on whether it helps you take responsibility for your own growth or serves as a way to perform your daily tasks with a sense of purpose.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider if your prayers are rooted in a genuine intention to act well, rather than a desire for external recognition.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q091",
+    "question": "I want to feel connected to God but don't know where to start.",
+    "retrieved": [
+      "6.15",
+      "9.22",
+      "12.2",
+      "6.47",
+      "7.21"
+    ],
+    "answer": "Krishna says that those who keep their minds fixed on Him, worshipping Him always with unwavering faith and concentration, are considered the best in Yoga [12.2]. Krishna explains that for those who worship Him alone, thinking of no other and remaining ever-united, He secures what is not already possessed and preserves what they already possess [9.22]. Krishna also states that he who is full of faith and has his inner self merged in Him is deemed the most devout among all Yogis [6.47]. Perhaps you could start by simply turning your thoughts toward the divine whenever you feel the need for a sense of connection. This might mean that focusing your attention on a single point of faith could help you feel more supported in your daily life. It is possible that by consistently nurturing this inner focus, you will find the peace and closeness you are looking for.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that those who keep their minds fixed on Him, worshipping Him always with unwavering faith and concentration, are considered the best in Yoga [12.2].",
+        "verse_ids": [
+          "12.2"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that for those who worship Him alone, thinking of no other and remaining ever-united, He secures what is not already possessed and preserves what they already possess [9.22].",
+        "verse_ids": [
+          "9.22"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also states that he who is full of faith and has his inner self merged in Him is deemed the most devout among all Yogis [6.47].",
+        "verse_ids": [
+          "6.47"
+        ],
+        "score": 0.763,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could start by simply turning your thoughts toward the divine whenever you feel the need for a sense of connection.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that focusing your attention on a single point of faith could help you feel more supported in your daily life.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It is possible that by consistently nurturing this inner focus, you will find the peace and closeness you are looking for.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q092",
+    "question": "How do I know if I'm making the right decision when both options seem good?",
+    "retrieved": [
+      "5.4",
+      "5.5",
+      "3.2",
+      "18.19",
+      "4.16"
+    ],
+    "answer": "Arjuna admits that Krishna's language perplexes him and confuses his reason, and he asks for the one way to secure his welfare [3.2]. Krishna says that even the wise are confused about what is action and what is inaction [4.16]. Krishna explains that knowledge, the act, and the doer differ according to the qualities [18.19]. Krishna says that only the unenlightened speak of wisdom and right action as separate, and he who perceives that the two are one knows the truth [5.5]. \n\nIn your situation, perhaps the pressure to find the single perfect choice is less important than how you approach the action itself. This might mean that the feeling of confusion is a natural part of the process, even for those who are wise. You might find some peace in knowing that your commitment to the path you choose is just as significant as the choice itself.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Arjuna admits that Krishna's language perplexes him and confuses his reason, and he asks for the one way to secure his welfare [3.2].",
+        "verse_ids": [
+          "3.2"
+        ],
+        "score": 0.452,
+        "supported": false
+      },
+      {
+        "sentence": "Krishna says that even the wise are confused about what is action and what is inaction [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that knowledge, the act, and the doer differ according to the qualities [18.19].",
+        "verse_ids": [
+          "18.19"
+        ],
+        "score": 0.996,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna says that only the unenlightened speak of wisdom and right action as separate, and he who perceives that the two are one knows the truth [5.5].",
+        "verse_ids": [
+          "5.5"
+        ],
+        "score": 0.0,
+        "supported": false
+      },
+      {
+        "sentence": "In your situation, perhaps the pressure to find the single perfect choice is less important than how you approach the action itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that the feeling of confusion is a natural part of the process, even for those who are wise.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find some peace in knowing that your commitment to the path you choose is just as significant as the choice itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q093",
+    "question": "What does it actually mean to know yourself?",
+    "retrieved": [
+      "2.25",
+      "4.34",
+      "13.12",
+      "13.20",
+      "14.2"
+    ],
+    "answer": "Krishna says that the Self is unmanifested, unthinkable, and unchangeable, and that knowing this leaves no cause for grief [2.25]. Krishna explains that constant yearning for the knowledge of the Self and pondering the lessons of truth is wisdom, while everything else is ignorance [13.12]. Krishna further states that one should know that all modifications and qualities are born of Nature [13.20]. Perhaps this means that looking past your changing moods and circumstances could be a way to begin understanding your true nature. In your situation, it might be helpful to consider that the core of who you are remains steady even when your external life feels like it is in constant flux. You might find that shifting your focus toward this unchanging aspect brings a sense of quiet clarity to your daily life.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that the Self is unmanifested, unthinkable, and unchangeable, and that knowing this leaves no cause for grief [2.25].",
+        "verse_ids": [
+          "2.25"
+        ],
+        "score": 0.972,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that constant yearning for the knowledge of the Self and pondering the lessons of truth is wisdom, while everything else is ignorance [13.12].",
+        "verse_ids": [
+          "13.12"
+        ],
+        "score": 0.995,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna further states that one should know that all modifications and qualities are born of Nature [13.20].",
+        "verse_ids": [
+          "13.20"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that looking past your changing moods and circumstances could be a way to begin understanding your true nature.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider that the core of who you are remains steady even when your external life feels like it is in constant flux.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that shifting your focus toward this unchanging aspect brings a sense of quiet clarity to your daily life.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q094",
+    "question": "Why do smart people still make bad choices even when they know better?",
+    "retrieved": [
+      "2.13",
+      "3.29",
+      "4.16",
+      "15.10",
+      "3.42"
+    ],
+    "answer": "Krishna says that even the wise are bewildered when trying to distinguish between action and inaction [4.16]. Krishna explains that those who are deluded by the qualities of nature remain attached to the functions of those qualities [3.29]. Krishna notes that the senses are powerful, but beyond them lies the mind, the intellect, and ultimately the Self [3.42]. Krishna states that the deluded do not see the truth, while those with the eye of knowledge behold it [15.10]. Perhaps this suggests that even when we have knowledge, the pull of our senses and the complexities of action can still cloud our judgment. In your situation, it might be helpful to consider that making mistakes is a common human experience, even for those who are otherwise very bright.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that even the wise are bewildered when trying to distinguish between action and inaction [4.16].",
+        "verse_ids": [
+          "4.16"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that those who are deluded by the qualities of nature remain attached to the functions of those qualities [3.29].",
+        "verse_ids": [
+          "3.29"
+        ],
+        "score": 0.965,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna notes that the senses are powerful, but beyond them lies the mind, the intellect, and ultimately the Self [3.42].",
+        "verse_ids": [
+          "3.42"
+        ],
+        "score": 0.94,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the deluded do not see the truth, while those with the eye of knowledge behold it [15.10].",
+        "verse_ids": [
+          "15.10"
+        ],
+        "score": 0.709,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this suggests that even when we have knowledge, the pull of our senses and the complexities of action can still cloud our judgment.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to consider that making mistakes is a common human experience, even for those who are otherwise very bright.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q095",
+    "question": "How do I stay calm when people criticise my work?",
+    "retrieved": [
+      "17.16",
+      "2.47",
+      "2.48",
+      "18.51",
+      "6.15"
+    ],
+    "answer": "Krishna says that serenity of mind, kindness, silence, self-control, and purity constitute the austerity of the mind [17.16]. Krishna explains that one has the right to work, but never to the fruits of that work [2.47]. Krishna advises that one should perform actions while remaining balanced in both success and failure [2.48]. Krishna states that by keeping the mind controlled and balanced, one attains a deep sense of peace [6.15]. Perhaps you could view the criticism as an external event that does not need to disturb your inner focus on the task itself. In your situation, it might be helpful to practice maintaining an even temperament regardless of the feedback you receive. This could allow you to stay centered even when others express their opinions about your efforts.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that serenity of mind, kindness, silence, self-control, and purity constitute the austerity of the mind [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one has the right to work, but never to the fruits of that work [2.47].",
+        "verse_ids": [
+          "2.47"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna advises that one should perform actions while remaining balanced in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that by keeping the mind controlled and balanced, one attains a deep sense of peace [6.15].",
+        "verse_ids": [
+          "6.15"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view the criticism as an external event that does not need to disturb your inner focus on the task itself.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to practice maintaining an even temperament regardless of the feedback you receive.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This could allow you to stay centered even when others express their opinions about your efforts.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q096",
+    "question": "I feel on top of the world when praised and crushed when criticised. How do I stay balanced?",
+    "retrieved": [
+      "17.16",
+      "2.48",
+      "2.61",
+      "6.25",
+      "6.14"
+    ],
+    "answer": "Krishna says that one should perform actions while abandoning attachment and remaining balanced in both success and failure [2.48]. Krishna explains that serenity of mind, kindness, and self-control are considered forms of mental austerity [17.16]. Krishna suggests that by using reason controlled by fortitude, one can little by little attain peace [6.25]. Krishna states that the person whose senses are under control possesses steady wisdom [2.61]. Perhaps you could view your reactions to praise and criticism as opportunities to practice this steady, internal balance. This might mean gently turning your focus inward whenever you feel your mood shifting based on the opinions of others. You might find that slowly cultivating this sense of inner quiet helps you remain grounded regardless of what is happening around you.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform actions while abandoning attachment and remaining balanced in both success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.989,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that serenity of mind, kindness, and self-control are considered forms of mental austerity [17.16].",
+        "verse_ids": [
+          "17.16"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that by using reason controlled by fortitude, one can little by little attain peace [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.994,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the person whose senses are under control possesses steady wisdom [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.99,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your reactions to praise and criticism as opportunities to practice this steady, internal balance.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean gently turning your focus inward whenever you feel your mood shifting based on the opinions of others.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "You might find that slowly cultivating this sense of inner quiet helps you remain grounded regardless of what is happening around you.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q097",
+    "question": "How do I not let one bad day ruin my whole week?",
+    "retrieved": [
+      "18.51",
+      "6.25",
+      "13.11",
+      "3.34",
+      "2.61"
+    ],
+    "answer": "Krishna says that one should not yield to the love and hate aroused by the objects of sense, as they are foes that obstruct the path [3.34]. Krishna explains that a person who is endowed with a pure intellect and controls the self by firmness abandons attraction and hatred [18.51]. Krishna suggests that by the help of reason controlled by fortitude, one may little by little attain peace [6.25]. Krishna states that the wisdom of one who restrains the senses and remains steadfast is steady [2.61]. Perhaps this means that when a difficult day occurs, you could try to gently observe those feelings of frustration without letting them take control of your mood. In your situation, it might be helpful to practice finding a quiet moment to steady your mind, rather than dwelling on the events that caused the initial reaction. This could be a way to keep your focus on a sense of inner calm instead of letting the memory of one day dictate how you feel for the rest of the week.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should not yield to the love and hate aroused by the objects of sense, as they are foes that obstruct the path [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.999,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that a person who is endowed with a pure intellect and controls the self by firmness abandons attraction and hatred [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.982,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that by the help of reason controlled by fortitude, one may little by little attain peace [6.25].",
+        "verse_ids": [
+          "6.25"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that the wisdom of one who restrains the senses and remains steadfast is steady [2.61].",
+        "verse_ids": [
+          "2.61"
+        ],
+        "score": 0.986,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps this means that when a difficult day occurs, you could try to gently observe those feelings of frustration without letting them take control of your mood.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it might be helpful to practice finding a quiet moment to steady your mind, rather than dwelling on the events that caused the initial reaction.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This could be a way to keep your focus on a sense of inner calm instead of letting the memory of one day dictate how you feel for the rest of the week.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q098",
+    "question": "My best friend and I had a big fight and stopped talking. How should I handle it?",
+    "retrieved": [
+      "2.38",
+      "3.30",
+      "6.23",
+      "18.51",
+      "16.2"
+    ],
+    "answer": "Krishna says that one should look upon pleasure and pain, victory and defeat, with an equal eye [2.38]. Krishna explains that one should be endowed with a pure intellect, controlling the self by firmness, and abandoning attraction and hatred [18.51]. Krishna describes qualities such as harmlessness, truth, absence of anger, and compassion towards beings [16.2]. Krishna suggests that one should surrender actions, be free from egoism, and act with a mind devoid of excitement [3.30]. \n\nIn your situation, perhaps you could try to approach the conflict with a sense of inner balance rather than focusing on the pain of the argument. This might mean letting go of your personal attachments or feelings of resentment to see if you can act with more compassion and kindness. It could be helpful to remain steady and calm, even if the current distance between you and your friend feels discouraging.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should look upon pleasure and pain, victory and defeat, with an equal eye [2.38].",
+        "verse_ids": [
+          "2.38"
+        ],
+        "score": 0.988,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that one should be endowed with a pure intellect, controlling the self by firmness, and abandoning attraction and hatred [18.51].",
+        "verse_ids": [
+          "18.51"
+        ],
+        "score": 0.922,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna describes qualities such as harmlessness, truth, absence of anger, and compassion towards beings [16.2].",
+        "verse_ids": [
+          "16.2"
+        ],
+        "score": 0.979,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna suggests that one should surrender actions, be free from egoism, and act with a mind devoid of excitement [3.30].",
+        "verse_ids": [
+          "3.30"
+        ],
+        "score": 0.992,
+        "supported": true
+      },
+      {
+        "sentence": "In your situation, perhaps you could try to approach the conflict with a sense of inner balance rather than focusing on the pain of the argument.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean letting go of your personal attachments or feelings of resentment to see if you can act with more compassion and kindness.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It could be helpful to remain steady and calm, even if the current distance between you and your friend feels discouraging.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q099",
+    "question": "How do I deal with someone who keeps hurting me but I still care about?",
+    "retrieved": [
+      "3.34",
+      "12.18",
+      "2.62",
+      "10.17",
+      "6.6"
+    ],
+    "answer": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34]. Krishna explains that when a man dwells on objects of sense, he creates an attraction for them, which develops into desire and breeds anger [2.62]. Krishna describes a person who is equal to friends and enemies and remains steady in situations of happiness and distress [12.18]. Krishna states that to him who has conquered his lower nature, the Self is a friend, but to him who has not done so, it acts like an enemy [6.6]. Perhaps you could reflect on whether your focus on this person is stirring up feelings that make it harder to find your own inner balance. It might be helpful to consider if finding a sense of steadiness within yourself could change how you experience these painful interactions. In your situation, you might find it useful to observe your own reactions to see if they are leading you toward a place of peace or a place of frustration.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that attachment and aversion for the objects of the senses abide in the senses, and he advises that one should not come under their sway because they are foes [3.34].",
+        "verse_ids": [
+          "3.34"
+        ],
+        "score": 0.993,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that when a man dwells on objects of sense, he creates an attraction for them, which develops into desire and breeds anger [2.62].",
+        "verse_ids": [
+          "2.62"
+        ],
+        "score": 0.869,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna describes a person who is equal to friends and enemies and remains steady in situations of happiness and distress [12.18].",
+        "verse_ids": [
+          "12.18"
+        ],
+        "score": 0.929,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna states that to him who has conquered his lower nature, the Self is a friend, but to him who has not done so, it acts like an enemy [6.6].",
+        "verse_ids": [
+          "6.6"
+        ],
+        "score": 0.997,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could reflect on whether your focus on this person is stirring up feelings that make it harder to find your own inner balance.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "It might be helpful to consider if finding a sense of steadiness within yourself could change how you experience these painful interactions.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, you might find it useful to observe your own reactions to see if they are leading you toward a place of peace or a place of frustration.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  },
+  {
+    "id": "q100",
+    "question": "How do I care for my family without getting so attached that their problems overwhelm me?",
+    "retrieved": [
+      "2.48",
+      "18.6",
+      "13.10",
+      "3.9",
+      "6.25"
+    ],
+    "answer": "Krishna says that one should perform actions while being steadfast in Yoga, abandoning attachment and remaining balanced in success and failure [2.48]. Krishna explains that actions should be performed leaving aside attachment and the desire for rewards [18.6]. Krishna also describes non-attachment as the non-identification of the Self with son, wife, home, and the rest, along with constant even-mindedness [13.10]. Perhaps you could view your care for your family as a form of service that exists apart from your own personal identity. This might mean that you can offer your support while gently keeping your inner peace separate from the outcomes of their daily struggles. In your situation, it could be helpful to focus on the act of caring itself, rather than becoming deeply entangled in the results of those efforts.",
+    "safety_note": null,
+    "checks": [
+      {
+        "sentence": "Krishna says that one should perform actions while being steadfast in Yoga, abandoning attachment and remaining balanced in success and failure [2.48].",
+        "verse_ids": [
+          "2.48"
+        ],
+        "score": 0.977,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna explains that actions should be performed leaving aside attachment and the desire for rewards [18.6].",
+        "verse_ids": [
+          "18.6"
+        ],
+        "score": 0.998,
+        "supported": true
+      },
+      {
+        "sentence": "Krishna also describes non-attachment as the non-identification of the Self with son, wife, home, and the rest, along with constant even-mindedness [13.10].",
+        "verse_ids": [
+          "13.10"
+        ],
+        "score": 0.934,
+        "supported": true
+      },
+      {
+        "sentence": "Perhaps you could view your care for your family as a form of service that exists apart from your own personal identity.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "This might mean that you can offer your support while gently keeping your inner peace separate from the outcomes of their daily struggles.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      },
+      {
+        "sentence": "In your situation, it could be helpful to focus on the act of caring itself, rather than becoming deeply entangled in the results of those efforts.",
+        "verse_ids": [],
+        "score": null,
+        "supported": null
+      }
+    ]
+  }
+]
