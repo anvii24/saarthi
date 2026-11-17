@@ -14,7 +14,7 @@ QUESTIONS_PATH = "data/test_set/questions_holdout.json"
 QRELS_PATH = "data/test_set/qrels_holdout.json"
 
 K = 20
-K1 = 8.0  # provisional: update after re-running tune_bm25.py with the wider grid
+K1 = 8.0  
 B = 0.75
 
 

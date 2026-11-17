@@ -1,8 +1,10 @@
 import json
 from pathlib import Path
 
+import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.naive_bayes import MultinomialNB
 
 from preprocessing.clean_en import clean_en
 
@@ -35,15 +37,20 @@ def load_training_data():
     return texts, labels
 
 
-def train_classifier():
-    """Build the TF-IDF matrix from the labelled questions."""
-    texts, labels = load_training_data()
-
-    vectorizer = TfidfVectorizer(
+def create_vectorizer():
+    """TF-IDF vectorizer that cleans text the same way as the search index."""
+    return TfidfVectorizer(
         tokenizer=clean_en,
         token_pattern=None,
         lowercase=False
     )
+
+
+def train_classifier():
+    """Build the TF-IDF matrix from the training questions."""
+    texts, labels = load_training_data()
+
+    vectorizer = create_vectorizer()
 
     training_matrix = vectorizer.fit_transform(texts)
 
@@ -103,7 +110,8 @@ def classify_theme(query, top_k=3, method="mean"):
         labels,
         method
     )
-     # Check whether the query has any vocabulary overlap
+
+    # Check whether the query has any vocabulary overlap
     if not any(similarities > 0):
         return {
             "predicted_theme": "unclassified",
@@ -134,3 +142,82 @@ def classify_theme(query, top_k=3, method="mean"):
         "closest_examples": closest_examples,
         "is_classified": True
     }
+
+
+# ---------------------------------------------------------------------------
+# Naive Bayes, Rocchio and kNN (compared in evaluation/run_classifiers.py)
+# ---------------------------------------------------------------------------
+
+METHODS = ("naive_bayes", "rocchio", "knn")
+
+
+def train_model(texts, labels, method="rocchio", k=3):
+    """Train one of: naive_bayes, rocchio, knn (k = number of neighbours)."""
+    if method not in METHODS:
+        raise ValueError(f"Method must be one of {METHODS}")
+
+    if not texts or len(texts) != len(labels):
+        raise ValueError("Texts and labels must have equal nonzero lengths.")
+
+    if k <= 0:
+        raise ValueError("k must be positive.")
+
+    vectorizer = create_vectorizer()
+    matrix = vectorizer.fit_transform(texts)
+
+    model = {
+        "method": method,
+        "vectorizer": vectorizer,
+        "matrix": matrix,
+        "labels": labels,
+        "k": k
+    }
+
+    if method == "naive_bayes":
+        model["classifier"] = MultinomialNB().fit(matrix, labels)
+
+    elif method == "rocchio":
+        # One centroid per theme: the average TF-IDF vector of its questions.
+        model["centroids"] = {
+            theme: np.asarray(
+                matrix[[i for i, label in enumerate(labels) if label == theme]].mean(axis=0)
+            ).ravel()
+            for theme in sorted(set(labels))
+        }
+
+    return model
+
+
+def predict_theme(model, query):
+    """Predict a theme with a model from train_model(); "unclassified" if no word matches."""
+    if not query or not query.strip():
+        raise ValueError("Query cannot be empty.")
+
+    query_vector = model["vectorizer"].transform([query])
+
+    if query_vector.nnz == 0:
+        return "unclassified"
+
+    if model["method"] == "naive_bayes":
+        return model["classifier"].predict(query_vector)[0]
+
+    if model["method"] == "rocchio":
+        themes = list(model["centroids"])
+        similarities = cosine_similarity(
+            query_vector, [model["centroids"][theme] for theme in themes]
+        ).flatten()
+        return themes[similarities.argmax()]
+
+    # kNN: majority vote among the k most similar training questions,
+    # ties broken by the highest similarity, then alphabetically.
+    similarities = cosine_similarity(query_vector, model["matrix"]).flatten()
+    nearest = similarities.argsort()[::-1][:min(model["k"], len(similarities))]
+
+    votes = {}
+    best = {}
+    for i in nearest:
+        theme = model["labels"][i]
+        votes[theme] = votes.get(theme, 0) + 1
+        best[theme] = max(best.get(theme, 0.0), similarities[i])
+
+    return sorted(votes, key=lambda theme: (-votes[theme], -best[theme], theme))[0]

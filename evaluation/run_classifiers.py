@@ -1,148 +1,101 @@
-import os, sys
+import os
+import sys
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+import csv
 import json
 from pathlib import Path
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report, f1_score
 from sklearn.metrics.pairwise import cosine_similarity
 
-from preprocessing.clean_en import clean_en
-from query.classifier import calculate_theme_scores, load_training_data
-
-
-DATA_PATH = (
-    Path(__file__).resolve().parent.parent
-    / "data/test_set/questions.json"
+from query.classifier import (
+    calculate_theme_scores,
+    create_vectorizer,
+    load_training_data,
+    predict_theme,
+    train_model,
 )
 
+ROOT = Path(__file__).resolve().parent.parent
+TEST_PATH = ROOT / "data" / "test_set" / "questions.json"
+OUTPUT_PATH = ROOT / "evaluation" / "results" / "classifiers.csv"
 
-def load_questions():
-    """Load labelled English questions."""
-    with open(DATA_PATH, "r", encoding="utf-8") as file:
+
+def load_test_questions():
+    """The 100 test questions (English) and their themes."""
+    with open(TEST_PATH, encoding="utf-8") as file:
         questions = json.load(file)
 
-    texts = []
-    labels = []
-
-    for question in questions.values():
-        text = question.get("en", "").strip()
-        theme = question.get("theme", "").strip()
-
-        if text and theme:
-            texts.append(text)
-            labels.append(theme)
-
-    return texts, labels
+    pairs = [
+        (q.get("en", "").strip(), q.get("theme", "").strip())
+        for q in questions.values()
+    ]
+    pairs = [(text, theme) for text, theme in pairs if text and theme]
+    return [text for text, _ in pairs], [theme for _, theme in pairs]
 
 
-def evaluate_method(train_texts, train_labels, test_texts, test_labels, method):
-    """Train on the separate training questions, score the test questions."""
-    actual = []
-    predicted = []
-    misclassified = []
+def predict_similarity(train_texts, train_labels, test_texts, method):
+    """TF-IDF mean / max: score each theme by similarity to its training questions."""
+    vectorizer = create_vectorizer()
+    matrix = vectorizer.fit_transform(train_texts)
 
-    vectorizer = TfidfVectorizer(
-        tokenizer=clean_en,
-        token_pattern=None,
-        lowercase=False
-    )
-
-    training_matrix = vectorizer.fit_transform(train_texts)
-
-    for text, label in zip(test_texts, test_labels):
-        query_vector = vectorizer.transform([text])
-
-        similarities = cosine_similarity(
-            query_vector,
-            training_matrix
-        ).flatten()
-
-        scores = calculate_theme_scores(
-            similarities,
-            train_labels,
-            method=method
-        )
-
-        predicted_theme = max(scores, key=scores.get)
-
-        actual.append(label)
-        predicted.append(predicted_theme)
-
-        if predicted_theme != label:
-            top_scores = sorted(
-                scores.items(),
-                key=lambda item: item[1],
-                reverse=True
-            )[:3]
-
-            misclassified.append({
-                "question": text,
-                "actual": label,
-                "predicted": predicted_theme,
-                "top_scores": top_scores
-            })
-
-    return actual, predicted, misclassified
+    predictions = []
+    for text in test_texts:
+        similarities = cosine_similarity(vectorizer.transform([text]), matrix).flatten()
+        scores = calculate_theme_scores(similarities, train_labels, method=method)
+        predictions.append(max(scores, key=scores.get))
+    return predictions
 
 
 def main():
     train_texts, train_labels = load_training_data()
-    texts, labels = load_questions()
+    test_texts, test_labels = load_test_questions()
 
-    print("Training questions:", len(train_texts))
-    print("Test questions:", len(texts))
-    print("Total themes:", len(set(labels)))
+    print(f"Training questions: {len(train_texts)}   Test questions: {len(test_texts)}   "
+          f"Themes: {len(set(test_labels))}\n")
 
-    mean_misclassified = []
+    runs = {
+        "TF-IDF mean": predict_similarity(train_texts, train_labels, test_texts, "mean"),
+        "TF-IDF max": predict_similarity(train_texts, train_labels, test_texts, "max"),
+    }
+    for name, method, k in (("Naive Bayes", "naive_bayes", 3), ("Rocchio", "rocchio", 3),
+                            ("kNN k=1", "knn", 1), ("kNN k=3", "knn", 3),
+                            ("kNN k=5", "knn", 5), ("kNN k=7", "knn", 7)):
+        model = train_model(train_texts, train_labels, method=method, k=k)
+        runs[name] = [predict_theme(model, text) for text in test_texts]
 
-    for method in ("mean", "max"):
-        actual, predicted, misclassified = evaluate_method(
-            train_texts,
-            train_labels,
-            texts,
-            labels,
-            method
-        )
+    rows = []
+    for name, predicted in runs.items():
+        rows.append({
+            "method": name,
+            "correct": sum(a == p for a, p in zip(test_labels, predicted)),
+            "questions": len(test_labels),
+            "accuracy": round(accuracy_score(test_labels, predicted), 3),
+            "macro_f1": round(f1_score(test_labels, predicted, average="macro", zero_division=0), 3),
+        })
 
-        correct = sum(
-            a == p for a, p in zip(actual, predicted)
-        )
+    print(f"{'method':<14}{'correct':>10}{'accuracy':>10}{'macro F1':>10}")
+    for row in rows:
+        print(f"{row['method']:<14}{row['correct']:>6}/{row['questions']:<3}"
+              f"{row['accuracy']:>10.3f}{row['macro_f1']:>10.3f}")
 
-        print("\n" + "=" * 50)
-        print("SCORING METHOD:", method.upper())
-        print("=" * 50)
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=list(rows[0]))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"\nSaved {OUTPUT_PATH.relative_to(ROOT)}")
 
-        print(f"Correct: {correct}/{len(actual)}")
-        print(f"Accuracy: {accuracy_score(actual, predicted):.4f}")
+    best = max(rows, key=lambda row: (row["accuracy"], row["macro_f1"]))["method"]
+    print(f"\nPer-theme report for the best method ({best}):")
+    print(classification_report(test_labels, runs[best], zero_division=0))
 
-        print("\nPer-theme report:")
-        print(
-            classification_report(
-                actual,
-                predicted,
-                zero_division=0
-            )
-        )
-
-        if method == "mean":
-            mean_misclassified = misclassified
-
-    print("\n" + "=" * 60)
-    print("MISCLASSIFICATION ANALYSIS (MEAN SCORING)")
-    print("=" * 60)
-
-    print("Total misclassified:", len(mean_misclassified))
-
-    for index, item in enumerate(mean_misclassified, start=1):
-        print(f"\n{index}. Question: {item['question']}")
-        print("   Actual theme:   ", item["actual"])
-        print("   Predicted theme:", item["predicted"])
-        print("   Top 3 theme scores:")
-
-        for theme, score in item["top_scores"]:
-            print(f"      {theme}: {score:.4f}")
+    wrong = [(t, a, p) for t, a, p in zip(test_texts, test_labels, runs["TF-IDF mean"]) if a != p]
+    print(f"Questions TF-IDF mean got wrong ({len(wrong)}):")
+    for text, actual, predicted in wrong:
+        print(f"  - {text}\n      actual: {actual}   predicted: {predicted}")
 
 
 if __name__ == "__main__":
