@@ -1,54 +1,54 @@
-"""
-Re-ranking (Person 3: Anvi).
-
-rerank() adjusts the fused results using extra signals:
-  - fused relevance score
-  - zone score (translation matches count more than commentary matches)
-  - PageRank from Antara's link graph
-  - theme boost if a verse's predicted theme matches the question's (Kashvi's classifier)
-
-STUB: combines the fused score with PageRank and a theme boost using equal
-weights; zone scores are added once Antara's index exposes zones.
-"""
-
 import os
 import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from schemas import SearchResult, make_result  # noqa: E402
 
-WEIGHTS = {"fused": 1.0, "pagerank": 1.0, "theme": 1.0}  # tune on q001-q020
-THEME_BOOST = 0.1
+WEIGHTS = {"fused": 0.8, "pagerank": 0.1, "theme": 0.1}
+
+
+def normalise(scores: dict[str, float]) -> dict[str, float]:
+    """Min-max scale to 0-1 (all 1.0 if every score is equal)."""
+    if not scores:
+        return {}
+    low, high = min(scores.values()), max(scores.values())
+    if high == low:
+        return {key: 1.0 for key in scores}
+    return {key: (value - low) / (high - low) for key, value in scores.items()}
 
 
 def rerank(
     results: list[SearchResult],
-    theme: str | None = None,
     pagerank_scores: dict[str, float] | None = None,
-    verse_themes: dict[str, list[str]] | None = None,
+    theme_scores: dict[str, float] | None = None,
+    weights: dict[str, float] | None = None,
 ) -> list[SearchResult]:
-    """Re-order results using PageRank and theme match.
+    """Re-order results with PageRank and topic PageRank.
 
-    Until Antara's PageRank is ready, pass nothing and every verse gets
-    the same PageRank, so the order only changes through the theme boost.
+    Args:
+        results: fused results, best first
+        pagerank_scores: {verse id: PageRank} for all verses (None = not used)
+        theme_scores: {verse id: topic PageRank for the predicted theme} (None = not used)
+        weights: {"fused", "pagerank", "theme"}; defaults to WEIGHTS
     """
-    pagerank_scores = pagerank_scores or {}
-    verse_themes = verse_themes or {}
+    weights = {**WEIGHTS, **(weights or {})}
+    fused = normalise({r["id"]: r["score"] for r in results})
+    pagerank = normalise(pagerank_scores or {})
+    theme = normalise(theme_scores or {})
 
     reranked = []
     for result in results:
-        pr = pagerank_scores.get(result["id"], 1.0)
-        boost = THEME_BOOST if theme and theme in verse_themes.get(result["id"], []) else 0.0
-        score = (
-            WEIGHTS["fused"] * result["score"]
-            + WEIGHTS["pagerank"] * pr * 0.01
-            + WEIGHTS["theme"] * boost
-        )
-        reranked.append(make_result(result["id"], score, "rerank"))
+        vid = result["id"]
+        score = weights["fused"] * fused[vid]
+        if pagerank:
+            score += weights["pagerank"] * pagerank.get(vid, 0.0)
+        if theme:
+            score += weights["theme"] * theme.get(vid, 0.0)
+        reranked.append(make_result(vid, score, "rerank"))
 
     return sorted(reranked, key=lambda r: r["score"], reverse=True)
 
 
 if __name__ == "__main__":
-    fused = [make_result("2.47", 0.032, "rrf"), make_result("2.48", 0.031, "rrf")]
-    print(rerank(fused, theme="action_and_results", verse_themes={"2.48": ["action_and_results"]}))
+    fused = [make_result("2.47", 0.033, "rrf"), make_result("2.48", 0.032, "rrf"), make_result("18.66", 0.016, "rrf")]
+    print(rerank(fused, pagerank_scores={"2.47": 0.001, "2.48": 0.004, "18.66": 0.002}))

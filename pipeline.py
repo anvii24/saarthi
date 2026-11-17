@@ -1,0 +1,210 @@
+"""
+Saarthi pipeline: question in, verses and a checked answer out.
+
+    from pipeline import ask
+    result = ask("exam mein fail ho gaya, kya karun?")
+
+Steps (the file each step comes from):
+  1. language     query/language.py      detect en / hi / hinglish, get English + Hindi versions
+  2. theme        query/classifier.py    predict one of the 11 themes
+  3. rewrite      query/rewrite.py       add 3-5 Gita concepts to the question
+  4. keyword      retrieval/bm25.py      BM25 over all English translations
+  5. meaning      indexing/embeddings.py multilingual-e5 dense search
+  6. fuse         retrieval/fusion.py    Reciprocal Rank Fusion of 4 and 5
+  7. re-rank      retrieval/rerank.py    + PageRank and topic PageRank (indexing/link_analysis.py)
+  8. explain      generation/rag.py      answer citing [chapter.verse], from the top verses only
+  9. fact-check   generation/fact_check.py  drop sentences their cited verse does not support
+
+Translating the answer into Hindi / Hinglish happens in the app
+(app/components/answer_panel.py), only when the user picks that language.
+
+Searching is done in English: the multilingual experiment
+(evaluation/run_multilingual.py) showed that translating Hindi and Hinglish
+questions to English first finds better verses than searching them directly.
+
+The spell checker (query/spelling.py) is not used here: it corrects against the
+Gita's own vocabulary, so it turns everyday words into Gita words ("exam" ->
+"enam", "boss" -> "loss"). It is used on the Advanced Search page instead, where
+people type Gita terms such as "dharmma".
+
+retrieve() runs steps 4-7 on its own, with switches to turn each part off, so
+evaluation/run_retrieval.py can measure what every part adds.
+
+Run from the repo root to try it:
+    python pipeline.py "I failed my exam and feel like a failure"
+"""
+
+import json
+import os
+import sys
+from functools import lru_cache
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from generation.fact_check import CITATION, keep_supported, verify  # noqa: E402
+from generation.rag import explain  # noqa: E402
+from indexing.embeddings import search_dense  # noqa: E402
+from indexing.link_analysis import load_graph, pagerank, topic_pagerank  # noqa: E402
+from indexing.theme_seeds import THEME_SEEDS  # noqa: E402
+from preprocessing.clean_en import clean_en  # noqa: E402
+from query.classifier import classify_theme  # noqa: E402
+from query.language import process_query  # noqa: E402
+from query.rewrite import rewrite  # noqa: E402
+from retrieval.bm25 import search_bm25  # noqa: E402
+from retrieval.fusion import rrf  # noqa: E402
+from retrieval.rerank import rerank  # noqa: E402
+
+VERSES_PATH = os.path.join("data", "verses.json")
+
+BM25_K1 = 8.0  # tuned on the tuning questions (evaluation/tune_bm25.py)
+BM25_B = 0.75
+CANDIDATES = 20  # results taken from each search before fusing
+TOP_VERSES = 5   # verses given to the LLM
+
+
+# ---------------------------------------------------------------------------
+# Data loaded once
+# ---------------------------------------------------------------------------
+
+@lru_cache(maxsize=1)
+def verses_by_id() -> dict:
+    with open(VERSES_PATH, encoding="utf-8") as f:
+        return {v["id"]: v for v in json.load(f)}
+
+
+@lru_cache(maxsize=1)
+def _graph():
+    return load_graph()
+
+
+@lru_cache(maxsize=1)
+def global_pagerank() -> dict:
+    return pagerank(_graph())
+
+
+@lru_cache(maxsize=None)
+def theme_pagerank(theme: str) -> dict:
+    """Topic PageRank started from the theme's seed verses ({} for an unknown theme)."""
+    if theme not in THEME_SEEDS:
+        return {}
+    return topic_pagerank(_graph(), THEME_SEEDS[theme])
+
+
+# ---------------------------------------------------------------------------
+# Search (steps 4-7)
+# ---------------------------------------------------------------------------
+
+def retrieve(
+    english: str,
+    concepts: list[str] | None = None,
+    theme: str | None = None,
+    use_bm25: bool = True,
+    use_dense: bool = True,
+    use_pagerank: bool = True,
+    use_theme: bool = True,
+    weights: dict | None = None,
+    k: int = CANDIDATES,
+) -> dict:
+    """Find verses for an English question.
+
+    Args:
+        english: the question in English
+        concepts: Gita concepts from rewrite() (None or [] = no query rewriting)
+        theme: predicted theme (needed for use_theme)
+        use_*: switch each part on or off (for the ablation table)
+        weights: re-rank weights (see retrieval/rerank.py)
+
+    Returns:
+        {"results": final ranking, "bm25": [...], "dense": [...], "fused": [...]}
+        each a list of SearchResult, best first
+    """
+    extra = " " + " ".join(concepts) if concepts else ""
+    lists = {"bm25": [], "dense": []}
+
+    if use_bm25:
+        tokens = clean_en(english + extra)
+        lists["bm25"] = search_bm25(tokens, k=k, lang="en", zone="translation", k1=BM25_K1, b=BM25_B)
+    if use_dense:
+        lists["dense"] = search_dense(english + extra, k=k)
+
+    ranked = [lst for lst in lists.values() if lst]
+    if len(ranked) == 1:
+        fused = ranked[0]  # one method only: nothing to fuse
+    else:
+        fused = rrf(ranked, top_n=k)
+
+    pr = global_pagerank() if use_pagerank else None
+    tp = theme_pagerank(theme) if use_theme and theme else None
+    final = rerank(fused, pr, tp, weights) if (pr or tp) else fused
+
+    return {"results": final, **lists, "fused": fused}
+
+
+# ---------------------------------------------------------------------------
+# The whole pipeline (steps 1-9)
+# ---------------------------------------------------------------------------
+
+def check_answer(question_en: str, verses: list[dict]) -> dict:
+    """Steps 8-9: explain with the given verses, then keep only supported sentences.
+
+    Returns:
+        {"text_en": checked English answer,
+         "citations": verse ids the checked answer cites,
+         "removed": [{"sentence", "verse_ids", "score"}, ...] sentences the checker dropped,
+         "safety_note": str | None}
+    """
+    answer = explain(question_en, verses)
+    checks = verify(answer["text"], verses)
+    text_en = keep_supported(checks)
+    return {
+        "text_en": text_en,
+        "citations": list(dict.fromkeys(CITATION.findall(text_en))),
+        "removed": [c for c in checks if c["supported"] is False],
+        "safety_note": answer["safety_note"],
+    }
+
+
+def ask(question: str, with_answer: bool = True, top_n: int = TOP_VERSES) -> dict:
+    """Run every step for a question in English, Hindi or Hinglish.
+
+    Returns:
+        {"question", "lang", "english", "hindi",
+         "theme", "concepts",
+         "verses": the top_n verse records,
+         "search": retrieve() output (every intermediate ranking),
+         "answer": check_answer() output, or None if with_answer=False}
+    """
+    query = process_query(question)                       # 1
+    english = query["english"]
+    theme = classify_theme(english)["predicted_theme"]    # 2
+    concepts = rewrite(english)                           # 3
+    search = retrieve(english, concepts, theme)           # 4-7
+
+    verses = verses_by_id()
+    top = [verses[r["id"]] for r in search["results"][:top_n] if r["id"] in verses]
+
+    return {
+        "question": question,
+        "lang": query["lang"],
+        "english": english,
+        "hindi": query["hindi"],
+        "theme": theme,
+        "concepts": concepts,
+        "verses": top,
+        "search": search,
+        "answer": check_answer(english, top) if with_answer and top else None,  # 8-9
+    }
+
+
+if __name__ == "__main__":
+    text = " ".join(sys.argv[1:]) or "I studied hard but still failed my exam. How do I cope?"
+    out = ask(text)
+    print(f"Language: {out['lang']}   English: {out['english']}")
+    print(f"Theme: {out['theme']}   Concepts: {out['concepts']}")
+    print("Top verses:", ", ".join(v["id"] for v in out["verses"]))
+    if out["answer"]:
+        print("\nAnswer:\n" + out["answer"]["text_en"])
+        if out["answer"]["removed"]:
+            print(f"\n({len(out['answer']['removed'])} sentence(s) removed by the fact-checker)")
+        if out["answer"]["safety_note"]:
+            print("\n" + out["answer"]["safety_note"])
