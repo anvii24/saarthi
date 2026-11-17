@@ -1,125 +1,144 @@
+"""
+Spelling correction (Person 2: Kashvi).
+
+correct("What is dharmma") -> "What is dharma"
+
+How one word is corrected:
+  1. Clean it the same way the index does (clean_en / clean_hi). If the cleaned
+     word is already in the index vocabulary, leave it alone.
+  2. Find candidates with the bigram (k=2) index: vocabulary words sharing
+     character bigrams with it, keeping those with Jaccard overlap >= 0.3.
+  3. Keep candidates within edit distance 1 (words of 4 letters or fewer) or 2.
+     A distance-2 candidate is only allowed if its Soundex code matches.
+  4. Rank by edit distance, then same Soundex, then how often the word occurs.
+
+Edit distance is language-aware: in Hindi, adding or dropping the virama (्),
+as in धरम / धर्म, costs only 0.25, because it is a very common spelling variation.
+
+Note: the corrected word is the index's cleaned (stemmed) form, so use this for
+keyword search, not for text shown to the user.
+"""
 
 import re
 
-from indexing.dictionary import (
-    build_kgram_index,
-    edit_distance,
-    soundex,
-)
-from retrieval.spell_correction import load_index
+from indexing.dictionary import build_kgram_index, soundex
+from indexing.inverted_index import InvertedIndex
+from preprocessing.clean_en import clean_en
+from preprocessing.clean_hi import clean_hi
 
+VIRAMA = "्"
+ZONES = ("translation", "commentary", "sanskrit")
 
+_INDEX_CACHE = {}
 _VOCAB_CACHE = {}
 
 
+def load_index(lang="en"):
+    """Load the inverted index built by build_indexes.py (cached)."""
+    if lang not in ("en", "hi"):
+        raise ValueError("Language must be 'en' or 'hi'")
+
+    if lang not in _INDEX_CACHE:
+        index = InvertedIndex()
+        index.load(f"data/processed/index_{lang}.json")
+        _INDEX_CACHE[lang] = index
+
+    return _INDEX_CACHE[lang]
+
+
+def edit_distance(word1, word2, lang="en"):
+    """Levenshtein distance; in Hindi, inserting or deleting a virama costs 0.25."""
+    previous = list(range(len(word2) + 1))
+
+    for i, char1 in enumerate(word1, start=1):
+        current = [i]
+
+        for j, char2 in enumerate(word2, start=1):
+            insertion_cost = 0.25 if lang == "hi" and char2 == VIRAMA else 1
+            deletion_cost = 0.25 if lang == "hi" and char1 == VIRAMA else 1
+            substitution_cost = 0 if char1 == char2 else 1
+            
+            current.append(min(
+                current[j - 1] + insertion_cost,
+                previous[j] + deletion_cost,
+                previous[j - 1] + substitution_cost,
+            ))
+
+        previous = current
+
+    return previous[-1]
+
+
+def get_max_distance(word):
+    """Short words may differ by 1 edit, longer words by 2."""
+    return 1 if len(word) <= 4 else 2
+
+
+def _get_kgrams(word, k=2):
+    """Character k-grams with $ marking the start and end of the word."""
+    padded = f"${word}$"
+    return {padded[i:i + k] for i in range(len(padded) - k + 1)}
+
+
 def _get_vocabulary(lang, zone):
-    """Load vocabulary, k-gram index and term frequencies."""
+    """Vocabulary, k-gram index and term frequencies for one zone (cached)."""
     key = (lang, zone)
 
     if key not in _VOCAB_CACHE:
-        index = load_index(lang)
-        postings = index.index[zone]
-
+        postings = load_index(lang).index[zone]
         vocabulary = set(postings.keys())
-        kgram_index = build_kgram_index(vocabulary, k=2)
-
         frequencies = {
             term: sum(len(positions) for positions in docs.values())
             for term, docs in postings.items()
         }
-
-        _VOCAB_CACHE[key] = (
-            vocabulary,
-            kgram_index,
-            frequencies,
-        )
+        _VOCAB_CACHE[key] = (vocabulary, build_kgram_index(vocabulary, k=2), frequencies)
 
     return _VOCAB_CACHE[key]
 
 
-def _get_kgrams(word, k=2):
-    """Get character k-grams with boundary markers."""
-    padded = f"${word}$"
-
-    return {
-        padded[i:i + k]
-        for i in range(len(padded) - k + 1)
-    }
-
-
-def _correct_word(word, lang, zone):
-    """Correct one word using Jaccard, edit distance and Soundex."""
+def correct_word(word, lang="en", zone="translation"):
+    """Correct one word using the indexed vocabulary (see the top of this file)."""
+    if lang not in ("en", "hi"):
+        raise ValueError("Language must be 'en' or 'hi'")
+    if zone not in ZONES:
+        raise ValueError("Invalid search zone")
     if not word:
         return word
 
-    index = load_index(lang)
-
-    if zone not in ("translation", "commentary", "sanskrit"):
-        raise ValueError("Invalid search zone")
-
-    if lang == "en":
-        from preprocessing.clean_en import clean_en
-        tokens = clean_en(word)
-    elif lang == "hi":
-        from preprocessing.clean_hi import clean_hi
-        tokens = clean_hi(word)
-    else:
-        raise ValueError("Language must be 'en' or 'hi'")
-
-    if len(tokens) != 1:
+    tokens = clean_en(word) if lang == "en" else clean_hi(word)
+    if len(tokens) != 1:  # a stopword, or not a single word
         return word
 
     normalized = tokens[0]
-
-    vocabulary, kgram_index, frequencies = _get_vocabulary(
-        lang, zone
-    )
-
+    vocabulary, kgram_index, frequencies = _get_vocabulary(lang, zone)
     if normalized in vocabulary:
         return word
 
+    # Candidates: vocabulary words that share at least one bigram.
     query_grams = _get_kgrams(normalized)
-
-    # Generate candidates using the k-gram index.
     candidates = set()
-
     for gram in query_grams:
         candidates.update(kgram_index.get(gram, set()))
 
-        ranked = []
     query_soundex = soundex(normalized)
-
-    # Reject candidates that are too different.
-    max_distance = 1 if len(normalized) <= 4 else 2
+    max_distance = get_max_distance(normalized)
+    ranked = []
 
     for candidate in candidates:
         candidate_grams = _get_kgrams(candidate)
-
-        union = query_grams | candidate_grams
-        intersection = query_grams & candidate_grams
-
-        jaccard = len(intersection) / len(union)
-
+        jaccard = len(query_grams & candidate_grams) / len(query_grams | candidate_grams)
         if jaccard < 0.3:
             continue
 
-        distance = edit_distance(normalized, candidate)
-
+        distance = edit_distance(normalized, candidate, lang)
         if distance > max_distance:
             continue
 
-        # Allow two-edit corrections only when phonetic codes match.
-        if distance == 2 and soundex(candidate) != query_soundex:
+        same_soundex = soundex(candidate) == query_soundex
+        if distance >= 2 and not same_soundex:
             continue
 
-        same_soundex = soundex(candidate) == query_soundex
-
-        ranked.append((
-            distance,
-            0 if same_soundex else 1,
-            -frequencies.get(candidate, 0),
-            candidate,
-        ))
+        ranked.append((distance, 0 if same_soundex else 1, -frequencies.get(candidate, 0), candidate))
 
     if not ranked:
         return word
@@ -129,25 +148,20 @@ def _correct_word(word, lang, zone):
 
 
 def correct(query, lang="en", zone="translation"):
-    """Correct misspelled words in a complete search query."""
+    """Correct every word in a query, keeping punctuation around each word."""
     if not query or not query.strip():
         return query
 
     def replace_word(match):
-        token = match.group(0)
-
-        # Preserve punctuation around each word.
-        parts = re.match(r"^([^\w]*)([\w]+)([^\w]*)$", token)
-
+        parts = re.match(r"^([^\w]*)([\w]+)([^\w]*)$", match.group(0))
         if not parts:
-            return token
-
+            return match.group(0)
         prefix, word, suffix = parts.groups()
-        corrected = _correct_word(word, lang, zone)
-
-        return prefix + corrected + suffix
+        return prefix + correct_word(word, lang, zone) + suffix
 
     return re.sub(r"\S+", replace_word, query)
 
 
-__all__ = ["correct"]
+correct_query = correct  # older name, kept so existing code keeps working
+
+__all__ = ["correct", "correct_query", "correct_word", "edit_distance", "get_max_distance", "load_index"]

@@ -25,7 +25,6 @@ from schemas import SearchResult, make_result  # noqa: E402
 
 MODEL_NAME = "intfloat/multilingual-e5-base"
 VERSES_PATH = os.path.join("data", "verses.json")
-SAMPLE_PATH = os.path.join("data", "sample_verses.json")
 VECTORS_PATH = os.path.join("data", "processed", "embeddings.npy")
 META_PATH = os.path.join("data", "processed", "embeddings_meta.json")
 
@@ -45,8 +44,8 @@ def get_model():
 
 
 def load_verses() -> list[dict]:
-    """Full verses.json if it exists, otherwise the 50-verse sample."""
-    path = VERSES_PATH if os.path.exists(VERSES_PATH) else SAMPLE_PATH
+    """All 701 verses from data/verses.json."""
+    path = VERSES_PATH
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
