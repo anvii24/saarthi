@@ -1,12 +1,11 @@
 import pytest
 
-from retrieval.spell_correction import (
+from query.spelling import (
     edit_distance,
     get_max_distance,
     correct_word,
     correct_query,
 )
-
 
 def test_edit_distance():
     assert edit_distance("kitten", "sitting") == 3
