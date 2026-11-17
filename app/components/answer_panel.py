@@ -1,17 +1,41 @@
+"""
+Answer panel for the Streamlit app (Person 3: Anvi).
+
+Shows one answer from pipeline.ask() the way the demo needs it:
+  - an English / हिन्दी / Hinglish toggle (defaults to the language the user asked in)
+  - each sentence that states what a verse says, with a ✓ (it passed the fact-checker)
+    and the verse ids it cites as small tags
+  - the gentler "application" sentences in italics, with no ✓ (they make no claim
+    about the text, so there is nothing to check)
+  - the safety note, when the question suggests serious distress
+  - the cited verses (Sanskrit, transliteration, translation, explanation)
+  - what the fact-checker removed, so the audience can see it working
+
+Use on the Ask page:
+    from pipeline import ask, verses_by_id
+    result = ask(question)
+    render_answer_panel(result["answer"], verses_by_id(), default_lang=result["lang"])
+
+Why the ✓ marks survive translation: every sentence left after the fact-checker
+that cites a verse was supported, and translate_answer() keeps the [2.47]
+citations in place, so in any language "has a citation" means "checked and supported".
+
+Try it on its own (from the repo root):
+    streamlit run app/components/answer_panel.py
+"""
+
 import html
-import json
 import os
+import re
 import sys
 
 import streamlit as st
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from generation.fact_check import CITATION, keep_supported, split_sentences, verify  # noqa: E402
-from generation.rag import explain  # noqa: E402
+from generation.fact_check import CITATION, split_sentences  # noqa: E402
 from generation.translate import translate_answer  # noqa: E402
 
 LANGS = {"English": "en", "हिन्दी": "hi", "Hinglish": "hinglish"}
-VERSES_PATH = os.path.join("data", "verses.json")
 
 CSS = """
 <style>
@@ -24,30 +48,11 @@ CSS = """
 """
 
 
-def prepare_answer(question_en: str, verses: list[dict]) -> dict:
-    """Explain, fact-check, and keep only what the checker accepts.
-
-    Returns:
-        {"text_en": verified English answer,
-         "citations": ["2.47", ...] verse ids cited in the verified answer,
-         "removed": [{"sentence", "verse_ids", "score"}, ...] what the checker dropped,
-         "safety_note": str | None}
-    """
-    answer = explain(question_en, verses)
-    checks = verify(answer["text"], verses)
-    text_en = keep_supported(checks)
-    return {
-        "text_en": text_en,
-        "citations": list(dict.fromkeys(CITATION.findall(text_en))),
-        "removed": [c for c in checks if c["supported"] is False],
-        "safety_note": answer["safety_note"],
-    }
-
-
 def sentence_html(sentence: str) -> str:
     """One sentence as HTML: ✓ + text + verse tags if it cites a verse, else italic."""
     ids = CITATION.findall(sentence)
-    body = html.escape(" ".join(CITATION.sub("", sentence).split()))
+    text = " ".join(CITATION.sub("", sentence).split())
+    body = html.escape(re.sub(r"\s+([.,;:!?।])", r"\1", text))  # "alone ." -> "alone."
     if not ids:
         return f'<p class="saarthi-app">{body}</p>'
     tags = "".join(f'<span class="saarthi-pill">{html.escape(v)}</span>' for v in dict.fromkeys(ids))
@@ -59,8 +64,19 @@ def verse_translation(verse: dict, lang: str) -> str:
     return next((verse["translations"][k] for k in keys if verse["translations"].get(k)), "")
 
 
-def render_answer_panel(prepared: dict, verses_by_id: dict, default_lang: str = "en", key: str = "answer") -> None:
-    """Draw the answer panel. `key` keeps widgets apart if a page shows two panels."""
+def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "en", key: str = "answer") -> None:
+    """Draw the answer panel.
+
+    Args:
+        answer: pipeline.ask(...)["answer"] (the output of pipeline.check_answer)
+        verses_by_id: {verse id: verse record}, e.g. pipeline.verses_by_id()
+        default_lang: "en", "hi" or "hinglish" (use the language the question was asked in)
+        key: keeps widgets apart if a page shows two panels
+    """
+    if not answer:
+        st.warning("No verses were found for this question, so there is no answer to show.")
+        return
+
     st.markdown(CSS, unsafe_allow_html=True)
 
     labels = list(LANGS)
@@ -73,10 +89,10 @@ def render_answer_panel(prepared: dict, verses_by_id: dict, default_lang: str = 
         with st.spinner("Translating..."):
             return translate_answer(text, lang)
 
-    if prepared.get("safety_note"):
-        st.info(show(prepared["safety_note"]))
+    if answer.get("safety_note"):
+        st.info(show(answer["safety_note"]))
 
-    text = show(prepared["text_en"])
+    text = show(answer["text_en"])
     if not text.strip():
         st.warning("None of the generated sentences passed the fact-checker, so there is no answer to show.")
     for sentence in split_sentences(text):
@@ -84,9 +100,9 @@ def render_answer_panel(prepared: dict, verses_by_id: dict, default_lang: str = 
     st.caption("✓ = checked against the cited verse by our fact-checker · "
                "italic lines are gentle suggestions, not claims about the text")
 
-    if prepared["citations"]:
+    if answer["citations"]:
         st.markdown("**Verses cited**")
-        for vid in prepared["citations"]:
+        for vid in answer["citations"]:
             verse = verses_by_id.get(vid)
             if not verse:
                 continue
@@ -99,44 +115,35 @@ def render_answer_panel(prepared: dict, verses_by_id: dict, default_lang: str = 
                 if lang == "en" and verse.get("explanation_en"):
                     st.caption("In simple words: " + verse["explanation_en"])
 
-    if prepared["removed"]:
-        with st.expander(f"Removed by the fact-checker ({len(prepared['removed'])})"):
+    if answer["removed"]:
+        with st.expander(f"Removed by the fact-checker ({len(answer['removed'])})"):
             st.caption("These sentences claimed more than their cited verse says, so they were not shown. "
                        "(Shown in English, as generated.)")
-            for c in prepared["removed"]:
+            for c in answer["removed"]:
                 st.markdown(f"- ~~{html.escape(c['sentence'])}~~  ·  support score {c['score']}")
 
-@st.cache_resource
-def _load_verses() -> dict:
-    with open(VERSES_PATH, encoding="utf-8") as f:
-        return {v["id"]: v for v in json.load(f)}
 
+# ---------------------------------------------------------------------------
+# Stand-alone test app:  streamlit run app/components/answer_panel.py
+# ---------------------------------------------------------------------------
 
 def _demo() -> None:
-    from indexing.embeddings import search_dense
-    from query.language import process_query
-    from query.rewrite import rewrite
+    from pipeline import ask, verses_by_id
 
     st.set_page_config(page_title="Saarthi answer panel", layout="centered")
     st.title("Saarthi")
-    st.caption("Answer panel test: meaning search only, until the full pipeline is wired up")
+    st.caption("Answer panel test, using the full pipeline")
     question = st.text_input("Ask anything, in English, Hindi or Hinglish")
     if not question.strip():
         return
 
-    verses_by_id = _load_verses()
     if st.session_state.get("demo_question") != question:
         with st.spinner("Finding verses and writing an answer..."):
-            pq = process_query(question)
-            concepts = rewrite(pq["english"])
-            query = f"{pq['english']} {' '.join(concepts)}" if concepts else pq["english"]
-            top = [verses_by_id[r["id"]] for r in search_dense(query, k=5)]
+            st.session_state.demo_result = ask(question)
             st.session_state.demo_question = question
-            st.session_state.demo_question_lang = pq["lang"]
-            st.session_state.demo_prepared = prepare_answer(pq["english"], top)
 
-    render_answer_panel(st.session_state.demo_prepared, verses_by_id,
-                        default_lang=st.session_state.demo_question_lang, key="demo")
+    result = st.session_state.demo_result
+    render_answer_panel(result["answer"], verses_by_id(), default_lang=result["lang"], key="demo")
 
 
 if __name__ == "__main__":
