@@ -16,7 +16,7 @@ Writes:
 Tuning vs holdout: parameters (BM25 k1/b, fusion and re-rank weights, graph alpha,
 checker threshold) are chosen on the tuning questions only, and results are
 reported on the holdout questions, so the numbers are not flattered by tuning on
-the questions they are scored on. data/test_set/independent_test_questions.json
+the questions they are scored on. data/test_set/theme_training_questions.json
 (theme-only, for the classifiers) is separate and is not touched by this script.
 
 It also checks the sheet and lists every problem it finds:

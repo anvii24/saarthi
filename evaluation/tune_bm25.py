@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import csv
 import json
@@ -15,7 +17,7 @@ OUTPUT_PATH = "evaluation/results/bm25_tuning.csv"
 K = 20
 
 # Parameter combinations to compare
-K1_VALUES = [0.8, 1.2, 1.5, 1.8, 2.0]
+K1_VALUES = [0.8, 1.2, 1.5, 1.8, 2.0, 2.5, 3.0]
 B_VALUES = [0.25, 0.5, 0.75, 1.0]
 
 

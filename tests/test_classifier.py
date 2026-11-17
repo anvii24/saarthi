@@ -10,8 +10,8 @@ from query.classifier import (
 def test_training_data_loads():
     texts, labels = load_training_data()
 
-    assert len(texts) == 68
-    assert len(labels) == 68
+    assert len(texts) == 55
+    assert len(labels) == 55
     assert len(set(labels)) == 11
 
 

@@ -21,7 +21,7 @@ def main():
 
     test_path = (
         project_root / "data" / "test_set"
-        / "independent_test_questions.json"
+        / "theme_training_questions.json"
     )
 
     with open(test_path, "r", encoding="utf-8") as file:

@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
 from pathlib import Path
@@ -5,6 +7,7 @@ from sklearn.metrics import confusion_matrix
 
 from sklearn.metrics import accuracy_score, classification_report
 
+from query.classifier import load_training_data
 from query.classifiers import train_classifier, predict_theme
 
 
@@ -33,46 +36,33 @@ def load_questions():
     return texts, labels
 
 
-def evaluate_method(texts, labels, method, k=3):
-    """Evaluate a classifier using leave-one-out cross-validation."""
-    actual = []
-    predicted = []
+def evaluate_method(train_texts, train_labels, test_texts, test_labels, method, k=3):
+    """Train once on the separate training questions, score the test questions."""
+    model = train_classifier(
+        train_texts,
+        train_labels,
+        method=method,
+        k=k
+    )
 
-    for held_out in range(len(texts)):
-        training_texts = [
-            text for i, text in enumerate(texts)
-            if i != held_out
-        ]
+    predicted = [predict_theme(model, text) for text in test_texts]
 
-        training_labels = [
-            label for i, label in enumerate(labels)
-            if i != held_out
-        ]
-
-        model = train_classifier(
-            training_texts,
-            training_labels,
-            method=method,
-            k=k
-        )
-
-        prediction = predict_theme(model, texts[held_out])
-
-        actual.append(labels[held_out])
-        predicted.append(prediction)
-
-    return actual, predicted
+    return list(test_labels), predicted
 
 
 def main():
+    train_texts, train_labels = load_training_data()
     texts, labels = load_questions()
 
-    print("Total questions:", len(texts))
+    print("Training questions:", len(train_texts))
+    print("Test questions:", len(texts))
     print("Total themes:", len(set(labels)))
 
     # Keep the existing Naive Bayes and Rocchio results as references.
     for method in ("naive_bayes", "rocchio"):
-        actual, predicted = evaluate_method(texts, labels, method)
+        actual, predicted = evaluate_method(
+            train_texts, train_labels, texts, labels, method
+        )
 
         print(f"\n{method.upper()}")
         print(f"Accuracy: {accuracy_score(actual, predicted):.4f}")
@@ -85,7 +75,7 @@ def main():
     print("\nKNN EXPERIMENT")
     for k in (1, 3, 5, 7):
         actual, predicted = evaluate_method(
-            texts, labels, "knn", k=k
+            train_texts, train_labels, texts, labels, "knn", k=k
         )
 
         print(

@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
 from pathlib import Path
@@ -7,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.metrics.pairwise import cosine_similarity
 
 from preprocessing.clean_en import clean_en
-from query.classifier import calculate_theme_scores
+from query.classifier import calculate_theme_scores, load_training_data
 
 
 DATA_PATH = (
@@ -35,31 +37,22 @@ def load_questions():
     return texts, labels
 
 
-def evaluate_method(texts, labels, method):
-    """Evaluate using leave-one-out cross-validation."""
+def evaluate_method(train_texts, train_labels, test_texts, test_labels, method):
+    """Train on the separate training questions, score the test questions."""
     actual = []
     predicted = []
     misclassified = []
 
-    for held_out in range(len(texts)):
-        training_texts = [
-            text for i, text in enumerate(texts)
-            if i != held_out
-        ]
+    vectorizer = TfidfVectorizer(
+        tokenizer=clean_en,
+        token_pattern=None,
+        lowercase=False
+    )
 
-        training_labels = [
-            label for i, label in enumerate(labels)
-            if i != held_out
-        ]
+    training_matrix = vectorizer.fit_transform(train_texts)
 
-        vectorizer = TfidfVectorizer(
-            tokenizer=clean_en,
-            token_pattern=None,
-            lowercase=False
-        )
-
-        training_matrix = vectorizer.fit_transform(training_texts)
-        query_vector = vectorizer.transform([texts[held_out]])
+    for text, label in zip(test_texts, test_labels):
+        query_vector = vectorizer.transform([text])
 
         similarities = cosine_similarity(
             query_vector,
@@ -68,16 +61,16 @@ def evaluate_method(texts, labels, method):
 
         scores = calculate_theme_scores(
             similarities,
-            training_labels,
+            train_labels,
             method=method
         )
 
         predicted_theme = max(scores, key=scores.get)
 
-        actual.append(labels[held_out])
+        actual.append(label)
         predicted.append(predicted_theme)
 
-        if predicted_theme != labels[held_out]:
+        if predicted_theme != label:
             top_scores = sorted(
                 scores.items(),
                 key=lambda item: item[1],
@@ -85,8 +78,8 @@ def evaluate_method(texts, labels, method):
             )[:3]
 
             misclassified.append({
-                "question": texts[held_out],
-                "actual": labels[held_out],
+                "question": text,
+                "actual": label,
                 "predicted": predicted_theme,
                 "top_scores": top_scores
             })
@@ -95,15 +88,19 @@ def evaluate_method(texts, labels, method):
 
 
 def main():
+    train_texts, train_labels = load_training_data()
     texts, labels = load_questions()
 
-    print("Total questions:", len(texts))
+    print("Training questions:", len(train_texts))
+    print("Test questions:", len(texts))
     print("Total themes:", len(set(labels)))
 
     mean_misclassified = []
 
     for method in ("mean", "max"):
         actual, predicted, misclassified = evaluate_method(
+            train_texts,
+            train_labels,
             texts,
             labels,
             method

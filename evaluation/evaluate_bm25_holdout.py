@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
 import math
@@ -10,7 +12,7 @@ QUESTIONS_PATH = "data/test_set/questions_holdout.json"
 QRELS_PATH = "data/test_set/qrels_holdout.json"
 
 K = 20
-K1 = 1.2
+K1 = 1.2  # provisional: update after re-running tune_bm25.py with the wider grid
 B = 1.0
 
 
@@ -39,8 +41,8 @@ def main():
 
     ids = sorted(set(questions) & set(qrels))
 
-    if len(ids) != 12:
-        raise ValueError(f"Expected 12 holdout questions, found {len(ids)}")
+    if not ids:
+        raise ValueError("No holdout questions found: run python evaluation/import_test_set.py")
 
     scores = []
     empty = 0
@@ -67,7 +69,7 @@ def main():
         score = ndcg_at_k(ranked_ids, qrels[qid], K)
         scores.append(score)
 
-        print(f"[{number}/12] {qid}: nDCG@20={score:.4f}")
+        print(f"[{number}/{len(ids)}] {qid}: nDCG@20={score:.4f}")
 
     average = sum(scores) / len(scores)
 

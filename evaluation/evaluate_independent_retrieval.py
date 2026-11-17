@@ -1,3 +1,6 @@
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import csv
 import json
 import math
@@ -7,11 +10,11 @@ from retrieval.bm25 import search_bm25
 from retrieval.tfidf import search_tfidf
 
 
-QUESTIONS_PATH = "data/test_set/questions.json"
-QRELS_PATH = "data/test_set/qrels.json"
+QUESTIONS_PATH = "data/test_set/questions_holdout.json"
+QRELS_PATH = "data/test_set/qrels_holdout.json"
 
 K = 20
-K1 = 1.2
+K1 = 1.2  # provisional: update after re-running tune_bm25.py with the wider grid
 B = 1.0
 
 

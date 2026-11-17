@@ -7,11 +7,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 from preprocessing.clean_en import clean_en
 
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "data/test_set/questions.json"
+DATA_PATH = (
+    Path(__file__).resolve().parent.parent
+    / "data/test_set/theme_training_questions.json"
+)
 
 
 def load_training_data():
-    """Load labelled English questions and their themes."""
+    """Load the separate theme-training questions (never the test questions)."""
     with open(DATA_PATH, "r", encoding="utf-8") as file:
         questions = json.load(file)
 
