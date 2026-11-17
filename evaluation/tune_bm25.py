@@ -17,8 +17,8 @@ OUTPUT_PATH = "evaluation/results/bm25_tuning.csv"
 K = 20
 
 # Parameter combinations to compare
-K1_VALUES = [0.8, 1.2, 1.5, 1.8, 2.0, 2.5, 3.0]
-B_VALUES = [0.25, 0.5, 0.75, 1.0]
+K1_VALUES = [2.5, 3.0, 4.0, 5.0, 6.0, 8.0]
+B_VALUES = [0.5, 0.75, 1.0]
 
 
 def ndcg_at_k(ranked_ids, grades, k=20):
