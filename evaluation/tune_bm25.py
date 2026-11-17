@@ -3,9 +3,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import csv
 import json
-import math
-import os
 
+from evaluation.metrics import ndcg_at_k
 from preprocessing.clean_en import clean_en
 from retrieval.bm25 import search_bm25
 
@@ -19,26 +18,6 @@ K = 20
 # Parameter combinations to compare
 K1_VALUES = [2.5, 3.0, 4.0, 5.0, 6.0, 8.0]
 B_VALUES = [0.5, 0.75, 1.0]
-
-
-def ndcg_at_k(ranked_ids, grades, k=20):
-    """Calculate nDCG@k using graded relevance labels."""
-
-    dcg = 0.0
-
-    for rank, verse_id in enumerate(ranked_ids[:k], start=1):
-        relevance = grades.get(verse_id, 0)
-        gain = (2 ** relevance) - 1
-        dcg += gain / math.log2(rank + 1)
-
-    ideal_grades = sorted(grades.values(), reverse=True)[:k]
-
-    idcg = 0.0
-    for rank, relevance in enumerate(ideal_grades, start=1):
-        gain = (2 ** relevance) - 1
-        idcg += gain / math.log2(rank + 1)
-
-    return dcg / idcg if idcg else 0.0
 
 
 def main():

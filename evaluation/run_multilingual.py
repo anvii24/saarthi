@@ -1,13 +1,13 @@
 import argparse
 import csv
 import json
-import math
 import os
 import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from indexing.embeddings import search_dense  
-from query.language import process_query  
+from evaluation.metrics import average_precision, mrr, ndcg_at_k, precision_at_k, recall_at_k  # noqa: E402
+from indexing.embeddings import search_dense  # noqa: E402
+from query.language import process_query  # noqa: E402
 
 QUESTIONS = os.path.join("data", "test_set", "questions.json")
 QRELS = os.path.join("data", "test_set", "qrels.json")
@@ -16,42 +16,12 @@ K = 10
 LANGS = ["en", "hi", "hinglish"]
 STRATEGIES = ["direct", "translate_en", "hindi_side"]
 
-# Metrics (stand-in for evaluation/metrics.py)
-
-def precision_at_k(ranked, rel, k):
-    return sum(1 for v in ranked[:k] if v in rel) / k
-
-
-def recall_at_k(ranked, rel, k):
-    return sum(1 for v in ranked[:k] if v in rel) / len(rel) if rel else 0.0
-
-
-def reciprocal_rank(ranked, rel):
-    return next((1 / i for i, v in enumerate(ranked, start=1) if v in rel), 0.0)
-
-
-def average_precision(ranked, rel):
-    hits, total = 0, 0.0
-    for i, v in enumerate(ranked, start=1):
-        if v in rel:
-            hits += 1
-            total += hits / i
-    return total / len(rel) if rel else 0.0
-
-
-def ndcg_at_k(ranked, grades, k):
-    dcg = sum((2 ** grades.get(v, 0) - 1) / math.log2(i + 1) for i, v in enumerate(ranked[:k], start=1))
-    ideal = sorted(grades.values(), reverse=True)[:k]
-    idcg = sum((2 ** g - 1) / math.log2(i + 1) for i, g in enumerate(ideal, start=1))
-    return dcg / idcg if idcg else 0.0
-
-
 def score(ranked, grades):
     rel = set(grades)
     return {
         "P@5": precision_at_k(ranked, rel, 5),
         "R@10": recall_at_k(ranked, rel, K),
-        "MRR": reciprocal_rank(ranked, rel),
+        "MRR": mrr(ranked, rel),
         "MAP": average_precision(ranked, rel),
         "nDCG@10": ndcg_at_k(ranked, grades, K),
     }

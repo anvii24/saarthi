@@ -3,8 +3,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import csv
 import json
-import math
 
+from evaluation.metrics import ndcg_at_k
 from preprocessing.clean_en import clean_en
 from retrieval.bm25 import search_bm25
 from retrieval.tfidf import search_tfidf
@@ -14,25 +14,8 @@ QUESTIONS_PATH = "data/test_set/questions_holdout.json"
 QRELS_PATH = "data/test_set/qrels_holdout.json"
 
 K = 20
-K1 = 8.0  
+K1 = 8.0
 B = 0.75
-
-
-def ndcg_at_k(ranked_ids, grades, k=20):
-    dcg = sum(
-        (2 ** grades.get(vid, 0) - 1) / math.log2(rank + 1)
-        for rank, vid in enumerate(ranked_ids[:k], start=1)
-    )
-
-    ideal = sorted(grades.values(), reverse=True)[:k]
-
-    idcg = sum(
-        (2 ** grade - 1) / math.log2(rank + 1)
-        for rank, grade in enumerate(ideal, start=1)
-    )
-
-    return dcg / idcg if idcg else 0.0
-
 
 def evaluate(method, questions, qrels):
     scores = []
