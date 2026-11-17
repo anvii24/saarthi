@@ -1,0 +1,8 @@
+metric,plain_rag,saarthi
+P@5,0.105,0.145
+nDCG@5,0.119,0.174
+citation_relevance_pct,11.0,18.8
+cited_sentences,458,292
+supported_pct,62.7,94.9
+unsupported_shown_per_answer,2.14,0.0
+answers_with_no_unsupported_shown_pct,12.5,100.0
