@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import sys
+from collections import Counter
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -16,6 +17,7 @@ from evaluation.metrics import (
     mrr,
     ndcg_at_k,
 )
+from query.classifier import load_training_data, train_model, predict_theme
 
 ALPHAS = [0.5, 0.7, 0.8, 0.9, 1.0]
 K = 5
@@ -61,11 +63,20 @@ def evaluate(ranked, relevant):
 
 
 def main():
-    with open("data/test_set/questions.json", encoding="utf-8") as f:
+    with open("data/test_set/questions_tuning.json", encoding="utf-8") as f:
         questions = json.load(f)
 
-    with open("data/test_set/qrels.json", encoding="utf-8") as f:
+    with open("data/test_set/qrels_tuning.json", encoding="utf-8") as f:
         qrels = json.load(f)
+
+    if not qrels:
+        raise ValueError("No tuning relevance labels found.")
+
+    train_texts, train_labels = load_training_data()
+    classifier = train_model(train_texts, train_labels, method="rocchio")
+
+    print(f"Classifier training questions: {len(train_texts)}")
+    print(f"Tuning questions: {len(qrels)}")
 
     graph = load_graph()
     global_pr = pagerank(graph)
@@ -74,6 +85,13 @@ def main():
         theme: topic_pagerank(graph, seeds)
         for theme, seeds in THEME_SEEDS.items()
     }
+
+    predicted_themes = {
+        question_id: predict_theme(classifier, questions[question_id]["en"])
+        for question_id in qrels
+    }
+
+    print("Predicted theme distribution:", dict(Counter(predicted_themes.values())))
 
     results = []
 
@@ -91,13 +109,10 @@ def main():
                 for result in dense_results
             }
 
-            graph_scores = topic_pr.get(
-                question["theme"], global_pr
-            )
+            predicted_theme = predicted_themes[question_id]
+            graph_scores = topic_pr.get(predicted_theme, global_pr)
 
-            combined = combine_scores(
-                dense_scores, graph_scores, alpha
-            )
+            combined = combine_scores(dense_scores, graph_scores, alpha)
 
             ranked = sorted(
                 combined,
@@ -122,9 +137,7 @@ def main():
     output_path = "evaluation/results/graph_alpha.csv"
 
     with open(output_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f, fieldnames=results[0].keys()
-        )
+        writer = csv.DictWriter(f, fieldnames=results[0].keys())
         writer.writeheader()
         writer.writerows(results)
 

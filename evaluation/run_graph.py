@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import sys
+from collections import Counter
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -16,14 +17,14 @@ from evaluation.metrics import (
     mrr,
     ndcg_at_k,
 )
+from query.classifier import load_training_data, train_model, predict_theme
 
-DATA_DIR = "data"
 TEST_DIR = "data/test_set"
 RESULTS_DIR = "evaluation/results"
 GRAPH_SCORES_PATH = "data/processed/graph_scores.json"
 RESULTS_PATH = "evaluation/results/graph.csv"
 
-ALPHA = 0.8
+ALPHA = 0.5
 K = 5
 
 
@@ -76,11 +77,20 @@ def main():
     os.makedirs(RESULTS_DIR, exist_ok=True)
     os.makedirs("data/processed", exist_ok=True)
 
-    with open(f"{TEST_DIR}/questions.json", encoding="utf-8") as f:
+    with open(f"{TEST_DIR}/questions_holdout.json", encoding="utf-8") as f:
         questions = json.load(f)
 
-    with open(f"{TEST_DIR}/qrels.json", encoding="utf-8") as f:
+    with open(f"{TEST_DIR}/qrels_holdout.json", encoding="utf-8") as f:
         qrels = json.load(f)
+
+    if not qrels:
+        raise ValueError("No holdout relevance labels found.")
+
+    train_texts, train_labels = load_training_data()
+    classifier = train_model(train_texts, train_labels, method="rocchio")
+
+    print(f"Classifier training questions: {len(train_texts)}")
+    print(f"Holdout questions: {len(qrels)}")
 
     graph = load_graph()
     print(f"Graph loaded: {len(graph)} verses")
@@ -108,16 +118,25 @@ def main():
 
     methods = ["dense", "pagerank", "topic_pagerank", "hits_authority"]
     all_results = {method: [] for method in methods}
+    predicted_themes = {}
 
     for question_id, relevant in qrels.items():
-        question = questions[question_id]
-        query = question["en"]
-        theme = question["theme"]
+        query = questions[question_id]["en"]
+        predicted_themes[question_id] = predict_theme(classifier, query)
+
+    print("Predicted theme distribution:", dict(Counter(predicted_themes.values())))
+
+    for question_id, relevant in qrels.items():
+        query = questions[question_id]["en"]
+        predicted_theme = predicted_themes[question_id]
 
         print(f"Evaluating {question_id}: {query}")
+        print(f"Predicted theme: {predicted_theme}")
 
         dense_results = search_dense(query, k=20)
         dense_scores = {result["id"]: result["score"] for result in dense_results}
+
+        selected_topic_scores = theme_pr.get(predicted_theme, global_pr)
 
         rankings = {
             "dense": rank_scores(dense_scores),
@@ -125,7 +144,7 @@ def main():
                 combine_scores(dense_scores, global_pr)
             ),
             "topic_pagerank": rank_scores(
-                combine_scores(dense_scores, theme_pr.get(theme, global_pr))
+                combine_scores(dense_scores, selected_topic_scores)
             ),
             "hits_authority": rank_scores(
                 combine_scores(dense_scores, authorities)
@@ -152,7 +171,8 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    print("\nGraph evaluation complete")
+    print("\nHoldout graph evaluation complete")
+    print(f"Evaluated {len(qrels)} holdout questions")
     print(f"Results saved to {RESULTS_PATH}")
 
     for row in rows:
