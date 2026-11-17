@@ -33,7 +33,3 @@ def render_verse_card(verse: dict, lang: str) -> None:
 
         st.markdown("**Translation**")
         st.write(translation)
-
-        if verse.get("explanation_en"):
-            with st.expander("Simple explanation"):
-                st.write(verse["explanation_en"])
