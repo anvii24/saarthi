@@ -1,16 +1,5 @@
-"""
-Language handling for user questions (Person 3: Anvi).
-
-process_query() works out whether a question is English, Hindi or Hinglish,
-and returns a Devanagari Hindi version and an English version, so both the
-English and the Hindi indexes can be searched.
-
-- Language detection: rule-based (Devanagari characters -> Hindi; Roman letters
-  with common Hindi words -> Hinglish; otherwise English).
-- Transliteration + translation: one LLM call (cached). We use the LLM rather
-  than IndicTrans2 / IndicXlit because those models are large and hard to install
-  on Windows, and the LLM handles Hinglish's loose spelling well.
-  (Mention this choice in the report.)
+"""Detect whether a question is English, Hindi or Hinglish, and get English and Hindi
+versions of it (one cached LLM call).
 """
 
 import os

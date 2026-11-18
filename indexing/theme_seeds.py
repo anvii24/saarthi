@@ -1,3 +1,4 @@
+"""Starting verses for each theme, used by topic PageRank."""
 
 THEME_SEEDS = {
     "duty": ["2.47", "3.19", "3.30", "18.47"],

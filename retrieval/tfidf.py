@@ -1,3 +1,4 @@
+"""TF-IDF keyword search (log tf, idf, cosine normalisation) over one zone of the inverted index."""
 
 import math
 from collections import Counter, defaultdict
@@ -10,6 +11,7 @@ _NORM_CACHE = {}
 
 
 def load_index(lang="en"):
+    """Load the saved inverted index for 'en' or 'hi' (cached)."""
     if lang not in ("en", "hi"):
         raise ValueError("Language must be 'en' or 'hi'")
 
@@ -23,18 +25,21 @@ def load_index(lang="en"):
 
 
 def calculate_tf(term_frequency):
+    """1 + log(tf), or 0 if the term is absent."""
     if term_frequency <= 0:
         return 0
     return 1 + math.log(term_frequency)
 
 
 def calculate_idf(total_documents, document_frequency):
+    """log(N / df)."""
     if document_frequency == 0:
         return 0
     return math.log(total_documents / document_frequency)
 
 
 def calculate_document_norms(index, zone="translation"):
+    """Length of each verse's TF-IDF vector, for cosine normalisation."""
     norms_squared = defaultdict(float)
     total_documents = len(index.document_lengths[zone])
 
@@ -57,6 +62,7 @@ def calculate_document_norms(index, zone="translation"):
 
 
 def search_tfidf(query_tokens, k=20, lang="en", zone="translation"):
+    """Top k verses by cosine similarity of TF-IDF vectors; returns [{id, score, method}]."""
     if k <= 0:
         return []
 

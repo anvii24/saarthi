@@ -1,3 +1,9 @@
+"""English vs Hindi vs Hinglish questions: search directly, translate to English first,
+or search the Hindi translations (meaning search, holdout questions).
+
+Run: python evaluation/run_multilingual.py
+"""
+
 import argparse
 import csv
 import json
@@ -17,6 +23,7 @@ LANGS = ["en", "hi", "hinglish"]
 STRATEGIES = ["direct", "translate_en", "hindi_side"]
 
 def score(ranked, grades):
+    """All five metrics for one ranking."""
     rel = set(grades)
     return {
         "P@5": precision_at_k(ranked, rel, 5),
@@ -103,6 +110,7 @@ def main():
 
 
 def make_chart(summary):
+    """Bar chart of nDCG@10 per question language and strategy."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt

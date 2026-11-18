@@ -1,3 +1,4 @@
+"""Polite downloader used by the crawlers: checks robots.txt and waits 1.5 s between requests to a site."""
 
 import time
 from pathlib import Path

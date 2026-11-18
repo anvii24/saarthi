@@ -1,3 +1,4 @@
+"""BM25 keyword search over one zone of the inverted index."""
 
 import math
 from collections import Counter, defaultdict
@@ -9,6 +10,7 @@ _INDEX_CACHE = {}
 
 
 def load_index(lang="en"):
+    """Load the saved inverted index for 'en' or 'hi' (cached)."""
     if lang not in ("en", "hi"):
         raise ValueError("Language must be 'en' or 'hi'")
 
@@ -22,6 +24,7 @@ def load_index(lang="en"):
 
 
 def calculate_idf(total_documents, document_frequency):
+    """BM25 idf: log(1 + (N - df + 0.5) / (df + 0.5))."""
     if total_documents <= 0 or document_frequency <= 0:
         return 0
 
@@ -40,6 +43,7 @@ def calculate_bm25_score(
     k1=1.5,
     b=0.75
 ):
+    """BM25 score of one query term in one verse."""
     if term_frequency <= 0 or total_documents <= 0:
         return 0
 
@@ -70,6 +74,7 @@ def search_bm25(
     k1=1.5,
     b=0.75
 ):
+    """Top k verses for cleaned query tokens; returns [{id, score, method}], best first."""
     if k <= 0:
         return []
 

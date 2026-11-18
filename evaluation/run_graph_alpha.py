@@ -1,3 +1,7 @@
+"""Choose alpha (weight of meaning search vs topic PageRank) on the tuning questions.
+
+Run: python evaluation/run_graph_alpha.py
+"""
 
 import csv
 import json
@@ -24,6 +28,7 @@ K = 5
 
 
 def normalize_scores(scores):
+    """Min-max scale scores to 0-1."""
     if not scores:
         return {}
 
@@ -40,6 +45,7 @@ def normalize_scores(scores):
 
 
 def combine_scores(dense_scores, graph_scores, alpha):
+    """alpha * meaning-search score + (1 - alpha) * graph score, both scaled to 0-1."""
     dense_normalized = normalize_scores(dense_scores)
     graph_normalized = normalize_scores(graph_scores)
 
@@ -53,6 +59,7 @@ def combine_scores(dense_scores, graph_scores, alpha):
 
 
 def evaluate(ranked, relevant):
+    """P@5, Recall@5, MAP, MRR and nDCG@5 for one ranking."""
     return {
         "P@5": precision_at_k(ranked, relevant.keys(), K),
         "Recall@5": recall_at_k(ranked, relevant.keys(), K),

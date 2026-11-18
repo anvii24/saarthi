@@ -1,32 +1,7 @@
-"""
-Merge raw VedicScriptures responses into data/verses.json and data/links.json
-(Person 3: Anvi).
+"""Merge the three raw sources into data/verses.json (701 verses) and extract the
+verse-to-verse references in the commentaries into data/links.json.
 
-Input:  1. data/raw/hi_commentary/  — one raw VedicScriptures JSON per verse
-           (from crawler/crawl_hi_commentary.py): Sanskrit, transliteration,
-           6 English + 2 Hindi translations, English + Hindi commentary
-        2. data/raw/en_source1/verses.json  — Antara's AdiyogiArts source
-           (crawler/crawl_en_source1.py). Its English translation is ~98% the same
-           as Gambhirananda's, which we already have, so we take only its short
-           plain-English explanation of each verse, as "explanation_en".
-        3. data/raw/en_source2/verses.json  — Kashvi's Swami Swarupananda (1909)
-           translation (crawler/crawl_en_source2.py), added as "en_swarupananda".
-           Its edition counts 34 verses in chapter 13, so chapters are aligned by
-           comparing texts (see add_aligned_translation), not just by id.
-Output: data/verses.json  — one clean Verse record per verse (see schemas.py)
-        data/links.json   — verse-to-verse cross-references found in the commentaries
-
-Run from the repo root (after both crawlers):
-    python crawler/merge.py
-    python crawler/merge.py --raw some/other/folder     (optional)
-
-Notes for the report:
-- The source has one extra entry per chapter: the closing colophon
-  ("ॐ तत्सदिति ... नाम ... अध्यायः"). It is not a verse, so it is dropped.
-- This edition has 35 verses in chapter 13, so the total is 701, not 700.
-- Links come from Swami Ramsukhdas's Hindi commentary ("(गीता 6। 30)" or "(6। 30)")
-  and Prabhupada's English purport ("Bg. 18.69"). References to other texts
-  (मानस, श्रीमद्भागवत, Upaniṣads ...) and three-part numbers are ignored.
+Run after the crawlers: python crawler/merge.py
 """
 
 import argparse
@@ -100,6 +75,7 @@ def clean_verse_text(text: str) -> str:
 
 
 def get(raw: dict, key: str, field: str) -> str:
+    """One cleaned field of one translation or commentary in a raw record ('' if missing)."""
     part = raw.get(key)
     return clean(part.get(field)) if isinstance(part, dict) else ""
 
@@ -191,6 +167,7 @@ def add_aligned_translation(verses: list[dict], source: list[dict], src_key: str
 # ---------------------------------------------------------------------------
 
 def to_verse(raw: dict) -> dict:
+    """Convert one raw source record into a Verse."""
     ch, v = int(raw["chapter"]), int(raw["verse"])
     translations = {}
     for key, field, name in ENGLISH_TRANSLATIONS + HINDI_TRANSLATIONS:
@@ -240,7 +217,7 @@ def main():
             print(f"  {verse['id']}: {problems}")
     valid_ids = {v["id"] for v in verses}
 
-    # 2b. add Antara's plain-English explanations (en_source1), matched by verse id
+    # 2b. add the plain-English explanations (en_source1), matched by verse id
     if os.path.exists(EN_SOURCE1):
         with open(EN_SOURCE1, encoding="utf-8") as f:
             explanations = {r["id"]: clean(r.get("commentary", "")) for r in json.load(f)}
@@ -255,7 +232,7 @@ def main():
     else:
         print(f"(No {EN_SOURCE1} yet: run crawler/crawl_en_source1.py to add explanations)")
 
-    # 2c. add Kashvi's Swarupananda (1909) translation (en_source2), aligning chapters
+    # 2c. add Swarupananda's (1909) translation (en_source2), aligning chapters
     if os.path.exists(EN_SOURCE2):
         with open(EN_SOURCE2, encoding="utf-8") as f:
             source2 = json.load(f)

@@ -1,3 +1,4 @@
+"""Hindi text cleaning: drop nukta, punctuation and stopwords, strip common plural suffixes."""
 
 import re
 
@@ -25,6 +26,7 @@ SUFFIXES = ("ाओं", "ियों", "ुओं", "ों", "ें")
 
 
 def clean_hi(text):
+    """Return the cleaned tokens of a Hindi text."""
     text = text.translate(NUKTA_MAP)
     text = re.sub(r"[।॥।,!?;:\"'()\[\]{}]", " ", text)
 

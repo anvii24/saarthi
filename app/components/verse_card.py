@@ -1,8 +1,10 @@
+"""One verse as a card: Sanskrit, transliteration and a translation."""
 
 import streamlit as st
 
 
 def render_verse_card(verse: dict, lang: str) -> None:
+    """Show one verse; lang 'hi' shows a Hindi translation, anything else English."""
     translations = verse.get("translations", {})
 
     if lang == "hi":

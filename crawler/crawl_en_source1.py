@@ -1,3 +1,7 @@
+"""Download the AdiyogiArts Gita JSON (plain-English explanations) into data/raw/en_source1/.
+
+Run: python crawler/crawl_en_source1.py
+"""
 
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -15,6 +19,7 @@ EN_SOURCE_URL = f"{BASE_URL}/en.json"
 
 
 def crawl_en_source1():
+    """Download the two files (if not saved yet) and save Verse records to data/raw/en_source1/verses.json."""
     EN_SOURCE1_DIR.mkdir(parents=True, exist_ok=True)
 
     base_path = EN_SOURCE1_DIR / "base.json"

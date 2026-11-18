@@ -1,3 +1,7 @@
+"""Query rewriting: the LLM lists 3-5 Gita concepts behind an everyday question
+("I failed my exam" -> "fruits of action", "equanimity").
+"""
+
 import os
 import sys
 

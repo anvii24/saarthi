@@ -1,14 +1,8 @@
-"""Parse locally saved chapters of Swami Swarupananda's 1909 Gita edition.
+"""Parse Swami Swarupananda's 1909 translation from chapter pages saved by hand in
+data/raw/en_source2/source_pages/ (the site does not allow automated copying).
 
-The source archive's terms restrict automated copying. For that reason this
-module does not download pages. Save chapter HTML pages manually in
-``data/raw/en_source2/source_pages`` as ``chapter_01.html`` ...
-``chapter_18.html`` and run this module. It checks each record against the
-canonical verse IDs in ``data/verses.json`` when that file is available.
-
-Unambiguously numbered passages are written to ``verses.json``. Passages
-covering multiple verses (for example, 42-44) are preserved separately in
-``grouped_passages.json`` and are never duplicated across individual verses.
+Verses printed together (e.g. 42-44) go to grouped_passages.json, not to single verses.
+Run: python crawler/crawl_en_source2.py
 """
 
 from __future__ import annotations

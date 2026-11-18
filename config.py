@@ -1,3 +1,4 @@
+"""File paths shared by the crawlers."""
 
 from pathlib import Path
 

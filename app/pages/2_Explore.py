@@ -1,3 +1,4 @@
+"""Explore page: browse any verse by chapter."""
 
 import os
 import sys

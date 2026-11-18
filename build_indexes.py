@@ -1,3 +1,7 @@
+"""Build the keyword indexes data/processed/index_en.json and index_hi.json.
+
+Run from the repo root: python build_indexes.py
+"""
 
 import json
 from indexing.inverted_index import InvertedIndex

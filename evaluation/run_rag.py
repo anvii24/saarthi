@@ -1,13 +1,7 @@
-"""
-RAG + fact-check evaluation
+"""Answer quality: v1 vs v2 prompt, and how often the fact-checker agrees with hand checks
+(holdout questions; search kept fixed so only the prompt changes).
 
-For every labelled test question (English version):
-  1. retrieve   top 5 verses: meaning search on the question + its Gita concepts
-                (rewrite.py). Swap in the full fused pipeline once BM25 exists.
-  2. explain    generation/rag.py writes an answer citing [chapter.verse]
-                (--prompt v1 or v2: see the top of generation/rag.py)
-  3. verify     generation/fact_check.py checks every cited sentence against its verse
-
+Run: python evaluation/run_rag.py --prompt v1 | --prompt v2 | --compare | --score-review
 """
 
 import argparse
@@ -31,6 +25,7 @@ THRESHOLDS = [0.3, 0.5, 0.7]
 
 
 def paths(version: str) -> dict:
+    """Output file names for one prompt version."""
     suffix = "" if version == "v1" else f"_{version}"
     base = os.path.join(OUT_DIR, f"rag{suffix}")
     return {"summary": base + ".csv", "answers": base + "_answers.json",
@@ -38,12 +33,14 @@ def paths(version: str) -> dict:
 
 
 def retrieve(question: str) -> list[str]:
+    """Top 5 verse ids: meaning search on the question plus its Gita concepts."""
     concepts = rewrite(question)
     query = f"{question} {' '.join(concepts)}" if concepts else question
     return [r["id"] for r in search_dense(query, k=TOP_N)]
 
 
 def pct(part: float, whole: float) -> float:
+    """Percentage rounded to 1 decimal (0 if whole is 0)."""
     return round(100 * part / whole, 1) if whole else 0.0
 
 
@@ -57,6 +54,7 @@ def existing_checks(path: str) -> dict:
 
 
 def run(args):
+    """Search, answer and fact-check every holdout question, then save the results."""
     with open(QUESTIONS, encoding="utf-8") as f:
         questions = json.load(f)
     with open(QRELS, encoding="utf-8") as f:
@@ -139,6 +137,7 @@ def run(args):
 
 
 def score_review(args):
+    """Compare the checker with the yes/no hand checks in the sentences file."""
     files = paths(args.prompt)
     if not os.path.exists(files["sentences"]):
         sys.exit(f"Run python evaluation/run_rag.py --prompt {args.prompt} first")
@@ -172,6 +171,7 @@ def score_review(args):
 
 
 def compare():
+    """v1 vs v2 side by side; saves rag_compare.csv."""
     tables = {}
     for version in ("v1", "v2"):
         path = paths(version)["summary"]

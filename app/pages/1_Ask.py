@@ -1,3 +1,5 @@
+"""Ask page: a question in any language -> a checked answer and its verses."""
+
 import os
 import sys
 

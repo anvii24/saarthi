@@ -1,24 +1,7 @@
-"""
-Crawl the Hindi translations + commentaries source (Person 3: Anvi).
+"""Download one JSON file per verse (Sanskrit, 8 translations, Hindi and English commentary)
+from github.com/vedicscriptures/bhagavad-gita-data into data/raw/hi_commentary/.
 
-Source: the VedicScriptures Bhagavad Gita data (the same data that powers
-https://vedicscriptures.github.io), one JSON file per verse in
-https://github.com/vedicscriptures/bhagavad-gita-data
-Each file holds the Sanskrit, transliteration, 6 English + 3 Hindi translations,
-and commentaries (Swami Ramsukhdas's Hindi commentary is where most verse
-cross-references come from).
-
-The crawler uses Antara's base_crawler (robots.txt check, 1.5 s delay, clear
-user agent). It walks each chapter verse by verse until the source returns
-404, so it needs no hard-coded verse counts. Files already downloaded are
-skipped, so an interrupted crawl can simply be run again.
-
-Output: data/raw/hi_commentary/<chapter>_<verse>.json  (raw, unedited)
-Then run:  python crawler/merge.py
-
-Run from the repo root:
-    python crawler/crawl_hi_commentary.py
-    python crawler/crawl_hi_commentary.py --chapters 2 12     (only some chapters, for testing)
+Already downloaded verses are skipped, so it can be re-run. Run: python crawler/crawl_hi_commentary.py
 """
 
 import argparse

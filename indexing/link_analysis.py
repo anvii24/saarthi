@@ -1,6 +1,9 @@
+"""PageRank, topic-specific PageRank and HITS on the verse reference graph (data/links.json)."""
+
 import json
 
 def build_graph(verses, links):
+    """The graph as {verse id: set of verse ids it refers to}."""
     graph = {verse["id"]: set() for verse in verses}
 
     for link in links:
@@ -16,6 +19,7 @@ def load_graph(
     verses_path="data/verses.json",
     links_path="data/links.json"
 ):
+    """Build the graph from data/verses.json and data/links.json."""
     with open(verses_path, "r", encoding="utf-8") as file:
         verses = json.load(file)
 
@@ -25,6 +29,7 @@ def load_graph(
     return build_graph(verses, links)
 
 def pagerank(graph, damping=0.85, max_iterations=100, tolerance=1e-8):
+    """PageRank score for every verse."""
     if not 0 <= damping < 1:
         raise ValueError("Damping must be between 0 and 1")
 
@@ -86,6 +91,7 @@ def topic_pagerank(
     max_iterations=100,
     tolerance=1e-8
 ):
+    """PageRank that restarts only at the given seed verses, so verses close to them score higher."""
     if not 0 <= damping < 1:
         raise ValueError("Damping must be between 0 and 1")
 
@@ -155,6 +161,7 @@ def topic_pagerank(
     return scores
 
 def hits(graph, max_iterations=100, tolerance=1e-8):
+    """HITS scores; returns (hubs, authorities)."""
     if max_iterations <= 0:
         raise ValueError("Maximum iterations must be positive")
 

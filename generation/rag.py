@@ -1,27 +1,8 @@
-"""
-RAG explanation (Person 3: Anvi).
+"""Write the answer: the LLM explains the top verses, citing [chapter.verse] after each claim.
 
-explain() gives the LLM the user's question plus the top retrieved verses and asks
-for a short explanation that uses ONLY those verses, citing [chapter.verse] after
-every claim about a verse. The explanation is written in English so the
-fact-checker can verify it; translate_answer() then converts it to Hindi or
-Hinglish for the user.
-
-Two prompt versions (kept side by side so the evaluation is reproducible):
-  v1  first version. The LLM read Gambhirananda + Prabhupada translations, but the
-      fact-checker verifies against the first two English translations (Sivananda +
-      Purohit), so faithful sentences could still look "unsupported".
-  v2  fixes that: the LLM reads exactly the translations the checker uses, and the
-      rules separate two kinds of sentence:
-        - verse sentences: say what ONE verse says, close to its wording, cite it
-        - application sentences: relate it to the user's situation, no citation,
-          phrased tentatively, never claiming "the Gita says"
-      Verse sentences name the speaker in the third person ("Krishna says...",
-      "Arjuna admits...") so a verse never reads as if the app itself is speaking.
-  evaluation/run_rag.py --prompt v1 / v2 compares them.
-
-Safety: if the question suggests serious distress, a fixed support note is added
-(Tele-MANAS, the Government of India's free mental-health helpline: 14416).
+v2 (default) separates verse sentences (one verse, close to its wording, cited) from
+gentle, uncited suggestions; v1 is kept for the comparison in evaluation/run_rag.py.
+A helpline note (Tele-MANAS, 14416) is added if the question suggests serious distress.
 """
 
 import os
@@ -84,6 +65,7 @@ TRANSLATIONS_V1 = ["en_gambirananda", "en_prabhupada", "en_sivananda", "en_adide
 
 
 def texts_v1(verse: dict) -> list[str]:
+    """The translations the v1 prompt shows the LLM."""
     texts = [verse["translations"][k] for k in TRANSLATIONS_V1 if verse["translations"].get(k)]
     return texts or [t for k, t in verse["translations"].items() if k.startswith("en_")]
 
@@ -111,6 +93,7 @@ def format_verses(verses: list[dict], version: str = "v1") -> str:
 
 
 def needs_safety_note(question: str) -> bool:
+    """True if the question contains a distress phrase."""
     q = question.lower()
     return any(word in q for word in DISTRESS_WORDS)
 

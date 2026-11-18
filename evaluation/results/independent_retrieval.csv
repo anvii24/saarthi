@@ -1,3 +1,0 @@
-method,questions,empty_results,nDCG@20,k1,b
-TF-IDF,46,0,0.0857,,
-BM25,46,0,0.0998,8.0,0.75

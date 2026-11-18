@@ -1,3 +1,7 @@
+"""All LLM calls go through ask() / ask_json(): settings come from .env, answers are cached
+in data/processed/llm_cache.json, and rate-limited calls are retried.
+"""
+
 import hashlib
 import json
 import os

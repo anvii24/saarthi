@@ -1,37 +1,13 @@
-"""
-Saarthi pipeline: question in, verses and a checked answer out.
+"""Saarthi pipeline: a question in English, Hindi or Hinglish in; verses and a checked answer out.
 
-    from pipeline import ask
-    result = ask("exam mein fail ho gaya, kya karun?")
+Steps: language -> theme -> Gita concepts -> BM25 + meaning search -> RRF fusion
+-> PageRank re-rank -> LLM answer -> fact-check. retrieve() runs only the search
+steps, with switches for the ablation table (evaluation/run_retrieval.py).
 
-Steps (the file each step comes from):
-  1. language     query/language.py      detect en / hi / hinglish, get English + Hindi versions
-  2. theme        query/classifier.py    predict one of the 11 themes
-  3. rewrite      query/rewrite.py       add 3-5 Gita concepts to the question
-  4. keyword      retrieval/bm25.py      BM25 over all English translations
-  5. meaning      indexing/embeddings.py multilingual-e5 dense search
-  6. fuse         retrieval/fusion.py    Reciprocal Rank Fusion of 4 and 5
-  7. re-rank      retrieval/rerank.py    + PageRank and topic PageRank (indexing/link_analysis.py)
-  8. explain      generation/rag.py      answer citing [chapter.verse], from the top verses only
-  9. fact-check   generation/fact_check.py  drop sentences their cited verse does not support
+The spell checker is not used here: it turns everyday words into Gita words
+("exam" -> "enam"), so it is used on the Advanced Search page instead.
 
-Translating the answer into Hindi / Hinglish happens in the app
-(app/components/answer_panel.py), only when the user picks that language.
-
-Searching is done in English: the multilingual experiment
-(evaluation/run_multilingual.py) showed that translating Hindi and Hinglish
-questions to English first finds better verses than searching them directly.
-
-The spell checker (query/spelling.py) is not used here: it corrects against the
-Gita's own vocabulary, so it turns everyday words into Gita words ("exam" ->
-"enam", "boss" -> "loss"). It is used on the Advanced Search page instead, where
-people type Gita terms such as "dharmma".
-
-retrieve() runs steps 4-7 on its own, with switches to turn each part off, so
-evaluation/run_retrieval.py can measure what every part adds.
-
-Run from the repo root to try it:
-    python pipeline.py "I failed my exam and feel like a failure"
+Try it: python pipeline.py "exam mein fail ho gaya, kya karun?"
 """
 
 import json
@@ -68,6 +44,7 @@ TOP_VERSES = 5   # verses given to the LLM
 
 @lru_cache(maxsize=1)
 def verses_by_id() -> dict:
+    """All verses as {id: verse}, loaded once."""
     with open(VERSES_PATH, encoding="utf-8") as f:
         return {v["id"]: v for v in json.load(f)}
 
@@ -79,6 +56,7 @@ def _graph():
 
 @lru_cache(maxsize=1)
 def global_pagerank() -> dict:
+    """PageRank of every verse, computed once."""
     return pagerank(_graph())
 
 
@@ -105,18 +83,9 @@ def retrieve(
     weights: dict | None = None,
     k: int = CANDIDATES,
 ) -> dict:
-    """Find verses for an English question.
+    """Search steps for an English question. Returns {"results", "bm25", "dense", "fused"}, each best first.
 
-    Args:
-        english: the question in English
-        concepts: Gita concepts from rewrite() (None or [] = no query rewriting)
-        theme: predicted theme (needed for use_theme)
-        use_*: switch each part on or off (for the ablation table)
-        weights: re-rank weights (see retrieval/rerank.py)
-
-    Returns:
-        {"results": final ranking, "bm25": [...], "dense": [...], "fused": [...]}
-        each a list of SearchResult, best first
+    concepts=None skips query rewriting; the use_* switches turn parts off for the ablation table.
     """
     extra = " " + " ".join(concepts) if concepts else ""
     lists = {"bm25": [], "dense": []}
@@ -145,13 +114,9 @@ def retrieve(
 # ---------------------------------------------------------------------------
 
 def check_answer(question_en: str, verses: list[dict]) -> dict:
-    """Steps 8-9: explain with the given verses, then keep only supported sentences.
+    """Answer from the given verses, then drop unsupported sentences.
 
-    Returns:
-        {"text_en": checked English answer,
-         "citations": verse ids the checked answer cites,
-         "removed": [{"sentence", "verse_ids", "score"}, ...] sentences the checker dropped,
-         "safety_note": str | None}
+    Returns {"text_en", "citations", "removed", "safety_note"}.
     """
     answer = explain(question_en, verses)
     checks = verify(answer["text"], verses)
@@ -165,14 +130,8 @@ def check_answer(question_en: str, verses: list[dict]) -> dict:
 
 
 def ask(question: str, with_answer: bool = True, top_n: int = TOP_VERSES) -> dict:
-    """Run every step for a question in English, Hindi or Hinglish.
-
-    Returns:
-        {"question", "lang", "english", "hindi",
-         "theme", "concepts",
-         "verses": the top_n verse records,
-         "search": retrieve() output (every intermediate ranking),
-         "answer": check_answer() output, or None if with_answer=False}
+    """Run every step. Returns the language, English and Hindi versions, theme, concepts,
+    the top verses, every intermediate ranking ("search") and the checked "answer".
     """
     query = process_query(question)                       # 1
     english = query["english"]

@@ -1,3 +1,9 @@
+"""Re-rank fused results with PageRank and topic PageRank.
+
+score = w_fused * fused + w_pagerank * PageRank + w_theme * topic PageRank, each scaled to 0-1.
+WEIGHTS were tuned on the tuning questions (evaluation/run_retrieval.py).
+"""
+
 import os
 import sys
 

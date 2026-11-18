@@ -1,3 +1,10 @@
+"""Theme classifier: predicts which of the 11 themes a question is about.
+
+Trained on data/test_set/theme_training_questions.json (55 questions kept apart from the
+test set). classify_theme() is used by the pipeline; train_model() and predict_theme()
+add Naive Bayes, Rocchio and kNN for comparison.
+"""
+
 import json
 from pathlib import Path
 

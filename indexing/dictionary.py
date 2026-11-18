@@ -1,3 +1,5 @@
+"""Dictionary tools for the spell checker: k-gram index, edit distance, Soundex and wildcard search."""
+
 import re
 from collections import defaultdict
 

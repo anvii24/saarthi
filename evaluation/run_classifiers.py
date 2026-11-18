@@ -1,3 +1,8 @@
+"""Theme classifier accuracy: trained on the 55 training questions, tested on the 100 test questions.
+
+Run: python evaluation/run_classifiers.py
+"""
+
 import os
 import sys
 

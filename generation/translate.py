@@ -1,10 +1,4 @@
-"""
-Answer translation (Person 3: Anvi).
-
-translate_answer() converts the verified English explanation into Hindi
-(Devanagari) or Hinglish (Hindi in Roman letters), keeping every [2.47]
-citation exactly as it is so the answer panel can still link to the verses.
-"""
+"""Translate the checked English answer into Hindi or Hinglish, keeping the [2.47] citations."""
 
 import os
 import re

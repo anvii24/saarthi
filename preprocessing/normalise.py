@@ -1,3 +1,4 @@
+"""Map spelling variants of Sanskrit terms to one form (krsna, krushna -> krishna)."""
 
 NORMALISATION_MAP = {
     "karman": "karma",
@@ -62,5 +63,6 @@ NORMALISATION_MAP = {
 
 
 def normalise_sanskrit(token):
+    """Return the standard spelling of a Sanskrit token."""
     token = token.lower().strip()
     return NORMALISATION_MAP.get(token, token)

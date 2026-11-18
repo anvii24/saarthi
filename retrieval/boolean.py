@@ -1,3 +1,4 @@
+"""Boolean search with AND, OR, NOT and brackets (NOT binds tightest, then AND, then OR)."""
 
 import re
 
@@ -10,6 +11,7 @@ _INDEX_CACHE = {}
 
 
 def load_index(lang="en"):
+    """Load the saved inverted index for 'en' or 'hi' (cached)."""
     if lang not in ("en", "hi"):
         raise ValueError("Language must be 'en' or 'hi'")
 
@@ -23,6 +25,7 @@ def load_index(lang="en"):
 
 
 def search_boolean(query, lang="en", zone="translation"):
+    """Verse ids matching a query such as 'anger AND NOT desire', in verse order."""
     if lang not in ("en", "hi"):
         raise ValueError("Language must be 'en' or 'hi'")
 

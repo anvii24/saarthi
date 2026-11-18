@@ -1,27 +1,5 @@
-"""
-Labelling helper: suggest candidate verses for test questions (Person 3: Anvi).
-
-For each question it runs three searches and pools the results:
-  1. meaning search on the English question
-  2. meaning search on the English question + its Gita concepts (rewrite.py)
-  3. meaning search on the Hindi question
-Then it writes a readable file listing, per question, up to 12 candidate verses
-with a translation and the plain-English explanation, so you can pick the
-2-6 verses that really answer it and grade them (2 = directly answers,
-1 = related) in the sheet's "relevant verses" column, e.g.  2.47:2, 2.48:2, 2.38:1
-
-Important: these are only SUGGESTIONS from our own system. Always read them and
-judge for yourself, and add good verses that are missing (the commentaries and
-explanations help). Labels copied blindly from the system would make our
-evaluation meaningless, since it would just be grading itself.
-
-Questions are read straight from the shared Google Sheet (it must be shared as
-"anyone with the link"), or from a CSV you downloaded with --csv.
-
-Run from the repo root:
-    python evaluation/label_helper.py --from q067 --to q100
-    python evaluation/label_helper.py --from q067 --to q100 --csv questions.csv
-Output: data/test_set/label_candidates_<from>-<to>.md
+"""Suggest candidate verses to help label test questions (suggestions only; every label
+was judged by hand). Run: python evaluation/label_helper.py --from q001 --to q034
 """
 
 import argparse
@@ -46,6 +24,7 @@ MAX_CANDIDATES = 12
 
 
 def load_questions(csv_path: str | None) -> list[dict]:
+    """Read the questions from the sheet or a downloaded CSV."""
     if csv_path:
         with open(csv_path, encoding="utf-8") as f:
             return list(csv.DictReader(f))
@@ -78,6 +57,7 @@ def candidates_for(q: dict) -> list[tuple[str, float, set[str]]]:
 
 
 def short(text: str, limit: int = 260) -> str:
+    """Cut text to at most limit characters."""
     text = " ".join((text or "").split())
     return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + " ..."
 

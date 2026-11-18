@@ -1,3 +1,4 @@
+"""English text cleaning: lowercase, drop punctuation and stopwords, Porter-stem."""
 
 import re
 import nltk
@@ -13,6 +14,7 @@ EXTRA_STOPWORDS = {
 
 
 def clean_en(text):
+    """Return the cleaned, stemmed tokens of an English text."""
     text = text.lower()
     text = re.sub(r"[^\w\s]", " ", text)
     text = re.sub(r"\d+", " ", text)

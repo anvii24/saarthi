@@ -1,12 +1,6 @@
-"""
-Shared data shapes for Saarthi.
+"""Shared data shapes (Verse, Link, SearchResult) and the 11 themes.
 
-Everyone imports from this file so that crawlers, indexes, search,
-ranking and the app all agree on what a verse, a link and a search
-result look like. Do not change a field name without telling the team.
-
-Usage:
-    from schemas import Verse, Link, SearchResult, THEMES, validate_verse
+Every part of the project imports these, so all modules agree on field names.
 """
 
 from typing import TypedDict
@@ -27,9 +21,10 @@ THEMES = [
     "relationships",
 ]
 
-# 1. Verse — one record per verse in data/verses.json (700 in total)
+# 1. Verse — one record per verse in data/verses.json (701 in total)
 
 class Verse(TypedDict):
+    """One verse record in data/verses.json."""
     id: str                       # "2.47"  (chapter.verse)
     chapter: int                  # 2
     verse: int                    # 47
@@ -42,6 +37,7 @@ class Verse(TypedDict):
 # 2. Link — one cross-reference between verses in data/links.json
 
 class Link(TypedDict):
+    """One reference from one verse to another."""
     from_id: str   # "2.47"  (stored in JSON as "from")
     to_id: str     # "3.19"  (stored in JSON as "to")
     source: str    # where the reference was found, e.g. "hi_commentary"
@@ -62,6 +58,7 @@ def link_to_json(link: Link) -> dict:
 # 3. SearchResult — what every search function returns (a list, best first)
 
 class SearchResult(TypedDict):
+    """One search hit: verse id, score and the method that found it."""
     id: str       # verse id, e.g. "2.47"
     score: float  # higher = more relevant
     method: str   # "tfidf", "bm25", "dense", "rrf", "rerank", ...

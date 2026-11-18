@@ -1,23 +1,8 @@
-"""
-NLI fact-checker (Person 3: Anvi).
+"""Fact-checker: an NLI model checks each cited sentence against its verse; a sentence is
+supported if P(entailment) >= 0.5, and unsupported ones are dropped.
 
-verify() checks every sentence of an explanation against the verse(s) it cites.
-A Natural Language Inference (NLI) model reads (premise = verse translation,
-hypothesis = sentence) and predicts entailment / neutral / contradiction.
-A sentence counts as supported if P(entailment) >= THRESHOLD for at least one
-cited verse.
-
-Model: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
-(multilingual, about 1.1 GB, downloaded once on first use; needs `sentencepiece`).
-
-The premise starts with who speaks the verse ("Arjuna says: ..."), taken from the
-source data. Answers report verses in the third person ("Arjuna admits that ..."),
-and without the speaker in the premise the checker could not confirm the name and
-rejected faithful sentences.
-
-Pipeline order: explain in English -> verify -> translate for the user.
-Sentences with no citation (e.g. a short intro) get supported = None: they are
-not claims about a verse, so they are neither ticked nor removed.
+Model: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7. The verse text starts
+with its speaker ("Arjuna says: ...") because answers name the speaker.
 """
 
 import re

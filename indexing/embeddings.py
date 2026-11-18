@@ -1,17 +1,6 @@
-"""
-Multilingual meaning search (Person 3: Anvi).
+"""Meaning search with the multilingual-e5 model (one vector per translation of every verse).
 
-build_embeddings() turns every translation of every verse into a vector.
-search_dense() embeds the question and finds the verses whose translations are
-closest in meaning (cosine similarity), in any language: a Hindi question can
-match an English translation and the other way round.
-
-Model: intfloat/multilingual-e5-base (about 1.1 GB, downloaded once on first use).
-e5 models expect "query: " in front of questions and "passage: " in front of documents.
-
-Usage (from the repo root):
-    python indexing/embeddings.py            # builds the index (a few minutes on CPU)
-    python indexing/embeddings.py "how do I deal with failure?"
+Build once: python indexing/embeddings.py   (a few minutes; saved in data/processed/)
 """
 
 import json

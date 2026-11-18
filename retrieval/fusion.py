@@ -1,12 +1,5 @@
-"""
-Reciprocal Rank Fusion (Person 3: Anvi).
-
-rrf() merges several ranked result lists (e.g. BM25 + dense search) into one.
-Each verse scores the sum of 1 / (k + rank) over every list it appears in,
-so verses ranked high by several methods rise to the top. Ranks are used
-instead of raw scores because BM25 and cosine scores are on different scales.
-
-This one is small enough to be the real implementation, not a stub.
+"""Reciprocal Rank Fusion: merge ranked lists by rank, not raw score, because
+BM25 and cosine scores are on different scales.
 """
 
 import os

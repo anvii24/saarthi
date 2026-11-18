@@ -1,34 +1,8 @@
-"""
-Baseline comparison (Person 3: Anvi): plain RAG vs Saarthi.
+"""Plain RAG (meaning search -> LLM, nothing checked) vs full Saarthi on the 80 holdout
+questions: verse quality, citation relevance, and unsupported sentences shown to users.
 
-Plain RAG is the usual "retrieve, then generate" setup used in existing
-Gita question-answering systems:
-    question -> meaning search (multilingual-e5) -> top 5 verses
-             -> LLM answer with citations (the original, v1 prompt) -> shown as is
-
-Saarthi adds the parts this project is about:
-    question -> theme + Gita concepts -> BM25 + meaning search -> RRF fusion
-             -> PageRank / topic PageRank re-ranking -> top 5 verses
-             -> LLM answer (v2 prompt) -> fact-checker removes unsupported sentences
-
-Both use the same LLM, the same verses data and the same 5-verse budget, and are
-scored on the holdout questions (never used for tuning).
-
-Measures (evaluation/results/baseline.csv):
-  P@5, nDCG@5          how good the 5 verses given to the LLM are (labels in qrels)
-  citation relevance   cited verses that the labels mark relevant
-  supported %          cited sentences the fact-checker accepts
-  unsupported shown    unsupported sentences the user actually sees, per answer
-                       (plain RAG shows all of them; Saarthi removes them)
-  answers with no unsupported sentence shown
-
-The fact-checker agreed with our hand checks on 95% of sentences
-(evaluation/results/rag_v2_checker_review.csv), which is why it is used here
-to score both systems.
-
-Run from the repo root (LLM calls are cached, so a rerun is quick):
-    python evaluation/baseline.py
-    python evaluation/baseline.py --from q055 --to q060      (quick test)
+The fact-checker scores both; it agreed with hand checks on 97% of sentences
+(evaluation/results/rag_checker_review.csv). Run: python evaluation/baseline.py
 """
 
 import argparse
@@ -76,10 +50,12 @@ def saarthi(question: str, verses: dict) -> dict:
 
 
 def pct(part: float, whole: float) -> float:
+    """Percentage rounded to 1 decimal (0 if whole is 0)."""
     return round(100 * part / whole, 1) if whole else 0.0
 
 
 def summarise(runs: list[dict], qrels: dict) -> dict:
+    """Average every measure over all questions for one system."""
     cited = [c for r in runs for c in r["checks"] if c["verse_ids"]]
     supported = [c for c in cited if c["supported"]]
     cited_verses = [(r["id"], v) for r in runs for v in dict.fromkeys(CITATION.findall(r["answer"]))]

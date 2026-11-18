@@ -1,3 +1,8 @@
+"""Choose BM25's k1 and b on the 20 tuning questions (nDCG@20).
+
+Run: python evaluation/tune_bm25.py
+"""
+
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 

@@ -1,3 +1,6 @@
+"""Does the link graph help? Meaning search alone vs + PageRank, topic PageRank or HITS,
+on the holdout questions. Run: python evaluation/run_graph.py
+"""
 
 import csv
 import json
@@ -29,6 +32,7 @@ K = 5
 
 
 def normalize_scores(scores):
+    """Min-max scale scores to 0-1."""
     if not scores:
         return {}
 
@@ -45,6 +49,7 @@ def normalize_scores(scores):
 
 
 def combine_scores(dense_scores, graph_scores):
+    """ALPHA * meaning-search score + (1 - ALPHA) * graph score, both scaled to 0-1."""
     dense_normalized = normalize_scores(dense_scores)
     graph_normalized = normalize_scores(graph_scores)
 
@@ -60,10 +65,12 @@ def combine_scores(dense_scores, graph_scores):
 
 
 def rank_scores(scores):
+    """Verse ids sorted by score, best first."""
     return sorted(scores, key=lambda verse_id: scores[verse_id], reverse=True)
 
 
 def evaluate_ranking(ranked, relevant):
+    """P@5, Recall@5, MAP, MRR and nDCG@5 for one ranking."""
     return {
         "P@5": precision_at_k(ranked, relevant.keys(), K),
         "Recall@5": recall_at_k(ranked, relevant.keys(), K),

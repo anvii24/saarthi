@@ -1,8 +1,10 @@
+"""Ranking metrics used by every evaluation: P@k, R@k, F1@k, AP / MAP, MRR and nDCG@k."""
 
 import math
 
 
 def precision_at_k(ranked, relevant, k):
+    """Fraction of the top k that is relevant."""
     if k <= 0:
         return 0.0
 
@@ -13,6 +15,7 @@ def precision_at_k(ranked, relevant, k):
 
 
 def recall_at_k(ranked, relevant, k):
+    """Fraction of the relevant verses found in the top k."""
     if k <= 0 or not relevant:
         return 0.0
 
@@ -23,6 +26,7 @@ def recall_at_k(ranked, relevant, k):
 
 
 def f1_at_k(ranked, relevant, k):
+    """Harmonic mean of P@k and R@k."""
     precision = precision_at_k(ranked, relevant, k)
     recall = recall_at_k(ranked, relevant, k)
 
@@ -33,6 +37,7 @@ def f1_at_k(ranked, relevant, k):
 
 
 def average_precision(ranked, relevant):
+    """Mean of the precision at each rank where a relevant verse appears."""
     relevant_set = set(relevant)
 
     if not relevant_set:
@@ -50,6 +55,7 @@ def average_precision(ranked, relevant):
 
 
 def mean_average_precision(rankings, relevants):
+    """Mean of average_precision over several queries."""
     if not rankings:
         return 0.0
 
@@ -62,6 +68,7 @@ def mean_average_precision(rankings, relevants):
 
 
 def mrr(ranked, relevant):
+    """1 / rank of the first relevant verse (0 if none); averaged over queries this is MRR."""
     relevant_set = set(relevant)
 
     for rank, item in enumerate(ranked, start=1):
@@ -72,6 +79,7 @@ def mrr(ranked, relevant):
 
 
 def ndcg_at_k(ranked, relevant, k):
+    """nDCG@k with graded labels {verse id: 1 or 2}; gain = 2^grade - 1."""
     if k <= 0:
         return 0.0
 

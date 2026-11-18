@@ -1,3 +1,5 @@
+"""Positional inverted index with three zones per verse: translation, commentary and sanskrit."""
+
 import re
 import json
 from collections import defaultdict
@@ -15,6 +17,7 @@ class InvertedIndex:
         self.document_frequencies = defaultdict(dict)
 
     def build_index(self, verses, lang):
+        """Index every verse's translation, commentary and Sanskrit zones for lang 'en' or 'hi'."""
         self.index = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
         self.document_lengths = defaultdict(dict)
         self.document_frequencies = defaultdict(dict)
@@ -71,6 +74,7 @@ class InvertedIndex:
             }
 
     def get_postings(self, term, zone=None):
+        """{verse id: positions} for a term in one zone (every zone if zone is None)."""
         if zone:
             return dict(self.index[zone].get(term, {}))
 
@@ -82,12 +86,15 @@ class InvertedIndex:
         return result
 
     def doc_length(self, verse_id, zone="translation"):
+        """Number of tokens in one verse's zone."""
         return self.document_lengths[zone].get(verse_id, 0)
 
     def doc_freq(self, term, zone="translation"):
+        """Number of verses whose zone contains the term."""
         return self.document_frequencies[zone].get(term, 0)
 
     def phrase_search(self, phrase, zone="translation", lang="en"):
+        """Verse ids whose zone contains the phrase as consecutive words."""
         tokens = clean_en(phrase) if lang == "en" else clean_hi(phrase)
 
         if not tokens:
@@ -108,6 +115,7 @@ class InvertedIndex:
         return matches
 
     def save(self, path="data/processed/index.json"):
+        """Save the index as JSON."""
         data = {
             "index": {
                 zone: {
@@ -133,6 +141,7 @@ class InvertedIndex:
             json.dump(data, file, ensure_ascii=False)
 
     def load(self, path="data/processed/index.json"):
+        """Load an index saved by save()."""
         with Path(path).open("r", encoding="utf-8") as file:
             data = json.load(file)
 

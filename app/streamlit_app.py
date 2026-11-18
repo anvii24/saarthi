@@ -1,3 +1,4 @@
+"""Saarthi home page. Run: streamlit run app/streamlit_app.py"""
 
 import streamlit as st
 

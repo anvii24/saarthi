@@ -1,27 +1,7 @@
-"""
-Answer panel for the Streamlit app (Person 3: Anvi).
+"""Answer panel: ✓ sentences checked by the fact-checker, italic suggestions, the cited verses,
+what the checker removed, and an English / हिन्दी / Hinglish toggle.
 
-Shows one answer from pipeline.ask() the way the demo needs it:
-  - an English / हिन्दी / Hinglish toggle (defaults to the language the user asked in)
-  - each sentence that states what a verse says, with a ✓ (it passed the fact-checker)
-    and the verse ids it cites as small tags
-  - the gentler "application" sentences in italics, with no ✓ (they make no claim
-    about the text, so there is nothing to check)
-  - the safety note, when the question suggests serious distress
-  - the cited verses (Sanskrit, transliteration, translation, explanation)
-  - what the fact-checker removed, so the audience can see it working
-
-Use on the Ask page:
-    from pipeline import ask, verses_by_id
-    result = ask(question)
-    render_answer_panel(result["answer"], verses_by_id(), default_lang=result["lang"])
-
-Why the ✓ marks survive translation: every sentence left after the fact-checker
-that cites a verse was supported, and translate_answer() keeps the [2.47]
-citations in place, so in any language "has a citation" means "checked and supported".
-
-Try it on its own (from the repo root):
-    streamlit run app/components/answer_panel.py
+Try it alone: streamlit run app/components/answer_panel.py
 """
 
 import html
@@ -60,19 +40,13 @@ def sentence_html(sentence: str) -> str:
 
 
 def verse_translation(verse: dict, lang: str) -> str:
+    """A translation in the chosen language (Hindi falls back to English)."""
     keys = (["hi_ramsukhdas", "hi_tejomayananda"] if lang == "hi" else []) + ["en_gambirananda", "en_sivananda"]
     return next((verse["translations"][k] for k in keys if verse["translations"].get(k)), "")
 
 
 def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "en", key: str = "answer") -> None:
-    """Draw the answer panel.
-
-    Args:
-        answer: pipeline.ask(...)["answer"] (the output of pipeline.check_answer)
-        verses_by_id: {verse id: verse record}, e.g. pipeline.verses_by_id()
-        default_lang: "en", "hi" or "hinglish" (use the language the question was asked in)
-        key: keeps widgets apart if a page shows two panels
-    """
+    """Draw pipeline.ask(...)["answer"]; default_lang is the language the question was asked in."""
     if not answer:
         st.warning("No verses were found for this question, so there is no answer to show.")
         return

@@ -1,22 +1,7 @@
-"""
-Spelling correction (Person 2: Kashvi).
+"""Spell checker for keyword search: k-gram candidates, edit distance and Soundex,
+checked against the index vocabulary (dharmma -> dharma).
 
-correct("What is dharmma") -> "What is dharma"
-
-How one word is corrected:
-  1. Clean it the same way the index does (clean_en / clean_hi). If the cleaned
-     word is already in the index vocabulary, leave it alone.
-  2. Find candidates with the bigram (k=2) index: vocabulary words sharing
-     character bigrams with it, keeping those with Jaccard overlap >= 0.3.
-  3. Keep candidates within edit distance 1 (words of 4 letters or fewer) or 2.
-     A distance-2 candidate is only allowed if its Soundex code matches.
-  4. Rank by edit distance, then same Soundex, then how often the word occurs.
-
-Edit distance is language-aware: in Hindi, adding or dropping the virama (्),
-as in धरम / धर्म, costs only 0.25, because it is a very common spelling variation.
-
-Note: the corrected word is the index's cleaned (stemmed) form, so use this for
-keyword search, not for text shown to the user.
+In Hindi, adding or dropping the virama (्) costs only 0.25, as it is a common slip.
 """
 
 import re
