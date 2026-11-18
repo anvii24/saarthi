@@ -4,7 +4,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from schemas import SearchResult, make_result  # noqa: E402
 
-WEIGHTS = {"fused": 0.8, "pagerank": 0.1, "theme": 0.1}
+WEIGHTS = {"fused": 0.6, "pagerank": 0.3, "theme": 0.1}
 
 
 def normalise(scores: dict[str, float]) -> dict[str, float]:
