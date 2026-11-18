@@ -22,8 +22,8 @@ from generation.rag import explain  # noqa: E402
 from indexing.embeddings import search_dense  # noqa: E402
 from query.rewrite import rewrite  # noqa: E402
 
-QUESTIONS = os.path.join("data", "test_set", "questions.json")
-QRELS = os.path.join("data", "test_set", "qrels.json")
+QUESTIONS = os.path.join("data", "test_set", "questions_holdout.json")
+QRELS = os.path.join("data", "test_set", "qrels_holdout.json")
 VERSES = os.path.join("data", "verses.json")
 OUT_DIR = os.path.join("evaluation", "results")
 TOP_N = 5

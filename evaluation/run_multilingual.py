@@ -9,8 +9,8 @@ from evaluation.metrics import average_precision, mrr, ndcg_at_k, precision_at_k
 from indexing.embeddings import search_dense  # noqa: E402
 from query.language import process_query  # noqa: E402
 
-QUESTIONS = os.path.join("data", "test_set", "questions.json")
-QRELS = os.path.join("data", "test_set", "qrels.json")
+QUESTIONS = os.path.join("data", "test_set", "questions_holdout.json")
+QRELS = os.path.join("data", "test_set", "qrels_holdout.json")
 OUT_DIR = os.path.join("evaluation", "results")
 K = 10
 LANGS = ["en", "hi", "hinglish"]

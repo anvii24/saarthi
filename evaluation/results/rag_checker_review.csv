@@ -1,8 +1,8 @@
 metric,value
-hand_checked,42
-accuracy_pct,95.2
+hand_checked,34
+accuracy_pct,97.1
 wrongly_kept,0
-wrongly_removed,2
-unsupported_precision,0.882
+wrongly_removed,1
+unsupported_precision,0.923
 unsupported_recall,1.0
-unsupported_f1,0.938
+unsupported_f1,0.96
