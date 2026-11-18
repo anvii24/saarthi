@@ -7,8 +7,6 @@ against that verse.
 > *"exam mein fail ho gaya, ab kya karun?"* → Krishna says that one has a right to the
 > work, but never to its fruits **[2.47]** ✓ …
 
-CSD358 Information Retrieval, end-semester project, Shiv Nadar Institution of Eminence.
-
 | | Team member | Part |
 |---|---|---|
 | Person 1 | Antara | Data collection, inverted index, link analysis (PageRank, HITS), app |
