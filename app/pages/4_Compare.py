@@ -1,5 +1,5 @@
 """
-Compare page (Person 2: Kashvi).
+Compare page.
 
 One question, four rankings side by side, so the audience can see what each step
 of the search changes (these are the intermediate lists that pipeline.retrieve() returns):

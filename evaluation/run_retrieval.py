@@ -1,5 +1,5 @@
 """
-Main retrieval results table (Person 2: Kashvi).
+Main retrieval results table.
 
 Runs 8 setups, each adding one part of Saarthi, and scores them on the holdout
 questions with P@5, R@10, MRR, MAP and nDCG@10 (evaluation/metrics.py).

@@ -7,11 +7,11 @@ against that verse.
 > *"exam mein fail ho gaya, ab kya karun?"* → Krishna says that one has a right to the
 > work, but never to its fruits **[2.47]** ✓ …
 
-| | Team member | Part |
-|---|---|---|
-| Person 1 | Antara | Data collection, inverted index, link analysis (PageRank, HITS), app |
-| Person 2 | Kashvi | BM25 / TF-IDF / Boolean search, spelling, theme classifier, retrieval evaluation, app |
-| Person 3 | Anvi | Multilingual queries, LLM query rewriting, meaning search, answers and fact-checking, pipeline |
+| Team member | Part |
+|---|---|
+| Antara | Data collection, inverted index, link analysis (PageRank, HITS), Explore page |
+| Kashvi | BM25 / TF-IDF / Boolean search, spelling, theme classifier, retrieval evaluation, Advanced Search and Compare pages |
+| Anvi | Multilingual queries, LLM query rewriting, meaning search, answers and fact-checking, pipeline, app design |
 
 ## How it works
 
@@ -89,10 +89,21 @@ python indexing/embeddings.py
 ## Run
 
 ```
-streamlit run app/Home.py                         # the app
+streamlit run app/Home.py                                  # the app
 python pipeline.py "exam mein fail ho gaya, kya karun?"    # one question in the terminal
 python -m pytest -q                                        # tests
 ```
+
+The models load in the background when the app opens, so give it about 30 seconds before
+the first question.
+
+| Page | What it does |
+|---|---|
+| Home | Pick a feeling or ask your own question; a verse to read; how Saarthi works |
+| Ask | Answer with cited verses, shown in English, Hindi or Hinglish; every verse found |
+| Explore | Read any verse with its Sanskrit, translations and commentary |
+| Advanced Search | Boolean and phrase search over the index, with spelling suggestions |
+| Compare | One question, four rankings side by side, to see what each search step changes |
 
 ## Reproduce the results
 
@@ -134,6 +145,6 @@ licence notes: `data/SOURCES.md`.
 | `query/` | language, spelling, theme, query rewriting |
 | `retrieval/` | BM25, TF-IDF, Boolean search, fusion, re-ranking |
 | `generation/` | LLM calls, answers, fact-checking, translation |
-| `app/` | Streamlit app (decorative images in `app/static/decor/` come from the team's mood board) |
+| `app/` | Streamlit app: `Home.py`, `pages/`, `components/` (style, decorations, answer panel), `static/decor/` (images from the team's mood board) |
 | `evaluation/` | every experiment and its results |
 | `tests/` | unit tests |

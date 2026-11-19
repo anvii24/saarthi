@@ -1,6 +1,6 @@
 # Data Sources and Licences
 
-Maintained by Kashvi (P2). Last updated: 12 Nov 2026.
+Maintained by Kashvi. Last updated: 12 Nov 2026.
 Status key: **[verified]** = checked against the original page by a team member; **[verify]** = not yet checked, do not cite in the report until confirmed.
 
 ## 1. Where our data comes from
@@ -52,7 +52,7 @@ The original Sanskrit verses are ancient text and in the public domain.
 
 
 
-## 5. Additional English translation (Person 2: `en_source2`)
+## 5. Additional English translation (`en_source2`)
 
 | Field | Details |
 |---|---|

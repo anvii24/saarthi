@@ -1,5 +1,5 @@
 """
-Advanced Search page (Person 2: Kashvi).
+Advanced Search page.
 
 Keyword search over the inverted index, for people who want exact control:
   - Boolean queries with AND / OR / NOT and brackets   (retrieval/boolean.py)
