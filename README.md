@@ -89,7 +89,7 @@ python indexing/embeddings.py
 ## Run
 
 ```
-streamlit run app/streamlit_app.py                         # the app
+streamlit run app/Home.py                         # the app
 python pipeline.py "exam mein fail ho gaya, kya karun?"    # one question in the terminal
 python -m pytest -q                                        # tests
 ```
@@ -134,6 +134,6 @@ licence notes: `data/SOURCES.md`.
 | `query/` | language, spelling, theme, query rewriting |
 | `retrieval/` | BM25, TF-IDF, Boolean search, fusion, re-ranking |
 | `generation/` | LLM calls, answers, fact-checking, translation |
-| `app/` | Streamlit app |
+| `app/` | Streamlit app (decorative images in `app/static/decor/` come from the team's mood board) |
 | `evaluation/` | every experiment and its results |
 | `tests/` | unit tests |

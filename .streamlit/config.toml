@@ -1,0 +1,15 @@
+# Saarthi look: warm cream, sindoor red and turmeric gold (fonts are set in app/components/style.py)
+[theme]
+base = "light"
+primaryColor = "#B5462C"
+backgroundColor = "#FBF4E6"
+secondaryBackgroundColor = "#F4E4C8"
+textColor = "#2E1F16"
+font = "serif"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+# serves app/static/ (the decoration images) at /app/static/
+enableStaticServing = true

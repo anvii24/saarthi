@@ -14,35 +14,33 @@ import streamlit as st
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from generation.fact_check import CITATION, split_sentences  # noqa: E402
 from generation.translate import translate_answer  # noqa: E402
+from app.components.style import speaker_name  # noqa: E402
+from app.components.verse_card import render_verse_card  # noqa: E402
 
 LANGS = {"English": "en", "हिन्दी": "hi", "Hinglish": "hinglish"}
 
 CSS = """
 <style>
-.saarthi-verse {margin: 0 0 .55rem 0; line-height: 1.6;}
-.saarthi-tick {color: #2e7d32; font-weight: 700; margin-right: .35rem;}
-.saarthi-app {margin: 0 0 .55rem 0; line-height: 1.6; font-style: italic; opacity: .8;}
-.saarthi-pill {display: inline-block; font-size: .78rem; font-weight: 600; padding: .05rem .45rem;
-               margin-left: .3rem; border-radius: .6rem; background: rgba(46,125,50,.12); color: #2e7d32;}
+.saarthi-verse {margin: 0 0 .6rem 0; line-height: 1.7; font-size: 1.08rem;}
+.saarthi-tick {color: #3B7A3B; font-weight: 700; margin-right: .4rem;}
+.saarthi-app {margin: 0 0 .6rem 0; line-height: 1.7; font-size: 1.05rem; font-style: italic; color: #6B4A36;}
+.saarthi-pill {display: inline-block; font-size: .78rem; font-weight: 600; padding: .05rem .5rem;
+               margin-left: .35rem; border-radius: .7rem; background: rgba(200,144,42,.18); color: #7A4A0E;}
 </style>
 """
 
 
-def sentence_html(sentence: str) -> str:
-    """One sentence as HTML: ✓ + text + verse tags if it cites a verse, else italic."""
+def sentence_html(sentence: str, delay: float = 0.0) -> str:
+    """One sentence as HTML: ✓ + text + verse tags if it cites a verse, else italic.
+    delay (seconds) makes the sentences fade in one after another."""
     ids = CITATION.findall(sentence)
     text = " ".join(CITATION.sub("", sentence).split())
     body = html.escape(re.sub(r"\s+([.,;:!?।])", r"\1", text))  # "alone ." -> "alone."
+    reveal = f' saarthi-reveal" style="animation-delay:{delay:.2f}s' if delay else ""
     if not ids:
-        return f'<p class="saarthi-app">{body}</p>'
+        return f'<p class="saarthi-app{reveal}">{body}</p>'
     tags = "".join(f'<span class="saarthi-pill">{html.escape(v)}</span>' for v in dict.fromkeys(ids))
-    return f'<p class="saarthi-verse"><span class="saarthi-tick">✓</span>{body}{tags}</p>'
-
-
-def verse_translation(verse: dict, lang: str) -> str:
-    """A translation in the chosen language (Hindi falls back to English)."""
-    keys = (["hi_ramsukhdas", "hi_tejomayananda"] if lang == "hi" else []) + ["en_gambirananda", "en_sivananda"]
-    return next((verse["translations"][k] for k in keys if verse["translations"].get(k)), "")
+    return f'<p class="saarthi-verse{reveal}"><span class="saarthi-tick">✓</span>{body}{tags}</p>'
 
 
 def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "en", key: str = "answer") -> None:
@@ -53,9 +51,14 @@ def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "e
 
     st.markdown(CSS, unsafe_allow_html=True)
 
+    # Start each new answer in the language it was asked in (Streamlit would
+    # otherwise keep the toggle's last choice from the previous question).
     labels = list(LANGS)
-    index = list(LANGS.values()).index(default_lang) if default_lang in LANGS.values() else 0
-    lang = LANGS[st.radio("Answer language", labels, index=index, horizontal=True, key=f"{key}_lang")]
+    default_label = next((label for label, code in LANGS.items() if code == default_lang), labels[0])
+    if st.session_state.get(f"{key}_answer") != answer["text_en"]:
+        st.session_state[f"{key}_answer"] = answer["text_en"]
+        st.session_state[f"{key}_lang"] = default_label
+    lang = LANGS[st.radio("Answer language", labels, horizontal=True, key=f"{key}_lang")]
 
     def show(text: str) -> str:
         if lang == "en" or not text:
@@ -69,8 +72,8 @@ def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "e
     text = show(answer["text_en"])
     if not text.strip():
         st.warning("None of the generated sentences passed the fact-checker, so there is no answer to show.")
-    for sentence in split_sentences(text):
-        st.markdown(sentence_html(sentence), unsafe_allow_html=True)
+    for i, sentence in enumerate(split_sentences(text)):
+        st.markdown(sentence_html(sentence, delay=0.15 + 0.45 * i), unsafe_allow_html=True)
     st.caption("✓ = checked against the cited verse by our fact-checker · "
                "italic lines are gentle suggestions, not claims about the text")
 
@@ -80,12 +83,8 @@ def render_answer_panel(answer: dict, verses_by_id: dict, default_lang: str = "e
             verse = verses_by_id.get(vid)
             if not verse:
                 continue
-            with st.expander(f"Chapter {verse['chapter']}, verse {verse['verse']}  ·  {vid}"):
-                if verse.get("sanskrit"):
-                    st.markdown(verse["sanskrit"].replace("\n", "  \n"))
-                if verse.get("transliteration"):
-                    st.caption(verse["transliteration"])
-                st.write(verse_translation(verse, lang))
+            with st.expander(f"Chapter {verse['chapter']}, verse {verse['verse']}  ·  {speaker_name(verse)}"):
+                render_verse_card(verse, lang, border=False, title=False)
                 if lang == "en" and verse.get("explanation_en"):
                     st.caption("In simple words: " + verse["explanation_en"])
 

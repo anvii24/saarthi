@@ -129,18 +129,37 @@ def check_answer(question_en: str, verses: list[dict]) -> dict:
     }
 
 
-def ask(question: str, with_answer: bool = True, top_n: int = TOP_VERSES) -> dict:
+def warm_up() -> None:
+    """Load the models and indexes ahead of time, so the first question is quick (the app runs this in the background)."""
+    from generation.fact_check import _load_model
+    from retrieval.bm25 import load_index
+
+    verses_by_id()
+    global_pagerank()
+    load_index("en")
+    search_dense("warm up", k=1)  # loads the meaning-search model and vectors
+    _load_model()
+
+
+def ask(question: str, with_answer: bool = True, top_n: int = TOP_VERSES, on_step=None) -> dict:
     """Run every step. Returns the language, English and Hindi versions, theme, concepts,
     the top verses, every intermediate ranking ("search") and the checked "answer".
+    on_step(text), if given, is called as each stage starts (the app shows it while waiting).
     """
+    step = on_step or (lambda text: None)
+    step("Understanding your question")
     query = process_query(question)                       # 1
     english = query["english"]
     theme = classify_theme(english)["predicted_theme"]    # 2
+    step("Finding the ideas the Gita uses for this")
     concepts = rewrite(english)                           # 3
+    step("Searching all 701 verses")
     search = retrieve(english, concepts, theme)           # 4-7
 
     verses = verses_by_id()
     top = [verses[r["id"]] for r in search["results"][:top_n] if r["id"] in verses]
+    if with_answer and top:
+        step("Writing the answer and checking every sentence against its verse")
 
     return {
         "question": question,

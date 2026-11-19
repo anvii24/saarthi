@@ -1,10 +1,15 @@
 """All LLM calls go through ask() / ask_json(): settings come from .env, answers are cached
 in data/processed/llm_cache.json, and rate-limited calls are retried.
+
+Works with any OpenAI-compatible API (Gemini, OpenAI, Claude). Claude's compatible API
+rejects JSON mode and a set temperature, so for Claude both are left out and the JSON is
+read from the reply text instead.
 """
 
 import hashlib
 import json
 import os
+import re
 import time
 
 from dotenv import load_dotenv
@@ -13,6 +18,7 @@ load_dotenv()
 
 MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 CACHE_PATH = os.path.join("data", "processed", "llm_cache.json")
+IS_CLAUDE = "anthropic.com" in (os.getenv("LLM_BASE_URL") or "")
 
 _client = None
 _cache = None
@@ -76,9 +82,15 @@ def ask(prompt: str, system: str = "", json_mode: bool = False, temperature: flo
 
     messages = [{"role": "system", "content": system}] if system else []
     messages.append({"role": "user", "content": prompt})
-    kwargs = {"model": MODEL, "messages": messages, "temperature": temperature}
-    if json_mode:
-        kwargs["response_format"] = {"type": "json_object"}
+    kwargs = {"model": MODEL, "messages": messages}
+    if IS_CLAUDE:
+        kwargs["max_tokens"] = 2000
+        if json_mode:
+            messages[-1]["content"] += "\n\nReply with only the JSON object, no other text."
+    else:
+        kwargs["temperature"] = temperature
+        if json_mode:
+            kwargs["response_format"] = {"type": "json_object"}
 
     reply = _create_with_retry(kwargs)
     cache[key] = reply
@@ -89,7 +101,8 @@ def ask(prompt: str, system: str = "", json_mode: bool = False, temperature: flo
 def ask_json(prompt: str, system: str = "", temperature: float = 0.2) -> dict:
     """Like ask(), but the reply must be a JSON object; returns it as a dict."""
     reply = ask(prompt, system=system, json_mode=True, temperature=temperature)
+    found = re.search(r"\{.*\}", reply, re.DOTALL)  # skips any ```json fences around it
     try:
-        return json.loads(reply)
+        return json.loads(found.group(0)) if found else {}
     except json.JSONDecodeError:
         return {}

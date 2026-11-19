@@ -6,6 +6,7 @@ with its speaker ("Arjuna says: ...") because answers name the speaker.
 """
 
 import re
+import threading
 
 MODEL_NAME = "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
 THRESHOLD = 0.5  # tune on a few hand-checked answers; report the value used
@@ -15,6 +16,7 @@ DEVANAGARI = re.compile(r"[ऀ-ॿ]")
 
 _tokenizer = None
 _model = None
+_lock = threading.Lock()
 
 
 def split_sentences(text: str) -> list[str]:
@@ -25,12 +27,13 @@ def split_sentences(text: str) -> list[str]:
 
 def _load_model():
     global _tokenizer, _model
-    if _model is None:
-        from transformers import AutoModelForSequenceClassification, AutoTokenizer
+    with _lock:
+        if _model is None:
+            from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-        _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-        _model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
-        _model.eval()
+            _tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+            _model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+            _model.eval()
     return _tokenizer, _model
 
 

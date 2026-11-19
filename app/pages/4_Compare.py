@@ -15,11 +15,15 @@ rewriting, exactly as in the main pipeline.
 
 import os
 import sys
+from functools import lru_cache
 
 import streamlit as st
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
+from app.components.background import run_with_loader, start_warm_up  # noqa: E402
+from app.components.decor import page_header  # noqa: E402
+from app.components.style import apply_style, footer  # noqa: E402
 from pipeline import retrieve, verses_by_id  # noqa: E402
 from query.classifier import classify_theme  # noqa: E402
 from query.rewrite import rewrite  # noqa: E402
@@ -33,10 +37,12 @@ COLUMNS = [
     ("results", "4. Final", "+ PageRank and theme"),
 ]
 
-st.set_page_config(page_title="Compare - Saarthi", page_icon="⚖️", layout="wide")
+st.set_page_config(page_title="Compare · Saarthi", page_icon="⚖️", layout="wide")
+apply_style()
+start_warm_up()
 
 
-@st.cache_data(show_spinner=False)
+@lru_cache(maxsize=32)  # runs in a background thread, so a plain cache instead of st.cache_data
 def search_all(question: str) -> tuple[list[str], str, dict]:
     """Concepts, predicted theme and every intermediate ranking for one question."""
     concepts = rewrite(question)
@@ -65,7 +71,7 @@ def move_label(verse_id: str, position: int, fused_rank: dict) -> str:
     return "same place as fused"
 
 
-st.title("Compare the search steps")
+page_header("Compare the search steps", "sun")
 st.write("See what each step of Saarthi's search changes for one question.")
 
 with st.form("compare"):
@@ -75,8 +81,8 @@ with st.form("compare"):
 
 if submitted and question.strip():
     try:
-        with st.spinner("Searching ..."):
-            concepts, theme, out = search_all(question.strip())
+        concepts, theme, out = run_with_loader(lambda on_step: search_all(question.strip()),
+                                               "Rewriting the question and running every search step")
     except FileNotFoundError:
         st.error("No embeddings yet. Run  python indexing/embeddings.py  once, then reload this page.")
         st.stop()
@@ -107,3 +113,5 @@ if submitted and question.strip():
                     st.write(excerpt(result["id"]))
                     if key == "results":
                         st.caption(move_label(result["id"], position, fused_rank))
+
+footer()

@@ -1,37 +1,36 @@
-"""One verse as a card: Sanskrit, transliteration and a translation."""
+"""One verse as a card: who speaks it, the Sanskrit, transliteration and a translation."""
+
+import html
 
 import streamlit as st
 
+from app.components.style import speaker_name
 
-def render_verse_card(verse: dict, lang: str) -> None:
-    """Show one verse; lang 'hi' shows a Hindi translation, anything else English."""
+
+def translation_for(verse: dict, lang: str) -> str:
+    """A Hindi translation for lang 'hi', otherwise English.
+
+    English prefers Adidevananda: the source copies of Gambhirananda and Sivananda lost
+    every "qu" (e.g. "alities" for "qualities").
+    """
     translations = verse.get("translations", {})
+    keys = ["hi_ramsukhdas", "hi_tejomayananda"] if lang == "hi" else ["en_adidevananda", "en_gambirananda"]
+    return next((translations[k] for k in keys if translations.get(k)), "Translation unavailable.")
 
-    if lang == "hi":
-        translation_keys = ["hi_ramsukhdas", "hi_tejomayananda"]
-    else:
-        translation_keys = ["en_gambirananda", "en_sivananda"]
 
-    translation = next(
-        (translations[key] for key in translation_keys if translations.get(key)),
-        "Translation unavailable."
-    )
-
-    with st.container(border=True):
-        st.markdown(
-            f"**Chapter {verse['chapter']}, Verse {verse['verse']}**"
-        )
-
-        if verse.get("speaker"):
-            st.caption(f"Speaker: {verse['speaker']}")
-
+def render_verse_card(verse: dict, lang: str, border: bool = True, title: bool = True) -> None:
+    """Show one verse; lang 'hi' shows a Hindi translation, anything else English."""
+    with st.container(border=border):
+        if title:
+            st.markdown(
+                f"<div class='saarthi-verse-title'>Chapter {verse['chapter']} · Verse {verse['verse']}"
+                f"<span class='saarthi-speaker'>{html.escape(speaker_name(verse))}</span></div>",
+                unsafe_allow_html=True,
+            )
         if verse.get("sanskrit"):
-            st.markdown("**Sanskrit**")
-            st.text(verse["sanskrit"])
-
+            lines = "<br>".join(html.escape(line) for line in verse["sanskrit"].splitlines())
+            st.markdown(f"<div class='saarthi-sanskrit'>{lines}</div>", unsafe_allow_html=True)
         if verse.get("transliteration"):
-            st.markdown("**Transliteration**")
-            st.write(verse["transliteration"])
-
-        st.markdown("**Translation**")
-        st.write(translation)
+            lines = "<br>".join(html.escape(line) for line in verse["transliteration"].splitlines())
+            st.markdown(f"<div class='saarthi-translit'>{lines}</div>", unsafe_allow_html=True)
+        st.write(translation_for(verse, lang))

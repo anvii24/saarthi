@@ -6,6 +6,7 @@ Build once: python indexing/embeddings.py   (a few minutes; saved in data/proces
 import json
 import os
 import sys
+import threading
 
 import numpy as np
 
@@ -20,15 +21,17 @@ META_PATH = os.path.join("data", "processed", "embeddings_meta.json")
 _model = None
 _vectors = None
 _meta = None
+_lock = threading.Lock()
 
 
 def get_model():
     """Load the embedding model once (first call downloads it)."""
     global _model
-    if _model is None:
-        from sentence_transformers import SentenceTransformer
+    with _lock:
+        if _model is None:
+            from sentence_transformers import SentenceTransformer
 
-        _model = SentenceTransformer(MODEL_NAME)
+            _model = SentenceTransformer(MODEL_NAME)
     return _model
 
 

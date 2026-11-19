@@ -22,6 +22,8 @@ import streamlit as st
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
+from app.components.decor import page_header  # noqa: E402
+from app.components.style import apply_style, footer  # noqa: E402
 from query.spelling import correct  # noqa: E402
 from retrieval.boolean import load_index, search_boolean  # noqa: E402
 
@@ -32,7 +34,8 @@ MAX_SHOWN = 50
 ZONES = {"Translation": "translation", "Commentary": "commentary", "Sanskrit": "sanskrit"}
 LANGUAGES = {"English": "en", "Hindi": "hi"}
 
-st.set_page_config(page_title="Advanced Search - Saarthi", page_icon="🔎", layout="wide")
+st.set_page_config(page_title="Advanced Search · Saarthi", page_icon="🔎", layout="wide")
+apply_style()
 
 
 # ---------------------------------------------------------------------------
@@ -92,7 +95,7 @@ def use_suggestion(text: str) -> None:
 # Page
 # ---------------------------------------------------------------------------
 
-st.title("Advanced Search")
+page_header("Advanced Search", "lotus_gold")
 st.write("Exact keyword search over the verses. For questions in everyday words, use the Ask page instead.")
 
 left, middle, right, far_right = st.columns([2, 1.2, 1.2, 1.2])
@@ -154,3 +157,5 @@ if query.strip():
                 st.caption(verse.get("transliteration", ""))
     if len(found) > MAX_SHOWN:
         st.caption(f"Showing the first {MAX_SHOWN} of {len(found)}. Add a word or a chapter filter to narrow it down.")
+
+footer()
