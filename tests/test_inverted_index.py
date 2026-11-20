@@ -1,5 +1,4 @@
 
-import json
 from indexing.inverted_index import InvertedIndex
 
 

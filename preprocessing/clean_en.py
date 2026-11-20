@@ -1,7 +1,6 @@
 """English text cleaning: lowercase, drop punctuation and stopwords, Porter-stem."""
 
 import re
-import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize

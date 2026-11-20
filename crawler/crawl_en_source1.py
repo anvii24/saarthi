@@ -7,7 +7,6 @@ import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
-from pathlib import Path
 
 from config import EN_SOURCE1_DIR
 from crawler.base_crawler import fetch, save_raw
